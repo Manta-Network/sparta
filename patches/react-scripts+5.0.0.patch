@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
+index 2b1b3bb..ec6c5ac 100644
+--- a/node_modules/react-scripts/config/webpack.config.js
++++ b/node_modules/react-scripts/config/webpack.config.js
+@@ -343,6 +343,14 @@ module.exports = function (webpackEnv) {
+           babelRuntimeRegenerator,
+         ]),
+       ],
++      fallback: {
++        'react/jsx-runtime': 'react/jsx-runtime.js',
++        'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
++        "crypto": require.resolve('crypto-browserify'),
++        "stream": require.resolve('stream-browserify'),
++        "buffer": require.resolve('buffer/'),
++        "process/browser": require.resolve('process/browser.js'),
++      },
+     },
+     module: {
+       strictExportPresence: true,
+@@ -602,6 +610,17 @@ module.exports = function (webpackEnv) {
+       ].filter(Boolean),
+     },
+     plugins: [
++      // Work around for Buffer is undefined:
++      // https://github.com/webpack/changelog-v5/issues/10
++      new webpack.ProvidePlugin({
++        Buffer: [
++          'buffer',
++          'Buffer'
++        ],
++      }),
++      new webpack.ProvidePlugin({
++        f: 'process/browser',
++      }),
+       // Generates an `index.html` file with the <script> injected.
+       new HtmlWebpackPlugin(
+         Object.assign(
