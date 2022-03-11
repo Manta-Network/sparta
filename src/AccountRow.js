@@ -10,7 +10,6 @@ import { u8aToHex } from '@polkadot/util';
 import BigNumber from 'bignumber.js';
 
 const wsProvider = new WsProvider('wss://ws.calamari.systems');
-//const wsProvider = new WsProvider('ws://127.0.0.1:9144');
 
 function AccountRow(props) {
   const [account, setAccount] = useState({
@@ -26,7 +25,10 @@ function AccountRow(props) {
           ({ nonce, data: balance }) => {
             setAccount((a) => ({
               ...a,
-              balance,
+              balance: {
+                free: BigNumber(balance.free).dividedBy(1e12),
+                reserved: BigNumber(balance.reserved).dividedBy(1e12),
+              },
               nonce
             }));
           }
@@ -70,16 +72,16 @@ function AccountRow(props) {
       <td style={{textAlign:'right'}}>
         {
           account.balance
-            ? (BigNumber(account.balance.reserved).dividedBy(1e12) >= 400000)
+            ? (account.balance.reserved >= 400000)
               ? (
-                  <i className="bi bi-lock-fill text-success" title={new Intl.NumberFormat().format(BigNumber(account.balance.reserved).dividedBy(1e12))}></i>
+                  <i className="bi bi-lock-fill text-success" title={new Intl.NumberFormat().format(account.balance.reserved)}></i>
                 )
-              : (BigNumber(account.balance.free).dividedBy(1e12) >= 400000)
+              : (account.balance.free >= 400000)
                 ? (
-                    <i className="bi bi-unlock-fill text-success" title={new Intl.NumberFormat().format(BigNumber(account.balance.free).dividedBy(1e12))}></i>
+                    <i className="bi bi-unlock-fill text-success" title={new Intl.NumberFormat().format(account.balance.free)}></i>
                   )
                 : (
-                    <i className="bi bi-unlock text-danger" title={new Intl.NumberFormat().format(BigNumber(account.balance.free).dividedBy(1e12))}></i>
+                    <i className="bi bi-unlock text-danger" title={new Intl.NumberFormat().format(account.balance.free)}></i>
                   )
             : (
                 <Spinner animation="border" variant="secondary" size="sm">

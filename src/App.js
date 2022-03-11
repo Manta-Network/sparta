@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import AccountRow from './AccountRow';
 
 const accounts = [...new Set([
+  'dmuaG34aVnxirpMsHXu6Mg7RxNN3cxG74ZyjLVEgvzNqBXm2U',
   'dmu7rmwTa35Ec5cnNMpn8EpnFPA727sDtpCQwu9uCo2sfnmg1',
   'dmvvqrfK5AUYH294zTCCiimJRV7CQDDQyC7RAkd5aZgUn9S6f',
   'dmxjZSec4Xj3xz3nBEwSHjQSnRGhvcoB4eRabkiw7pSDuv8fW',
