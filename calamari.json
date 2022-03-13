@@ -63,13 +63,6 @@
     }
   },
   {
-    "ss58": "dmu7rmwTa35Ec5cnNMpn8EpnFPA727sDtpCQwu9uCo2sfnmg1",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
     "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
     "metrics": {
       "calamari": "",
@@ -92,13 +85,6 @@
   },
   {
     "ss58": "dmuMp3ZDzrggjgRmCsXLuriE2wB8qfAwhrwCskAsepqGnYyAD",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
     "metrics": {
       "calamari": "",
       "kusama": ""
