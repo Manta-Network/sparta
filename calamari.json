@@ -1,0 +1,345 @@
+[
+  {
+    "ss58": "dmxjZSec4Xj3xz3nBEwSHjQSnRGhvcoB4eRabkiw7pSDuv8fW",
+    "metrics": {
+      "calamari": "https://crispy.calamari.systems",
+      "kusama": "https://kusama.crispy.calamari.systems"
+    }
+  },
+  {
+    "ss58": "dmu63DLez715hRyhzdigz6akxS2c9W6RQvrToUWuQ1hntcBwF",
+    "metrics": {
+      "calamari": "https://crunchy.calamari.systems",
+      "kusama": "https://kusama.crunchy.calamari.systems"
+    }
+  },
+  {
+    "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
+    "metrics": {
+      "calamari": "https://hotdog.calamari.systems",
+      "kusama": "https://kusama.hotdog.calamari.systems"
+    }
+  },
+  {
+    "ss58": "dmyhGnuox8ny9R1efVsWKxNU2FevMxcPZaB66uEJqJhgC4a1W",
+    "metrics": {
+      "calamari": "https://tasty.calamari.systems",
+      "kusama": "https://kusama.tasty.calamari.systems"
+    }
+  },
+  {
+    "ss58": "dmzbLejekGYZmfo5FoSznv5bBik7vGowuLxvzqFs2gZo2kANh",
+    "metrics": {
+      "calamari": "https://tender.calamari.systems",
+      "kusama": "https://kusama.tender.calamari.systems"
+    }
+  },
+  {
+    "ss58": "dmu7rmwTa35Ec5cnNMpn8EpnFPA727sDtpCQwu9uCo2sfnmg1",
+    "metrics": {
+      "calamari": "https://calamari.metrics.agrajag.thgttg.com",
+      "kusama": "https://kusama.metrics.agrajag.thgttg.com"
+    }
+  },
+  {
+    "ss58": "dmvvqrfK5AUYH294zTCCiimJRV7CQDDQyC7RAkd5aZgUn9S6f",
+    "metrics": {
+      "calamari": "http://65.108.122.7:9615",
+      "kusama": "http://65.108.122.7:9616"
+    }
+  },
+  {
+    "ss58": "dmuaG34aVnxirpMsHXu6Mg7RxNN3cxG74ZyjLVEgvzNqBXm2U",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmu7rmwTa35Ec5cnNMpn8EpnFPA727sDtpCQwu9uCo2sfnmg1",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmuBBGBxRRLhZa7QEfZvMPZsV3YXEgNeTkA1vhwhBhpLrSyH2",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmud8aJzwQ5H8v1Zw9AekV8TXwEe412JCeCEcwKwsvkpeeCAU",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmuMp3ZDzrggjgRmCsXLuriE2wB8qfAwhrwCskAsepqGnYyAD",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmuuG83f3JeXBmMp7e3XssJzq7rUAuNgAT3z7HoUPWueqpD1V",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmv2KUDD1JHCgtYDSds8FUBf7bd59SLkGXLz979PV7V4DbX8G",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvejwLsRVWLFNfWMm2potXvYU3TXBzxndun1zKqFRFs2nDP6",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvK7LAuPAAdSzFWqkXiS9AwxMhc7vCYmvZHg8iHveaFYG5HL",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvQL8XfiJcfufCowNHCkJ8qxMAdw39i1nPsH8jf7AbEgnvNW",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvu53ayeLxRSf14ejMEBMpePQxSVwBDSvyQXC789miKprvgq",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvXcSGBjyW4cq3ban3L4LJB6RtHQhBmtztZZ4o6TYKjoZ7Ye",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwcJrQm4ShNd1ASnksCG465hchJKrjTGiSoFsC9vMJcgbsPV",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwkmhm6YZgBihxdgvDLcwRy7ZuvzFDhEyntTYuy7QeXddxdN",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwtABggtvqJovSnFYi3KX5jCoPs66cZro8et9PJiRk7VGQ1f",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmww5oaqM52Tg9WHLe9WJ9bKhyekZH1SiT4mYdb2khY1zLQg6",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmx4WhyUDhAjsMf1mRD55qApjxnqSXcSsmweHgcv8seGkrN4R",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmxa3MJczFGT92BUQjwsxguUC2t5qFaDdagfpBQWdGkNPJYQ5",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmxARc22SyzyD29ca92pWkbcGjJcMibatAnAQnwEbo7zwiPFW",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmxo6FdaDHxPJPdUMDvVzEcqE8UuV2Ve1JURt4jF9efNDyk2o",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmxRC8PY2FbFhSjsx1RpcqJpiYoZ2ubGR8rAMhW3ocxpWkArh",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmy6hUYKvUqpo7QxFFK5bgmnGYLpfSMxFDw2t3XpC6MjMkLJa",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmy6WPM2KfD7WBxJYS6UG17GHJVCv8kewiwTr6ciVeXLbBpvf",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmy9gzyanK9FpAxVamGa7TLz2t9RAn1SLzuy6fr5Pq5Sztqje",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmyhNFR1qUuA8efaYvpW75qGKrYfzrK8ejygttHojeL4ujzUb",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmynx7uZ8HE1gNSQhXiiqVrKX5yPkHka99HjfY98z8DqRtEw3",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmyyAnvDKvWePe7d6yWzVnqVhJp9HbNMs5RDoKjUSABNQcVf5",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmyZopEVaerkgSWWTd4WScPkhQgHTeLfMcHVCkQUyL1gu29c3",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmzCAH7F9E6QoSuFWq2Hfq4b3XNzUz73zV82PzUiv4QUp5tH3",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  }
+]
