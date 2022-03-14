@@ -3,7 +3,7 @@
     "ss58": "dmxjZSec4Xj3xz3nBEwSHjQSnRGhvcoB4eRabkiw7pSDuv8fW",
     "status": "invulnerable",
     "metrics": {
-      "calamari": "https://crispy.calamari.systems",
+      "calamari": "http://crispy.calamari.systems",
       "kusama": "https://kusama.crispy.calamari.systems"
     }
   },
@@ -11,7 +11,7 @@
     "ss58": "dmu63DLez715hRyhzdigz6akxS2c9W6RQvrToUWuQ1hntcBwF",
     "status": "invulnerable",
     "metrics": {
-      "calamari": "https://crunchy.calamari.systems",
+      "calamari": "http://crunchy.calamari.systems",
       "kusama": "https://kusama.crunchy.calamari.systems"
     }
   },
@@ -19,7 +19,7 @@
     "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
     "status": "invulnerable",
     "metrics": {
-      "calamari": "https://hotdog.calamari.systems",
+      "calamari": "http://hotdog.calamari.systems",
       "kusama": "https://kusama.hotdog.calamari.systems"
     }
   },
@@ -27,7 +27,7 @@
     "ss58": "dmyhGnuox8ny9R1efVsWKxNU2FevMxcPZaB66uEJqJhgC4a1W",
     "status": "invulnerable",
     "metrics": {
-      "calamari": "https://tasty.calamari.systems",
+      "calamari": "http://tasty.calamari.systems",
       "kusama": "https://kusama.tasty.calamari.systems"
     }
   },
@@ -35,7 +35,7 @@
     "ss58": "dmzbLejekGYZmfo5FoSznv5bBik7vGowuLxvzqFs2gZo2kANh",
     "status": "invulnerable",
     "metrics": {
-      "calamari": "https://tender.calamari.systems",
+      "calamari": "http://tender.calamari.systems",
       "kusama": "https://kusama.tender.calamari.systems"
     }
   },
