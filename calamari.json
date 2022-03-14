@@ -100,8 +100,8 @@
   {
     "ss58": "dmuuG83f3JeXBmMp7e3XssJzq7rUAuNgAT3z7HoUPWueqpD1V",
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "https://calamari.metrics.fundmybirthday.com",
+      "kusama": "https://kusama.metrics.fundmybirthday.com"
     }
   },
   {
