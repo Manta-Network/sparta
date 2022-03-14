@@ -13,80 +13,142 @@ const wsProvider = new WsProvider('wss://ws.calamari.systems');
 
 function AccountRow(props) {
   const [account, setAccount] = useState({
-    ss58: props.ss58,
-    hex: u8aToHex(decodeAddress(props.ss58))
+    ss58: props.collator.ss58,
+    hex: u8aToHex(decodeAddress(props.collator.ss58)),
+    balance: {
+      loading: true,
+    },
+    session: {
+      loading: true,
+    },
+    icon: {
+      class: (props.collator.status === 'invulnerable')
+        ? `bi bi-shield-lock-fill`
+        : (props.collator.status === 'active')
+          ? `bi bi-shield-shaded`
+          : (props.collator.status === 'cabdidate')
+            ? `bi bi-shield-check`
+            : `bi bi-shield`,
+      title: (props.collator.status === 'invulnerable')
+        ? `invulnerable collator`
+        : (props.collator.status === 'active')
+          ? `active collator`
+          : (props.collator.status === 'candidate')
+            ? `candidate collator`
+            : `applicant`,
+    },
   });
-  
   useEffect(() => {
-    if (!!props.ss58) {
+    if (!!props.collator.ss58) {
       async function fetchData() {
         const api = await ApiPromise.create({ provider: wsProvider });
-        api.query.system.account(props.ss58).then(
-          ({ nonce, data: balance }) => {
+        api.query.system.account(props.collator.ss58)
+          .then(
+            ({ nonce, data: balance }) => {
+              const free = BigNumber(balance.free).dividedBy(1e12);
+              const reserved = BigNumber(balance.reserved).dividedBy(1e12);
+              setAccount((a) => ({
+                ...a,
+                balance: {
+                  free,
+                  reserved,
+                  icon: {
+                    class: (reserved >= 400000)
+                      ? `bi bi-lock-fill text-success`
+                      : (free >= 400000)
+                        ? `bi bi-unlock-fill text-success`
+                        : `bi bi-unlock text-danger`,
+                    title: (reserved >= 400000)
+                      ? new Intl.NumberFormat().format(reserved)
+                      : new Intl.NumberFormat().format(free)
+                  },
+                  loading: false,
+                },
+                nonce
+              }));
+            }
+          ).catch((error) => {
             setAccount((a) => ({
               ...a,
               balance: {
-                free: BigNumber(balance.free).dividedBy(1e12),
-                reserved: BigNumber(balance.reserved).dividedBy(1e12),
-              },
-              nonce
+                error,
+                loading: false,
+              }
             }));
-          }
-        );
-        api.query.session.nextKeys(props.ss58).then(
-          (nextKeys) => {
+          });
+        api.query.session.nextKeys(props.collator.ss58)
+          .then(
+            (nextKeys) => {
+              const sessionKeys = (nextKeys.isSome)
+                ? nextKeys.unwrap()
+                : {};
+              setAccount((a) => ({
+                ...a,
+                session: {
+                  ...(nextKeys.isSome) && { ...sessionKeys },
+                  icon: {
+                    class: (nextKeys.isSome)
+                      ? `bi bi-link-45deg text-success`
+                      : `bi bi-link-45deg text-danger`,
+                    title: (nextKeys.isSome)
+                      ? sessionKeys.aura.toString()
+                      : `no session key binding`
+                  },
+                  loading: false,
+                }
+              }));
+            }
+          ).catch((error) => {
             setAccount((a) => ({
               ...a,
               session: {
-                ...(nextKeys.isNone) && { unbound: true },
-                ...(nextKeys.isSome) && { ...nextKeys.unwrap() },
+                error,
+                icon: {
+                  class: `bi bi-link-45deg text-danger`,
+                  title: `no session key binding`
+                },
+                loading: false,
               }
             }));
-          }
-        );
+          });
       }
       fetchData();
       return () => {
         setAccount((a) => (a));
       };
     }
-  }, [props.ss58]);
+  }, [props.collator.ss58]);
   return (
     <tr>
       <td>
         <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} /> {account.ss58}
       </td>
       <td>
+        <i className={account.icon.class} title={account.icon.title}></i>
+      </td>
+      <td>
         {
-          !!account.session
-            ? !!account.session.unbound
-              ? <i className="bi bi-link-45deg text-danger" title={`no session key binding`}></i>
-              : <i className="bi bi-link-45deg text-success" title={account.session.aura.toString()}></i>
-            : (
+          !!account.session.loading
+            ? (
                 <Spinner animation="border" variant="secondary" size="sm">
-                  <span className="visually-hidden">aura lookup in progress</span>
+                  <span className="visually-hidden">session keys lookup in progress</span>
                 </Spinner>
+              )
+            : (
+                <i className={account.session.icon.class} title={account.session.icon.title}></i>
               )
         }
       </td>
       <td style={{textAlign:'right'}}>
         {
-          account.balance
-            ? (account.balance.reserved >= 400000)
-              ? (
-                  <i className="bi bi-lock-fill text-success" title={new Intl.NumberFormat().format(account.balance.reserved)}></i>
-                )
-              : (account.balance.free >= 400000)
-                ? (
-                    <i className="bi bi-unlock-fill text-success" title={new Intl.NumberFormat().format(account.balance.free)}></i>
-                  )
-                : (
-                    <i className="bi bi-unlock text-danger" title={new Intl.NumberFormat().format(account.balance.free)}></i>
-                  )
-            : (
+          !!account.balance.loading
+            ? (
                 <Spinner animation="border" variant="secondary" size="sm">
                   <span className="visually-hidden">balance lookup in progress</span>
                 </Spinner>
+              )
+            : (
+                <i className={account.balance.icon.class} title={account.balance.icon.title}></i>
               )
         }
       </td>
