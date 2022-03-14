@@ -142,7 +142,7 @@ function App() {
       <Row>
         <Col>
           <p>
-            a shortllisting for a calamari collator candidacy requires (at a minimum):
+            a shortlisting for a calamari collator candidacy requires (at a minimum):
           </p>
           <ul>
             <li>
