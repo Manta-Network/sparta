@@ -127,7 +127,7 @@ function App() {
                   best block within ten blocks of target
                 </li>
                 <li>
-                  <i className="bi bi-arrow-repeat text-danger" style={{ marginRight: '0.5em'}}></i>
+                  <i className="bi bi-arrow-repeat text-warning" style={{ marginRight: '0.5em'}}></i>
                   best block not within ten blocks of target
                 </li>
                 <li>
@@ -172,7 +172,7 @@ function App() {
               metrics endpoints are exposed, preferably over ssl.
             </li>
             <li>
-              length of time that metrics have been available and in the `up` state.
+              length of time that metrics have been available and in the <code>up</code> state.
             </li>
             <li>
               p2p ports are exposed.

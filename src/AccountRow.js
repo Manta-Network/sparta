@@ -152,7 +152,7 @@ function AccountRow(props) {
                   icon: {
                     class: ((block.height.target - block.height.best) <= 10)
                       ? `bi bi-arrow-repeat text-success`
-                      : `bi bi-arrow-repeat text-danger`,
+                      : `bi bi-arrow-repeat text-warning`,
                     title: `${block.height.best} / ${block.height.target}`
                   },
                 },
