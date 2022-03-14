@@ -58,8 +58,8 @@
   {
     "ss58": "dmuaG34aVnxirpMsHXu6Mg7RxNN3cxG74ZyjLVEgvzNqBXm2U",
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "http://51.195.63.206:9615",
+      "kusama": "http://51.195.63.206:9616"
     }
   },
   {
