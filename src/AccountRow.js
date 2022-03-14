@@ -38,83 +38,141 @@ function AccountRow(props) {
             : `applicant`,
     },
   });
+  const [metrics, setMetrics] = useState({
+    calamari: {
+      loading: true
+    },
+    kusama: {
+      loading: true
+    },
+  });
   useEffect(() => {
     if (!!props.collator.ss58) {
-      async function fetchData() {
-        const api = await ApiPromise.create({ provider: wsProvider });
-        api.query.system.account(props.collator.ss58)
-          .then(
-            ({ nonce, data: balance }) => {
-              const free = BigNumber(balance.free).dividedBy(1e12);
-              const reserved = BigNumber(balance.reserved).dividedBy(1e12);
+      ApiPromise.create({ provider: wsProvider })
+        .then((api) => {
+          api.query.system.account(props.collator.ss58)
+            .then(
+              ({ nonce, data: balance }) => {
+                const free = BigNumber(balance.free).dividedBy(1e12);
+                const reserved = BigNumber(balance.reserved).dividedBy(1e12);
+                setAccount((a) => ({
+                  ...a,
+                  balance: {
+                    free,
+                    reserved,
+                    icon: {
+                      class: (reserved >= 400000)
+                        ? `bi bi-lock-fill text-success`
+                        : (free >= 400000)
+                          ? `bi bi-unlock-fill text-success`
+                          : `bi bi-unlock text-danger`,
+                      title: (reserved >= 400000)
+                        ? new Intl.NumberFormat().format(reserved)
+                        : new Intl.NumberFormat().format(free)
+                    },
+                    loading: false,
+                  },
+                  nonce
+                }));
+              }
+            ).catch((error) => {
               setAccount((a) => ({
                 ...a,
                 balance: {
-                  free,
-                  reserved,
-                  icon: {
-                    class: (reserved >= 400000)
-                      ? `bi bi-lock-fill text-success`
-                      : (free >= 400000)
-                        ? `bi bi-unlock-fill text-success`
-                        : `bi bi-unlock text-danger`,
-                    title: (reserved >= 400000)
-                      ? new Intl.NumberFormat().format(reserved)
-                      : new Intl.NumberFormat().format(free)
-                  },
+                  error,
                   loading: false,
-                },
-                nonce
+                }
               }));
-            }
-          ).catch((error) => {
-            setAccount((a) => ({
-              ...a,
-              balance: {
-                error,
-                loading: false,
+            });
+          api.query.session.nextKeys(props.collator.ss58)
+            .then(
+              (nextKeys) => {
+                const sessionKeys = (nextKeys.isSome)
+                  ? nextKeys.unwrap()
+                  : {};
+                setAccount((a) => ({
+                  ...a,
+                  session: {
+                    ...(nextKeys.isSome) && { ...sessionKeys },
+                    icon: {
+                      class: (nextKeys.isSome)
+                        ? `bi bi-link-45deg text-success`
+                        : `bi bi-link-45deg text-danger`,
+                      title: (nextKeys.isSome)
+                        ? sessionKeys.aura.toString()
+                        : `no session key binding`
+                    },
+                    loading: false,
+                  }
+                }));
               }
-            }));
-          });
-        api.query.session.nextKeys(props.collator.ss58)
-          .then(
-            (nextKeys) => {
-              const sessionKeys = (nextKeys.isSome)
-                ? nextKeys.unwrap()
-                : {};
+            ).catch((error) => {
               setAccount((a) => ({
                 ...a,
                 session: {
-                  ...(nextKeys.isSome) && { ...sessionKeys },
+                  error,
                   icon: {
-                    class: (nextKeys.isSome)
-                      ? `bi bi-link-45deg text-success`
-                      : `bi bi-link-45deg text-danger`,
-                    title: (nextKeys.isSome)
-                      ? sessionKeys.aura.toString()
-                      : `no session key binding`
+                    class: `bi bi-link-45deg text-danger`,
+                    title: `no session key binding`
                   },
                   loading: false,
                 }
               }));
-            }
-          ).catch((error) => {
-            setAccount((a) => ({
-              ...a,
-              session: {
-                error,
-                icon: {
-                  class: `bi bi-link-45deg text-danger`,
-                  title: `no session key binding`
+            });
+        })
+        .catch(console.error);
+      ['calamari', 'kusama'].forEach((chain) => {
+        fetch(
+          `https://metrics.sparta.pelagos.systems/${props.collator.ss58}/${chain}.json`,
+          {
+            method: 'GET',
+            mode: 'cors',
+            cache: 'no-cache',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          },
+        )
+          .then(response => response.json())
+          .then((chainMetrics) => {
+            const blockHeightMetrics = chainMetrics.find((m) => m.name === 'substrate_block_height');
+            const block = {
+              height: {
+                help: blockHeightMetrics.help,
+                best: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'best').value),
+                finalized: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'finalized').value),
+                target: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'sync_target').value),
+              }
+            };
+            setMetrics((m) => ({
+              ...m,
+              [chain]: {
+                block,
+                sync: {
+                  icon: {
+                    class: ((block.height.target - block.height.best) <= 10)
+                      ? `bi bi-arrow-repeat text-success`
+                      : `bi bi-arrow-repeat text-danger`,
+                    title: `${block.height.best} / ${block.height.target}`
+                  },
                 },
                 loading: false,
               }
             }));
+          })
+          .catch((error) => {
+            setMetrics((m) => ({
+              ...m,
+              [chain]: {
+                error,
+                loading: false,
+              }
+            }));
           });
-      }
-      fetchData();
+      });
       return () => {
         setAccount((a) => (a));
+        setMetrics((m) => (m));
       };
     }
   }, [props.collator.ss58]);
@@ -123,10 +181,23 @@ function AccountRow(props) {
       <td>
         <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} /> {account.ss58}
       </td>
-      <td>
+      <td style={{textAlign:'center'}}>
         <i className={account.icon.class} title={account.icon.title}></i>
       </td>
-      <td>
+      <td style={{textAlign:'center'}}>
+        {
+          !!account.balance.loading
+            ? (
+                <Spinner animation="border" variant="secondary" size="sm">
+                  <span className="visually-hidden">balance lookup in progress</span>
+                </Spinner>
+              )
+            : (
+                <i className={account.balance.icon.class} title={account.balance.icon.title}></i>
+              )
+        }
+      </td>
+      <td style={{textAlign:'center'}}>
         {
           !!account.session.loading
             ? (
@@ -139,17 +210,38 @@ function AccountRow(props) {
               )
         }
       </td>
-      <td style={{textAlign:'right'}}>
+      <td style={{textAlign:'center'}}>
         {
-          !!account.balance.loading
+          !!metrics.calamari.loading
             ? (
                 <Spinner animation="border" variant="secondary" size="sm">
-                  <span className="visually-hidden">balance lookup in progress</span>
+                  <span className="visually-hidden">calamari metrics lookup in progress</span>
                 </Spinner>
               )
-            : (
-                <i className={account.balance.icon.class} title={account.balance.icon.title}></i>
+            : !!metrics.calamari.error
+              ? (
+                  <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.calamari.error}`}></i>
+                )
+              : (
+                  <i className={metrics.calamari.sync.icon.class} title={metrics.calamari.sync.icon.title}></i>
+                )
+        }
+      </td>
+      <td style={{textAlign:'center'}}>
+        {
+          !!metrics.kusama.loading
+            ? (
+                <Spinner animation="border" variant="secondary" size="sm">
+                  <span className="visually-hidden">kusama metrics lookup in progress</span>
+                </Spinner>
               )
+            : !!metrics.kusama.error
+              ? (
+                  <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.kusama.error}`}></i>
+                )
+              : (
+                  <i className={metrics.kusama.sync.icon.class} title={metrics.kusama.sync.icon.title}></i>
+                )
         }
       </td>
     </tr>

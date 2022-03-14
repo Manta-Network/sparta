@@ -26,13 +26,35 @@ function App() {
                   account
                 </th>
                 <th>
-                  collator
+                  status
+                </th>
+                <th>
+                  bond
                 </th>
                 <th>
                   session
                 </th>
-                <th style={{textAlign:'right'}}>
-                  bond
+                <th>
+                  calamari
+                </th>
+                <th>
+                  kusama
+                </th>
+              </tr>
+              <tr>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                  sync
+                </th>
+                <th>
+                  sync
                 </th>
               </tr>
             </thead>
@@ -45,7 +67,7 @@ function App() {
           legend
           <ul>
             <li>
-              collator
+              collator status
               <ul style={{ listStyleType: 'none', marginTop: 0}}>
                 <li>
                   <i className="bi bi-shield-lock-fill" style={{ marginRight: '0.5em'}}></i>
@@ -66,20 +88,7 @@ function App() {
               </ul>
             </li>
             <li>
-              session
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-link-45deg text-success" style={{ marginRight: '0.5em'}}></i>
-                  aura bound
-                </li>
-                <li>
-                  <i className="bi bi-link-45deg text-danger" style={{ marginRight: '0.5em'}}></i>
-                  aura unbound
-                </li>
-              </ul>
-            </li>
-            <li>
-              bond
+              bond balance status
               <ul style={{ listStyleType: 'none', marginTop: 0}}>
                 <li>
                   <i className="bi bi-lock-fill text-success" style={{ marginRight: '0.5em'}}></i>
@@ -92,6 +101,36 @@ function App() {
                 <li>
                   <i className="bi bi-unlock text-danger" style={{ marginRight: '0.5em'}}></i>
                   missing
+                </li>
+              </ul>
+            </li>
+            <li>
+              session binding status
+              <ul style={{ listStyleType: 'none', marginTop: 0}}>
+                <li>
+                  <i className="bi bi-link-45deg text-success" style={{ marginRight: '0.5em'}}></i>
+                  aura bound
+                </li>
+                <li>
+                  <i className="bi bi-link-45deg text-danger" style={{ marginRight: '0.5em'}}></i>
+                  aura unbound
+                </li>
+              </ul>
+            </li>
+            <li>
+              sync status
+              <ul style={{ listStyleType: 'none', marginTop: 0}}>
+                <li>
+                  <i className="bi bi-arrow-repeat text-success" style={{ marginRight: '0.5em'}}></i>
+                  best block within ten blocks of target
+                </li>
+                <li>
+                  <i className="bi bi-arrow-repeat text-danger" style={{ marginRight: '0.5em'}}></i>
+                  best block not within ten blocks of target
+                </li>
+                <li>
+                  <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
+                  metrics endpoint unknown
                 </li>
               </ul>
             </li>
