@@ -1,71 +1,22 @@
-import { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Table from 'react-bootstrap/Table';
-import AccountRow from './AccountRow';
+import AccountsTable from './AccountsTable';
 
 function App() {
-  const [collators, setCollators] = useState([]);
-  useEffect(() => {
-    if (!collators.length) {
-      fetch(`https://raw.githubusercontent.com/Manta-Network/sparta/main/calamari.json`)
-        .then(response => response.json())
-        .then(setCollators)
-        .catch(console.error);
-    }
-  }, [collators.length]);
   return (
     <Container>
       <Row>
         <Col>
-          <Table striped size="sm">
-            <thead>
-              <tr>
-                <th>
-                  account
-                </th>
-                <th>
-                  status
-                </th>
-                <th>
-                  bond
-                </th>
-                <th>
-                  session
-                </th>
-                <th>
-                  calamari
-                </th>
-                <th>
-                  kusama
-                </th>
-              </tr>
-              <tr>
-                <th>
-                </th>
-                <th>
-                </th>
-                <th>
-                </th>
-                <th>
-                </th>
-                <th>
-                  sync
-                </th>
-                <th>
-                  sync
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {collators.map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
-            </tbody>
-          </Table>
+          <Routes>
+            <Route path='/' element={<AccountsTable />} />
+            {/*<Route path='/:ss58' element={<App/>} />*/}
+          </Routes>
         </Col>
         <Col md="auto">
-          <p>
-            legend
+          <p style={{padding: '5px', borderBottom: '1px solid #cccccc'}}>
+            <strong>legend</strong>
           </p>
           <ul>
             <li>
