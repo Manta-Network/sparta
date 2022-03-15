@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import AccountDetail from './AccountDetail';
 import AccountsTable from './AccountsTable';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <Col>
           <Routes>
             <Route path='/' element={<AccountsTable />} />
-            {/*<Route path='/:ss58' element={<App/>} />*/}
+            <Route path='/:ss58' element={<AccountDetail />} />
           </Routes>
         </Col>
         <Col md="auto">

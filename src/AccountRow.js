@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import Identicon from '@polkadot/react-identicon';
 
 import Spinner from 'react-bootstrap/Spinner';
@@ -12,6 +14,7 @@ import BigNumber from 'bignumber.js';
 const wsProvider = new WsProvider('wss://ws.calamari.systems');
 
 function AccountRow(props) {
+  const navigate = useNavigate();
   const [account, setAccount] = useState({
     ss58: props.collator.ss58,
     hex: u8aToHex(decodeAddress(props.collator.ss58)),
@@ -26,7 +29,7 @@ function AccountRow(props) {
         ? `bi bi-shield-lock-fill`
         : (props.collator.status === 'active')
           ? `bi bi-shield-shaded`
-          : (props.collator.status === 'cabdidate')
+          : (props.collator.status === 'candidate')
             ? `bi bi-shield-check`
             : `bi bi-shield`,
       title: (props.collator.status === 'invulnerable')
@@ -177,14 +180,15 @@ function AccountRow(props) {
     }
   }, [props.collator.ss58]);
   return (
-    <tr>
+    <tr onClick={() => navigate(`/${account.ss58}`)}>
       <td>
-        <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} /> {account.ss58}
+        <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} />
+        <span style={{cursor: 'pointer', marginLeft: '0.5em'}}>{account.ss58}</span>
       </td>
-      <td style={{textAlign:'center'}}>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
         <i className={account.icon.class} title={account.icon.title}></i>
       </td>
-      <td style={{textAlign:'center'}}>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!account.balance.loading
             ? (
@@ -197,7 +201,7 @@ function AccountRow(props) {
               )
         }
       </td>
-      <td style={{textAlign:'center'}}>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!account.session.loading
             ? (
@@ -210,7 +214,7 @@ function AccountRow(props) {
               )
         }
       </td>
-      <td style={{textAlign:'center'}}>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!metrics.calamari.loading
             ? (
@@ -227,7 +231,7 @@ function AccountRow(props) {
                 )
         }
       </td>
-      <td style={{textAlign:'center'}}>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!metrics.kusama.loading
             ? (
