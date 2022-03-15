@@ -317,8 +317,8 @@
   {
     "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "https://calamari.metrics.favoursanywhere.com",
+      "kusama": "https://kusama.metrics.favoursanywhere.com"
     }
   },
   {
