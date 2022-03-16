@@ -44,22 +44,6 @@ function AccountsTable() {
                 up
               </th>
             </tr>
-            <tr>
-              <td style={{textAlign:'center'}}>
-              </td>
-              <td style={{textAlign:'center'}}>
-              </td>
-              <td style={{textAlign:'center'}}>
-              </td>
-              <td style={{textAlign:'center'}}>
-              </td>
-              <td style={{textAlign:'center'}}>
-                sync
-              </td>
-              <td style={{textAlign:'center'}}>
-                sync
-              </td>
-            </tr>
           </thead>
           <tbody>
             {collators.map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
