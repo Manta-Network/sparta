@@ -77,27 +77,6 @@
     }
   },
   {
-    "ss58": "dmuBBGBxRRLhZa7QEfZvMPZsV3YXEgNeTkA1vhwhBhpLrSyH2",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmud8aJzwQ5H8v1Zw9AekV8TXwEe412JCeCEcwKwsvkpeeCAU",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmuMp3ZDzrggjgRmCsXLuriE2wB8qfAwhrwCskAsepqGnYyAD",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
     "ss58": "dmuuG83f3JeXBmMp7e3XssJzq7rUAuNgAT3z7HoUPWueqpD1V",
     "metrics": {
       "calamari": "https://calamari.metrics.fundmybirthday.com",
@@ -105,52 +84,10 @@
     }
   },
   {
-    "ss58": "dmv2KUDD1JHCgtYDSds8FUBf7bd59SLkGXLz979PV7V4DbX8G",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmvejwLsRVWLFNfWMm2potXvYU3TXBzxndun1zKqFRFs2nDP6",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmvK7LAuPAAdSzFWqkXiS9AwxMhc7vCYmvZHg8iHveaFYG5HL",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
     "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
     "metrics": {
       "calamari": "https://calamari.metrics.polkadotters.com",
       "kusama": "https://kusama.metrics.polkadotters.com"
-    }
-  },
-  {
-    "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmvQL8XfiJcfufCowNHCkJ8qxMAdw39i1nPsH8jf7AbEgnvNW",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmvu53ayeLxRSf14ejMEBMpePQxSVwBDSvyQXC789miKprvgq",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
     }
   },
   {
@@ -165,27 +102,6 @@
     "metrics": {
       "calamari": "http://155.138.138.183:9615",
       "kusama": "http://155.138.138.183:9616"
-    }
-  },
-  {
-    "ss58": "dmwcJrQm4ShNd1ASnksCG465hchJKrjTGiSoFsC9vMJcgbsPV",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmwkmhm6YZgBihxdgvDLcwRy7ZuvzFDhEyntTYuy7QeXddxdN",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmwtABggtvqJovSnFYi3KX5jCoPs66cZro8et9PJiRk7VGQ1f",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
     }
   },
   {
@@ -214,6 +130,111 @@
     "metrics": {
       "calamari": "https://calamari.metrics.calamari.anonstake.com",
       "kusama": "https://kusama.metrics.calamari.anonstake.com"
+    }
+  },
+  {
+    "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
+    "metrics": {
+      "calamari": "https://calamari.metrics.favoursanywhere.com",
+      "kusama": "https://kusama.metrics.favoursanywhere.com"
+    }
+  },
+  {
+    "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm",
+    "metrics": {
+      "calamari": "https://calamari.rhee.substake.app",
+      "kusama": "https://kusama.rhee.substake.app"
+    }
+  },
+  {
+    "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
+    "metrics": {
+      "calamari": "https://calamari.metrics.dp.stakebaby.com",
+      "kusama": "https://kusama.metrics.dp.stakebaby.com"
+    }
+  },
+  {
+    "ss58": "dmynx7uZ8HE1gNSQhXiiqVrKX5yPkHka99HjfY98z8DqRtEw3",
+    "metrics": {
+      "calamari": "http://calamari.staking4all.org:9615",
+      "kusama": "http://calamari.staking4all.org:9616"
+    }
+  },
+  {
+    "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
+    "metrics": {
+      "calamari": "https://calamari.pathrocknetwork.org",
+      "kusama": "https://kusama.pathrocknetwork.org"
+    }
+  },
+  {
+    "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
+    "metrics": {
+      "calamari": "https://calamari.metrics.cj.kmapro.de",
+      "kusama": "https://kusama.metrics.cj.kmapro.de"
+    }
+  },
+  {
+    "ss58": "dmv2KUDD1JHCgtYDSds8FUBf7bd59SLkGXLz979PV7V4DbX8G",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvejwLsRVWLFNfWMm2potXvYU3TXBzxndun1zKqFRFs2nDP6",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvK7LAuPAAdSzFWqkXiS9AwxMhc7vCYmvZHg8iHveaFYG5HL",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvQL8XfiJcfufCowNHCkJ8qxMAdw39i1nPsH8jf7AbEgnvNW",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmvu53ayeLxRSf14ejMEBMpePQxSVwBDSvyQXC789miKprvgq",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwcJrQm4ShNd1ASnksCG465hchJKrjTGiSoFsC9vMJcgbsPV",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwkmhm6YZgBihxdgvDLcwRy7ZuvzFDhEyntTYuy7QeXddxdN",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwtABggtvqJovSnFYi3KX5jCoPs66cZro8et9PJiRk7VGQ1f",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
     }
   },
   {
@@ -266,31 +287,10 @@
     }
   },
   {
-    "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
-    "metrics": {
-      "calamari": "https://calamari.metrics.cj.kmapro.de",
-      "kusama": "https://kusama.metrics.cj.kmapro.de"
-    }
-  },
-  {
     "ss58": "dmyhNFR1qUuA8efaYvpW75qGKrYfzrK8ejygttHojeL4ujzUb",
     "metrics": {
       "calamari": "",
       "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmynx7uZ8HE1gNSQhXiiqVrKX5yPkHka99HjfY98z8DqRtEw3",
-    "metrics": {
-      "calamari": "http://calamari.staking4all.org:9615",
-      "kusama": "http://calamari.staking4all.org:9616"
-    }
-  },
-  {
-    "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
-    "metrics": {
-      "calamari": "https://calamari.pathrocknetwork.org",
-      "kusama": "https://kusama.pathrocknetwork.org"
     }
   },
   {
@@ -308,31 +308,31 @@
     }
   },
   {
-    "ss58": "dmzCAH7F9E6QoSuFWq2Hfq4b3XNzUz73zV82PzUiv4QUp5tH3",
+    "ss58": "dmuBBGBxRRLhZa7QEfZvMPZsV3YXEgNeTkA1vhwhBhpLrSyH2",
     "metrics": {
       "calamari": "",
       "kusama": ""
     }
   },
   {
-    "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
+    "ss58": "dmud8aJzwQ5H8v1Zw9AekV8TXwEe412JCeCEcwKwsvkpeeCAU",
     "metrics": {
-      "calamari": "https://calamari.metrics.favoursanywhere.com",
-      "kusama": "https://kusama.metrics.favoursanywhere.com"
+      "calamari": "",
+      "kusama": ""
     }
   },
   {
-    "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm",
+    "ss58": "dmuMp3ZDzrggjgRmCsXLuriE2wB8qfAwhrwCskAsepqGnYyAD",
     "metrics": {
-      "calamari": "https://calamari.rhee.substake.app",
-      "kusama": "https://kusama.rhee.substake.app"
+      "calamari": "",
+      "kusama": ""
     }
   },
   {
-    "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
+    "ss58": "dmzCAH7F9E6QoSuFWq2Hfq4b3XNzUz73zV82PzUiv4QUp5tH3",
     "metrics": {
-      "calamari": "https://calamari.metrics.dp.stakebaby.com",
-      "kusama": "https://kusama.metrics.dp.stakebaby.com"
+      "calamari": "",
+      "kusama": ""
     }
   }
 ]
