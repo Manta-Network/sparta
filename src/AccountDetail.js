@@ -13,6 +13,8 @@ import { u8aToHex } from '@polkadot/util';
 import BigNumber from 'bignumber.js';
 import Metric from './metric/Metric';
 
+import { dateDiff } from './utils';
+
 const wsProvider = new WsProvider('wss://ws.calamari.systems');
 
 function AccountDetail() {
@@ -167,6 +169,9 @@ function AccountDetail() {
               ...m,
               [chain]: {
                 metrics: chainMetrics,
+                process: {
+                  start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
+                },
                 block,
                 sync: {
                   icon: {
@@ -270,6 +275,30 @@ function AccountDetail() {
                           <i className={account.session.icon.class} title={account.session.icon.title}></i>
                           <span style={{marginRight: '0.5em'}}>
                             {account.session.icon.title}
+                          </span>
+                        </span>
+                      )
+                }
+              </td>
+            </tr>
+            <tr>
+              <th>uptime</th>
+              <td>
+                {
+                  (!metrics.calamari || !!metrics.calamari.loading)
+                    ? (
+                        <Spinner animation="border" variant="secondary" size="sm">
+                          <span className="visually-hidden">process start lookup in progress</span>
+                        </Spinner>
+                      )
+                    : (
+                        <span>
+                          <i className="bi bi-clock-history" title={new Intl.DateTimeFormat().format(metrics.calamari.process.start)} style={{marginRight: '0.5em'}}></i>
+                          <span style={{marginRight: '0.5em'}}>
+                            {dateDiff(metrics.calamari.process.start, null, null)}
+                          </span>
+                          <span style={{marginRight: '0.5em'}}>
+                            - process started: {new Intl.DateTimeFormat('en', { dateStyle: 'full', timeStyle: 'full' }).format(metrics.calamari.process.start)}
                           </span>
                         </span>
                       )

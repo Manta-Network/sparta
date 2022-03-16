@@ -11,6 +11,8 @@ import { u8aToHex } from '@polkadot/util';
 
 import BigNumber from 'bignumber.js';
 
+import { dateDiff } from './utils';
+
 const wsProvider = new WsProvider('wss://ws.calamari.systems');
 
 function AccountRow(props) {
@@ -150,6 +152,9 @@ function AccountRow(props) {
             setMetrics((m) => ({
               ...m,
               [chain]: {
+                process: {
+                  start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
+                },
                 block,
                 sync: {
                   icon: {
@@ -245,6 +250,25 @@ function AccountRow(props) {
                 )
               : (
                   <i className={metrics.kusama.sync.icon.class} title={metrics.kusama.sync.icon.title}></i>
+                )
+        }
+      </td>
+      <td style={{textAlign:'center', cursor: 'pointer'}}>
+        {
+          !!metrics.calamari.loading
+            ? (
+                <Spinner animation="border" variant="secondary" size="sm">
+                  <span className="visually-hidden">calamari metrics lookup in progress</span>
+                </Spinner>
+              )
+            : !!metrics.calamari.error
+              ? (
+                  <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.calamari.error}`}></i>
+                )
+              : (
+                  <span>
+                    {dateDiff(metrics.calamari.process.start, null, 'significant')}
+                  </span>
                 )
         }
       </td>

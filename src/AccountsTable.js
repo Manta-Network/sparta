@@ -40,6 +40,9 @@ function AccountsTable() {
               <th style={{textAlign:'center'}}>
                 kusama
               </th>
+              <th style={{textAlign:'center'}}>
+                up
+              </th>
             </tr>
             <tr>
               <td style={{textAlign:'center'}}>
