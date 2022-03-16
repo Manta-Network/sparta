@@ -217,13 +217,6 @@
     }
   },
   {
-    "ss58": "dmy6hUYKvUqpo7QxFFK5bgmnGYLpfSMxFDw2t3XpC6MjMkLJa",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
     "ss58": "dmy6WPM2KfD7WBxJYS6UG17GHJVCv8kewiwTr6ciVeXLbBpvf",
     "metrics": {
       "calamari": "",
@@ -266,6 +259,20 @@
     }
   },
   {
+    "ss58": "dmv2KUDD1JHCgtYDSds8FUBf7bd59SLkGXLz979PV7V4DbX8G",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmy6hUYKvUqpo7QxFFK5bgmnGYLpfSMxFDw2t3XpC6MjMkLJa",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
     "ss58": "dmuBBGBxRRLhZa7QEfZvMPZsV3YXEgNeTkA1vhwhBhpLrSyH2",
     "metrics": {
       "calamari": "",
@@ -281,13 +288,6 @@
   },
   {
     "ss58": "dmuMp3ZDzrggjgRmCsXLuriE2wB8qfAwhrwCskAsepqGnYyAD",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmv2KUDD1JHCgtYDSds8FUBf7bd59SLkGXLz979PV7V4DbX8G",
     "metrics": {
       "calamari": "",
       "kusama": ""
