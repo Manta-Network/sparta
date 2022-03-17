@@ -191,6 +191,7 @@ function AccountRow(props) {
               ...m,
               [chain]: {
                 name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
+                version: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.version,
                 process: {
                   start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
                 },
@@ -239,6 +240,13 @@ function AccountRow(props) {
         {
           (!!metrics.kusama.name && (metrics.calamari.name !== metrics.kusama.name))
             ? ` / ${metrics.kusama.name}`
+            : null
+        }
+      </td>
+      <td style={{cursor: 'pointer'}}>
+        {
+          (!!metrics.calamari.version)
+            ? `${metrics.calamari.version.split('-')[0]}-${metrics.calamari.version.split('-')[1]}`
             : null
         }
       </td>

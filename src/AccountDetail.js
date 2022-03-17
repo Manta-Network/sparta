@@ -182,7 +182,7 @@ function AccountDetail() {
             });
         })
         .catch(console.error);
-      ['calamari', 'kusama'].forEach((chain) => {
+      Object.keys(metrics).forEach((chain) => {
         fetch(
           `https://metrics.sparta.pelagos.systems/${params.ss58}/${chain}.json`,
           {
@@ -209,6 +209,7 @@ function AccountDetail() {
               ...m,
               [chain]: {
                 name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
+                version: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.version,
                 metrics: chainMetrics,
                 process: {
                   start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
@@ -241,7 +242,7 @@ function AccountDetail() {
         setMetrics((m) => (m));
       };
     }
-  }, [params.ss58]);
+  }, [metrics, params.ss58]);
   return (
     <>
       <Row>
@@ -255,8 +256,13 @@ function AccountDetail() {
             {
               Object.keys(metrics).map((chain, i) => (
                 <tr>
-                  <th>{chain} name</th>
-                  <th>{metrics[chain].name}</th>
+                  <th>{chain}</th>
+                  <th>
+                    {metrics[chain].name}
+                    <span className="text-muted" style={{marginLeft: '0.5em'}}>
+                      {metrics[chain].version}
+                    </span>
+                  </th>
                 </tr>
               ))
             }
@@ -433,7 +439,7 @@ function AccountDetail() {
           </tbody>
         </Table>
         {
-          ['calamari', 'kusama'].map((chain, i) => (
+          Object.keys(metrics).map((chain, i) => (
             <Table key={i}>
               <thead>
                 <tr>
@@ -448,7 +454,7 @@ function AccountDetail() {
                           <th>metrics</th>
                           <td>
                             <Spinner animation="border" variant="secondary" size="sm">
-                              <span className="visually-hidden">calamari metrics lookup in progress</span>
+                              <span className="visually-hidden">{chain} metrics lookup in progress</span>
                             </Spinner>
                           </td>
                         </tr>
@@ -458,7 +464,7 @@ function AccountDetail() {
                           <tr>
                             <th>metrics</th>
                             <td>
-                              <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.calamari.error}`}></i>
+                              <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics[chain].error}`}></i>
                             </td>
                           </tr>
                         )

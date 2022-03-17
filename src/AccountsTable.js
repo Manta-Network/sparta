@@ -28,6 +28,9 @@ function AccountsTable() {
               <th>
                 node
               </th>
+              <th>
+                version
+              </th>
               <th style={{textAlign:'center'}}>
                 status
               </th>
