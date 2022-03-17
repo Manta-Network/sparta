@@ -8,12 +8,7 @@ function Histogram(props) {
           <li key={i}>
             {Object.keys(m.labels).map((l) => `${l}: ${m.labels[l]}`).join(', ')}
             <br />
-            <Chart
-              chartType="Histogram"
-              data={Object.keys(m.buckets).map((k) => [k, m.buckets[k]])}
-              width="100%"
-              legendToggle
-            />
+            <Chart chartType="Histogram" data={Object.keys(m.buckets).map((k) => [k, m.buckets[k]])} width="100%" legendToggle />
           </li>
         ))
       }
