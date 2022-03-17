@@ -198,8 +198,8 @@
   {
     "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "https://calamari.metrics.calamari.stakecraft.com",
+      "kusama": "https://kusama.metrics.calamari.stakecraft.com"
     }
   },
   {
