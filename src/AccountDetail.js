@@ -291,17 +291,21 @@ function AccountDetail() {
                           <span className="visually-hidden">process start lookup in progress</span>
                         </Spinner>
                       )
-                    : (
-                        <span>
-                          <i className="bi bi-clock-history" title={new Intl.DateTimeFormat().format(metrics.calamari.process.start)} style={{marginRight: '0.5em'}}></i>
-                          <span style={{marginRight: '0.5em'}}>
-                            {dateDiff(metrics.calamari.process.start, null, null)}
+                    : !!metrics.calamari.error
+                      ? (
+                          <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.calamari.error}`}></i>
+                        )
+                      : (
+                          <span>
+                            <i className="bi bi-clock-history" title={new Intl.DateTimeFormat().format(metrics.calamari.process.start)} style={{marginRight: '0.5em'}}></i>
+                            <span style={{marginRight: '0.5em'}}>
+                              {dateDiff(metrics.calamari.process.start, null, null)}
+                            </span>
+                            <span style={{marginRight: '0.5em'}}>
+                              - process started: {new Intl.DateTimeFormat('en', { dateStyle: 'full', timeStyle: 'full' }).format(metrics.calamari.process.start)}
+                            </span>
                           </span>
-                          <span style={{marginRight: '0.5em'}}>
-                            - process started: {new Intl.DateTimeFormat('en', { dateStyle: 'full', timeStyle: 'full' }).format(metrics.calamari.process.start)}
-                          </span>
-                        </span>
-                      )
+                        )
                 }
               </td>
             </tr>
