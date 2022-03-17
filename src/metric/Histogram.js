@@ -22,4 +22,3 @@ function Histogram(props) {
 }
 
 export default Histogram;
-// data={[["Age", "Weight"], [4, 5.5], [8, 12]]}
