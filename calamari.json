@@ -334,5 +334,12 @@
       "calamari": "",
       "kusama": ""
     }
+  },
+  {
+    "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
+    "metrics": {
+      "calamari": "https://stats.calamari.migusha.com",
+      "kusama": "https://stats.kasuma.migusha.com"
+    }
   }
 ]
