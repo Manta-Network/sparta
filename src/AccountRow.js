@@ -43,6 +43,14 @@ function AccountRow(props) {
             : `applicant`,
     },
   });
+  const [alerts, setAlerts] = useState({
+    calamari: {
+      loading: true
+    },
+    kusama: {
+      loading: true
+    },
+  });
   const [metrics, setMetrics] = useState({
     calamari: {
       loading: true
@@ -127,6 +135,36 @@ function AccountRow(props) {
         })
         .catch(console.error);
       ['calamari', 'kusama'].forEach((chain) => {
+        if (!!props.collator.metrics[chain]) {
+          fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${(new URL(props.collator.metrics[chain])).host}%22`)
+            .then(response => response.json())
+            .then((alerts) => {
+              setAlerts((a) => ({
+                ...a,
+                [chain]: {
+                  alerts,
+                  loading: false,
+                }
+              }));
+            })
+            .catch((error) => {
+              setAlerts((a) => ({
+                ...a,
+                [chain]: {
+                  error,
+                  loading: false,
+                }
+              }));
+            });
+        } else {
+          setAlerts((a) => ({
+            ...a,
+            [chain]: {
+              error: `${chain} metrics endpoint unknown`,
+              loading: false,
+            }
+          }));
+        }
         fetch(
           `https://metrics.sparta.pelagos.systems/${props.collator.ss58}/${chain}.json`,
           {
@@ -180,10 +218,11 @@ function AccountRow(props) {
       });
       return () => {
         setAccount((a) => (a));
+        setAlerts((a) => (a));
         setMetrics((m) => (m));
       };
     }
-  }, [props.collator.ss58]);
+  }, [props.collator.ss58, props.collator.metrics]);
   return (
     <tr onClick={() => navigate(`/${account.ss58}`)}>
       <td>
@@ -221,36 +260,46 @@ function AccountRow(props) {
       </td>
       <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
-          !!metrics.calamari.loading
-            ? (
-                <Spinner animation="border" variant="secondary" size="sm">
-                  <span className="visually-hidden">calamari metrics lookup in progress</span>
-                </Spinner>
-              )
-            : !!metrics.calamari.error
+          Object.keys(metrics).map((chain) => (
+            !!metrics[chain].loading
               ? (
-                  <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.calamari.error}`}></i>
+                  <Spinner animation="border" variant="secondary" size="sm">
+                    <span className="visually-hidden">{chain} metrics lookup in progress</span>
+                  </Spinner>
                 )
-              : (
-                  <i className={metrics.calamari.sync.icon.class} title={metrics.calamari.sync.icon.title}></i>
-                )
+              : !!metrics[chain].error
+                ? (
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics[chain].error}`}></i>
+                  )
+                : (
+                    <i className={metrics[chain].sync.icon.class} title={metrics[chain].sync.icon.title}></i>
+                  )
+          ))
         }
       </td>
       <td style={{textAlign:'center', cursor: 'pointer'}}>
         {
-          !!metrics.kusama.loading
-            ? (
-                <Spinner animation="border" variant="secondary" size="sm">
-                  <span className="visually-hidden">kusama metrics lookup in progress</span>
-                </Spinner>
-              )
-            : !!metrics.kusama.error
+          Object.keys(alerts).map((chain) => (
+            !!alerts[chain].loading
               ? (
-                  <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics.kusama.error}`}></i>
+                  <Spinner animation="border" variant="secondary" size="sm">
+                    <span className="visually-hidden">{chain} alerts lookup in progress</span>
+                  </Spinner>
                 )
-              : (
-                  <i className={metrics.kusama.sync.icon.class} title={metrics.kusama.sync.icon.title}></i>
-                )
+              : !!alerts[chain].error
+                ? (
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`${alerts[chain].error}`}></i>
+                  )
+                : !!alerts[chain].alerts.length
+                  ? alerts[chain].alerts.map((alert) => (
+                      <a key={alert.fingerprint} href={alert.generatorURL}>
+                        <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={alert.annotations.message}></i>
+                      </a>
+                    ))
+                  : (
+                      <i className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
+                    )
+          ))
         }
       </td>
       <td style={{textAlign:'center', cursor: 'pointer'}}>

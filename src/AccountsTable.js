@@ -35,10 +35,10 @@ function AccountsTable() {
                 session
               </th>
               <th style={{textAlign:'center'}}>
-                calamari
+                sync
               </th>
               <th style={{textAlign:'center'}}>
-                kusama
+                alerts
               </th>
               <th style={{textAlign:'center'}}>
                 up

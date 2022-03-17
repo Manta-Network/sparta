@@ -29,12 +29,20 @@ function AccountDetail() {
       loading: true,
     },
   });
+  const [alerts, setAlerts] = useState({
+    calamari: {
+      loading: true
+    },
+    kusama: {
+      loading: true
+    },
+  });
   useEffect(() => {
     if (!!account.ss58 && !account.icon) {
       fetch(`https://raw.githubusercontent.com/Manta-Network/sparta/main/calamari.json`)
         .then(response => response.json())
         .then((collators) => {
-          const { status } = collators.find((c) => c.ss58 === account.ss58);
+          const { metrics, status } = collators.find((c) => c.ss58 === account.ss58);
           setAccount((a) => ({
             ...a,
             status,
@@ -55,6 +63,38 @@ function AccountDetail() {
                     : `applicant`,
             },
           }));
+          Object.keys(metrics).forEach((chain) => {
+            if (!!metrics[chain]) {
+              fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${(new URL(metrics[chain])).host}%22`)
+                .then(response => response.json())
+                .then((alerts) => {
+                  setAlerts((a) => ({
+                    ...a,
+                    [chain]: {
+                      alerts,
+                      loading: false,
+                    }
+                  }));
+                })
+                .catch((error) => {
+                  setAlerts((a) => ({
+                    ...a,
+                    [chain]: {
+                      error,
+                      loading: false,
+                    }
+                  }));
+                });
+            } else {
+              setAlerts((a) => ({
+                ...a,
+                [chain]: {
+                  error: `${chain} metrics endpoint unknown`,
+                  loading: false,
+                }
+              }));
+            }
+          })
         })
         .catch(console.error);
     }
@@ -310,7 +350,7 @@ function AccountDetail() {
               </td>
             </tr>
             {
-              ['calamari', 'kusama'].map((chain, i) => (
+              Object.keys(metrics).map((chain, i) => (
                 <tr key={i}>
                   <th>{chain} sync</th>
                   <td>
@@ -338,8 +378,48 @@ function AccountDetail() {
                                   target: {metrics[chain].block.height.target}
                                 </span>
                               </span>
-                              
                             )
+                    }
+                  </td>
+                </tr>
+              ))
+            }
+            {
+              Object.keys(alerts).map((chain, i) => (
+                <tr key={i}>
+                  <th>{chain} alerts</th>
+                  <td>
+                    {
+                      !!alerts[chain].loading
+                        ? (
+                            <Spinner animation="border" variant="secondary" size="sm">
+                              <span className="visually-hidden">{chain} alerts lookup in progress</span>
+                            </Spinner>
+                          )
+                        : !!alerts[chain].error
+                          ? (
+                              <i className={`bi bi-exclamation-circle text-danger`} title={`${alerts[chain].error}`}></i>
+                            )
+                          : !!alerts[chain].alerts.length
+                            ? alerts[chain].alerts.map((alert) => (
+                                <span>
+                                  <a key={alert.fingerprint} href={alert.generatorURL}>
+                                    <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={alert.annotations.message}></i>
+                                  </a>
+                                  <span style={{marginLeft: '0.5em'}}>
+                                    {alert.annotations.message}
+                                  </span>
+                                  <br />
+                                </span>
+                              ))
+                            : (
+                                <span>
+                                  <i className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
+                                  <span style={{marginLeft: '0.5em'}}>
+                                    no active {chain} alerts
+                                  </span>
+                                </span>
+                              )
                     }
                   </td>
                 </tr>

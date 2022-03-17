@@ -88,6 +88,27 @@ function App() {
                 </li>
               </ul>
             </li>
+            <li>
+              alert status
+              <ul style={{ listStyleType: 'none', marginTop: 0}}>
+                <li>
+                  <i className="bi bi-activity text-success" style={{ marginRight: '0.5em'}}></i>
+                  no active alerts
+                </li>
+                <li>
+                  <i className="bi bi-exclamation-diamond-fill text-warning" style={{ marginRight: '0.5em'}}></i>
+                  warning alert firing
+                </li>
+                <li>
+                  <i className="bi bi-exclamation-diamond-fill text-danger" style={{ marginRight: '0.5em'}}></i>
+                  critical alert firing
+                </li>
+                <li>
+                  <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
+                  metrics endpoint unknown
+                </li>
+              </ul>
+            </li>
           </ul>
         </Col>
       </Row>
