@@ -208,6 +208,7 @@ function AccountDetail() {
             setMetrics((m) => ({
               ...m,
               [chain]: {
+                name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
                 metrics: chainMetrics,
                 process: {
                   start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
@@ -251,10 +252,14 @@ function AccountDetail() {
       <Row>
         <Table>
           <thead>
-            <tr>
-              <th></th>
-              <th></th>
-            </tr>
+            {
+              Object.keys(metrics).map((chain, i) => (
+                <tr>
+                  <th>{chain} name</th>
+                  <th>{metrics[chain].name}</th>
+                </tr>
+              ))
+            }
           </thead>
           <tbody>
             <tr>

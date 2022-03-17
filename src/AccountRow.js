@@ -190,6 +190,7 @@ function AccountRow(props) {
             setMetrics((m) => ({
               ...m,
               [chain]: {
+                name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
                 process: {
                   start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
                 },
@@ -225,9 +226,21 @@ function AccountRow(props) {
   }, [props.collator.ss58, props.collator.metrics]);
   return (
     <tr onClick={() => navigate(`/${account.ss58}`)}>
-      <td>
+      <td style={{cursor: 'pointer'}}>
         <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} />
-        <span style={{cursor: 'pointer', marginLeft: '0.5em'}}>{account.ss58}</span>
+        <span style={{cursor: 'pointer', marginLeft: '0.5em'}}>{account.ss58.slice(0, 5)}...{account.ss58.slice(44)}</span>
+      </td>
+      <td style={{cursor: 'pointer'}}>
+        {
+          (!!metrics.calamari.name)
+            ? metrics.calamari.name
+            : null
+        }
+        {
+          (!!metrics.kusama.name && (metrics.calamari.name !== metrics.kusama.name))
+            ? ` / ${metrics.kusama.name}`
+            : null
+        }
       </td>
       <td style={{textAlign:'center', cursor: 'pointer'}}>
         <i className={account.icon.class} title={account.icon.title}></i>

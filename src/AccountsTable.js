@@ -25,6 +25,9 @@ function AccountsTable() {
               <th>
                 account
               </th>
+              <th>
+                node
+              </th>
               <th style={{textAlign:'center'}}>
                 status
               </th>
