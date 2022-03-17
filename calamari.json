@@ -189,6 +189,13 @@
     }
   },
   {
+    "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
+    "metrics": {
+      "calamari": "http://146.59.68.182:9615",
+      "kusama": "http://146.59.68.182:9616"
+    }
+  },
+  {
     "ss58": "dmvejwLsRVWLFNfWMm2potXvYU3TXBzxndun1zKqFRFs2nDP6",
     "metrics": {
       "calamari": "",
@@ -211,13 +218,6 @@
   },
   {
     "ss58": "dmxARc22SyzyD29ca92pWkbcGjJcMibatAnAQnwEbo7zwiPFW",
-    "metrics": {
-      "calamari": "",
-      "kusama": ""
-    }
-  },
-  {
-    "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
     "metrics": {
       "calamari": "",
       "kusama": ""
