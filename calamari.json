@@ -170,8 +170,8 @@
   {
     "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
     "metrics": {
-      "calamari": "http://95.214.55.74:9615",
-      "kusama": "http://95.214.55.74:9616"
+      "calamari": "https://calamari.metrics.letsnode.io",
+      "kusama": "https://kusama.metrics.letsnode.io"
     }
   },
   {
