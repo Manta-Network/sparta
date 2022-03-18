@@ -341,5 +341,12 @@
       "calamari": "",
       "kusama": ""
     }
+  },
+    {
+    "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
+    "metrics": {
+      "calamari": "https://stats.calamari.themilkywaygang.com",
+      "kusama": "https://stats.kasuma.themilkywaygang.com"
+    }
   }
 ]
