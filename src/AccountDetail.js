@@ -16,6 +16,11 @@ import Metric from './metric/Metric';
 import { dateDiff } from './utils';
 
 const wsProvider = new WsProvider('wss://ws.calamari.systems');
+const sidecars = [
+  'https://api.chilli.calamari.systems',
+  'https://api.jalapeno.calamari.systems',
+  'https://api.serrano.calamari.systems',
+];
 
 function AccountDetail() {
   const params = useParams();
@@ -111,42 +116,42 @@ function AccountDetail() {
   });
   useEffect(() => {
     if (!!params.ss58) {
+      fetch(`${sidecars[~~(sidecars.length * Math.random())]}/accounts/${params.ss58}/balance-info`)
+        .then(response => response.json())
+        .then((balance) => {
+          const free = BigNumber(balance.free).dividedBy(1e12);
+          const reserved = BigNumber(balance.reserved).dividedBy(1e12);
+          setAccount((a) => ({
+            ...a,
+            balance: {
+              free,
+              reserved,
+              icon: {
+                class: (reserved >= 400000)
+                  ? `bi bi-lock-fill text-success`
+                  : (free >= 400000)
+                    ? `bi bi-unlock-fill text-success`
+                    : `bi bi-unlock text-danger`,
+                title: (reserved >= 400000)
+                  ? new Intl.NumberFormat().format(reserved)
+                  : new Intl.NumberFormat().format(free)
+              },
+              loading: false,
+            },
+            nonce: balance.nonce
+          }));
+        })
+        .catch((error) => {
+          setAccount((a) => ({
+            ...a,
+            balance: {
+              error,
+              loading: false,
+            }
+          }));
+        });
       ApiPromise.create({ provider: wsProvider })
         .then((api) => {
-          api.query.system.account(params.ss58)
-            .then(
-              ({ nonce, data: balance }) => {
-                const free = BigNumber(balance.free).dividedBy(1e12);
-                const reserved = BigNumber(balance.reserved).dividedBy(1e12);
-                setAccount((a) => ({
-                  ...a,
-                  balance: {
-                    free,
-                    reserved,
-                    icon: {
-                      class: (reserved >= 400000)
-                        ? `bi bi-lock-fill text-success`
-                        : (free >= 400000)
-                          ? `bi bi-unlock-fill text-success`
-                          : `bi bi-unlock text-danger`,
-                      title: (reserved >= 400000)
-                        ? new Intl.NumberFormat().format(reserved)
-                        : new Intl.NumberFormat().format(free)
-                    },
-                    loading: false,
-                  },
-                  nonce
-                }));
-              }
-            ).catch((error) => {
-              setAccount((a) => ({
-                ...a,
-                balance: {
-                  error,
-                  loading: false,
-                }
-              }));
-            });
           api.query.session.nextKeys(params.ss58)
             .then(
               (nextKeys) => {
