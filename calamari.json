@@ -154,6 +154,27 @@
     }
   },
   {
+    "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
+    "metrics": {
+      "calamari": "https://calamari.metrics.letsnode.io",
+      "kusama": "https://kusama.metrics.letsnode.io"
+    }
+  },
+  {
+    "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
+    "metrics": {
+      "calamari": "https://stats.calamari.migusha.com",
+      "kusama": "https://stats.kasuma.migusha.com"
+    }
+  },
+  {
+    "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
+    "metrics": {
+      "calamari": "https://stats.calamari.themilkywaygang.com",
+      "kusama": "https://stats.kasuma.themilkywaygang.com"
+    }
+  },
+  {
     "ss58": "dmynx7uZ8HE1gNSQhXiiqVrKX5yPkHka99HjfY98z8DqRtEw3",
     "metrics": {
       "calamari": "http://calamari.staking4all.org:9615",
@@ -165,13 +186,6 @@
     "metrics": {
       "calamari": "http://51.195.63.206:9615",
       "kusama": "http://51.195.63.206:9616"
-    }
-  },
-  {
-    "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
-    "metrics": {
-      "calamari": "https://calamari.metrics.letsnode.io",
-      "kusama": "https://kusama.metrics.letsnode.io"
     }
   },
   {
@@ -193,13 +207,6 @@
     "metrics": {
       "calamari": "http://146.59.68.182:9615",
       "kusama": "http://146.59.68.182:9616"
-    }
-  },
-  {
-    "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
-    "metrics": {
-      "calamari": "https://stats.calamari.migusha.com",
-      "kusama": "https://stats.kasuma.migusha.com"
     }
   },
   {
@@ -340,13 +347,6 @@
     "metrics": {
       "calamari": "",
       "kusama": ""
-    }
-  },
-    {
-    "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
-    "metrics": {
-      "calamari": "https://stats.calamari.themilkywaygang.com",
-      "kusama": "https://stats.kasuma.themilkywaygang.com"
     }
   }
 ]
