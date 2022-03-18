@@ -136,7 +136,9 @@ function AccountRow(props) {
         .catch(console.error);
       ['calamari', 'kusama'].forEach((chain) => {
         if (!!props.collator.metrics[chain]) {
-          fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${(new URL(props.collator.metrics[chain])).host}%22`)
+          const metricsUrl = new URL(props.collator.metrics[chain]);
+          const instance = `${metricsUrl.hostname}${(!!metricsUrl.port) ? `:${metricsUrl.port}` : (metricsUrl.protocol === 'https:') ? `:443` : ''}`;
+          fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${instance}%22`)
             .then(response => response.json())
             .then((alerts) => {
               setAlerts((a) => ({
@@ -314,7 +316,11 @@ function AccountRow(props) {
                 : !!alerts[chain].alerts.length
                   ? alerts[chain].alerts.map((alert) => (
                       <a key={alert.fingerprint} href={alert.generatorURL}>
-                        <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={alert.annotations.message}></i>
+                        <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={!!alert.annotations.message
+                          ? alert.annotations.message
+                          : !!alert.annotations.description
+                            ? alert.annotations.description
+                            : alert.annotations.summary}></i>
                       </a>
                     ))
                   : (

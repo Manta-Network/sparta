@@ -65,7 +65,9 @@ function AccountDetail() {
           }));
           Object.keys(metrics).forEach((chain) => {
             if (!!metrics[chain]) {
-              fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${(new URL(metrics[chain])).host}%22`)
+              const metricsUrl = new URL(metrics[chain]);
+              const instance = `${metricsUrl.hostname}${(!!metricsUrl.port) ? `:${metricsUrl.port}` : (metricsUrl.protocol === 'https:') ? `:443` : ''}`;
+              fetch(`https://am.pulse.pelagos.systems/api/v2/alerts?filter=instance%3D%22${instance}%22`)
                 .then(response => response.json())
                 .then((alerts) => {
                   setAlerts((a) => ({
@@ -217,9 +219,7 @@ function AccountDetail() {
                 block,
                 sync: {
                   icon: {
-                    class: ((block.height.target - block.height.best) <= 10)
-                      ? `bi bi-arrow-repeat text-success`
-                      : `bi bi-arrow-repeat text-warning`,
+                    class: `bi bi-arrow-repeat text-${((block.height.target - block.height.best) <= 10) ? 'success' : 'warning'}`,
                     title: `${block.height.best} / ${block.height.target}`
                   },
                 },
@@ -415,10 +415,21 @@ function AccountDetail() {
                             ? alerts[chain].alerts.map((alert) => (
                                 <span>
                                   <a key={alert.fingerprint} href={alert.generatorURL}>
-                                    <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={alert.annotations.message}></i>
+                                    <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={
+                                      !!alert.annotations.message
+                                        ? alert.annotations.message
+                                        : !!alert.annotations.description
+                                          ? alert.annotations.description
+                                          : alert.annotations.summary}></i>
                                   </a>
                                   <span style={{marginLeft: '0.5em'}}>
-                                    {alert.annotations.message}
+                                    {
+                                      !!alert.annotations.message
+                                        ? alert.annotations.message
+                                        : !!alert.annotations.description
+                                          ? alert.annotations.description
+                                          : alert.annotations.summary
+                                    }
                                   </span>
                                   <br />
                                 </span>
