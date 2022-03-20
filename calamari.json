@@ -65,8 +65,8 @@
   {
     "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
     "metrics": {
-      "calamari": "https://calamari.metrics.pithecus.co.uk",
-      "kusama": "https://kusama.metrics.pithecus.co.uk"
+      "calamari": "https://calamari.pithecus.co.uk",
+      "kusama": "https://kusama.pithecus.co.uk"
     }
   },
   {
