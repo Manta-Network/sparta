@@ -93,14 +93,6 @@
     }
   },
   {
-    "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
-    "status": "candidate",
-    "metrics": {
-      "calamari": "https://calamari.metrics.polkadotters.com",
-      "kusama": "https://kusama.metrics.polkadotters.com"
-    }
-  },
-  {
     "ss58": "dmww5oaqM52Tg9WHLe9WJ9bKhyekZH1SiT4mYdb2khY1zLQg6",
     "metrics": {
       "calamari": "https://calamari.metrics.substake.app",
