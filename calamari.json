@@ -56,6 +56,22 @@
     }
   },
   {
+    "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://calamari.metrics.polkadotters.com",
+      "kusama": "https://kusama.metrics.polkadotters.com"
+    }
+  },
+  {
+    "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://calamari.metrics.cj.kmapro.de",
+      "kusama": "https://kusama.metrics.cj.kmapro.de"
+    }
+  },
+  {
     "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
     "metrics": {
       "calamari": "https://calamari.metrics.nettle.network",
@@ -78,6 +94,7 @@
   },
   {
     "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
+    "status": "candidate",
     "metrics": {
       "calamari": "https://calamari.metrics.polkadotters.com",
       "kusama": "https://kusama.metrics.polkadotters.com"
@@ -137,13 +154,6 @@
     "metrics": {
       "calamari": "https://calamari.pathrocknetwork.org",
       "kusama": "https://kusama.pathrocknetwork.org"
-    }
-  },
-  {
-    "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
-    "metrics": {
-      "calamari": "https://calamari.metrics.cj.kmapro.de",
-      "kusama": "https://kusama.metrics.cj.kmapro.de"
     }
   },
   {
