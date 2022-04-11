@@ -72,6 +72,30 @@
     }
   },
   {
+    "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://calamari.metrics.calamari.stakecraft.com",
+      "kusama": "https://kusama.metrics.calamari.stakecraft.com"
+    }
+  },
+  {
+    "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://calamari.metrics.dp.stakebaby.com",
+      "kusama": "https://kusama.metrics.dp.stakebaby.com"
+    }
+  },
+  {
+    "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://stats.calamari.migusha.com",
+      "kusama": "https://stats.kasuma.migusha.com"
+    }
+  },
+  {
     "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
     "metrics": {
       "calamari": "https://calamari.metrics.nettle.network",
@@ -135,13 +159,6 @@
     }
   },
   {
-    "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
-    "metrics": {
-      "calamari": "https://calamari.metrics.dp.stakebaby.com",
-      "kusama": "https://kusama.metrics.dp.stakebaby.com"
-    }
-  },
-  {
     "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
     "metrics": {
       "calamari": "https://calamari.pathrocknetwork.org",
@@ -149,24 +166,10 @@
     }
   },
   {
-    "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
-    "metrics": {
-      "calamari": "https://calamari.metrics.calamari.stakecraft.com",
-      "kusama": "https://kusama.metrics.calamari.stakecraft.com"
-    }
-  },
-  {
     "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
     "metrics": {
       "calamari": "https://calamari.metrics.letsnode.io",
       "kusama": "https://kusama.metrics.letsnode.io"
-    }
-  },
-  {
-    "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
-    "metrics": {
-      "calamari": "https://stats.calamari.migusha.com",
-      "kusama": "https://stats.kasuma.migusha.com"
     }
   },
   {
