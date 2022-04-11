@@ -180,6 +180,13 @@
     }
   },
   {
+    "ss58": "dmzh2ESTJAy1MJ8Ekg9zs1653HFBUqCQeErihJZSHfFXGgNUh",
+    "metrics": {
+      "calamari": "https://calamari.metrics.gostake.io",
+      "kusama": "https://kusama.metrics.gostake.io"
+    }
+  },
+  {
     "ss58": "dmynx7uZ8HE1gNSQhXiiqVrKX5yPkHka99HjfY98z8DqRtEw3",
     "metrics": {
       "calamari": "http://calamari.staking4all.org:9615",
