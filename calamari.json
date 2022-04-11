@@ -73,7 +73,7 @@
   },
   {
     "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://calamari.metrics.calamari.stakecraft.com",
       "kusama": "https://kusama.metrics.calamari.stakecraft.com"
@@ -81,7 +81,7 @@
   },
   {
     "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://calamari.metrics.dp.stakebaby.com",
       "kusama": "https://kusama.metrics.dp.stakebaby.com"
@@ -89,7 +89,7 @@
   },
   {
     "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://stats.calamari.migusha.com",
       "kusama": "https://stats.kasuma.migusha.com"
