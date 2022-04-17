@@ -96,18 +96,34 @@
     }
   },
   {
-    "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
-    "metrics": {
-      "calamari": "https://calamari.metrics.nettle.network",
-      "kusama": "https://kusama.metrics.nettle.network"
-    }
-  },
-  {
     "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
     "status": "candidate",
     "metrics": {
       "calamari": "https://calamari.pithecus.co.uk",
       "kusama": "https://kusama.pithecus.co.uk"
+    }
+  },
+  {
+    "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://calamari.brightlystake.com",
+      "kusama": "https://kusama.brightlystake.com"
+    }
+  },
+  {
+    "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
+    "status": "candidate",
+    "metrics": {
+      "calamari": "https://stats.calamari.themilkywaygang.com",
+      "kusama": "https://stats.kasuma.themilkywaygang.com"
+    }
+  },
+  {
+    "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
+    "metrics": {
+      "calamari": "https://calamari.metrics.nettle.network",
+      "kusama": "https://kusama.metrics.nettle.network"
     }
   },
   {
@@ -129,14 +145,6 @@
     "metrics": {
       "calamari": "https://calamari.metrics.staker.space",
       "kusama": "https://kusama.metrics.staker.space"
-    }
-  },
-  {
-    "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
-    "status": "candidate",
-    "metrics": {
-      "calamari": "https://calamari.brightlystake.com",
-      "kusama": "https://kusama.brightlystake.com"
     }
   },
   {
@@ -172,14 +180,6 @@
     "metrics": {
       "calamari": "https://calamari.metrics.letsnode.io",
       "kusama": "https://kusama.metrics.letsnode.io"
-    }
-  },
-  {
-    "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
-    "status": "candidate",
-    "metrics": {
-      "calamari": "https://stats.calamari.themilkywaygang.com",
-      "kusama": "https://stats.kasuma.themilkywaygang.com"
     }
   },
   {
