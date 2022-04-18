@@ -97,7 +97,7 @@
   },
   {
     "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://calamari.pithecus.co.uk",
       "kusama": "https://kusama.pithecus.co.uk"
@@ -105,7 +105,7 @@
   },
   {
     "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://calamari.brightlystake.com",
       "kusama": "https://kusama.brightlystake.com"
@@ -113,7 +113,7 @@
   },
   {
     "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
-    "status": "candidate",
+    "status": "active",
     "metrics": {
       "calamari": "https://stats.calamari.themilkywaygang.com",
       "kusama": "https://stats.kasuma.themilkywaygang.com"
