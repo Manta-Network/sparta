@@ -43,8 +43,8 @@
     "ss58": "dmu7rmwTa35Ec5cnNMpn8EpnFPA727sDtpCQwu9uCo2sfnmg1",
     "status": "active",
     "metrics": {
-      "calamari": "https://calamari.metrics.agrajag.thgttg.com",
-      "kusama": "https://kusama.metrics.agrajag.thgttg.com"
+      "calamari": "https://calamari.metrics.novgorodian.thgttg.com",
+      "kusama": "https://kusama.metrics.novgorodian.thgttg.com"
     }
   },
   {
