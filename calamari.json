@@ -213,8 +213,8 @@
   {
     "ss58": "dmyZopEVaerkgSWWTd4WScPkhQgHTeLfMcHVCkQUyL1gu29c3",
     "metrics": {
-      "calamari": "http://141.95.126.166:9615",
-      "kusama": "http://141.95.126.166:9616"
+      "calamari": "http://calamari.metrics.rocke7.net",
+      "kusama": "http://kusama.metrics.rocke7.net"
     }
   },
   {
