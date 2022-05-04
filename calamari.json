@@ -512,6 +512,15 @@
     "metrics": {
       "calamari": "https://calamari.metrics.letsnode.io",
       "kusama": "https://kusama.metrics.letsnode.io"
+    },
+    "balance": {
+      "nonce": "9",
+      "tokenSymbol": "KMA",
+      "free": "403645081896142025",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
