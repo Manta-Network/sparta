@@ -363,6 +363,9 @@
       "miscFrozen": "0",
       "feeFrozen": "0",
       "locks": []
+    },
+    "session": {
+      "aura": "0xd6c307eb98e3d7f0e909dd77fe79b0e40caeb1ad416a08c02eec5e21df73eb5c"
     }
   },
   {
