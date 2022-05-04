@@ -1,0 +1,24 @@
+{
+  "at": {
+    "hash": "0x9dde8cd0068b9cfb41bb81d461dd0a5dba6125869f2b3378323ea9abe0849dd8",
+    "height": "1299849"
+  },
+  "nonce": 14,
+  "tokenSymbol": "KMA",
+  "free": "0x0000000000000000060eaa393b90faa8",
+  "reserved": 0,
+  "miscFrozen": "0x0000000000000000008176b6eb54c000",
+  "feeFrozen": 0,
+  "locks": [
+    {
+      "id": "0x63616c616d767374",
+      "amount": "0x000000000000000000611909307f9000",
+      "reasons": "Misc"
+    },
+    {
+      "id": "0x64656d6f63726163",
+      "amount": "0x0000000000000000008176b6eb54c000",
+      "reasons": "Misc"
+    }
+  ]
+}
