@@ -1,0 +1,13 @@
+{
+  "at": {
+    "hash": "0x3e452f6e94fe7e32dd4f8ec5085b145d5ad0b696fb283a5acd4b966b291b0eb8",
+    "height": "1299859"
+  },
+  "nonce": "3",
+  "tokenSymbol": "KMA",
+  "free": "410958118729945702",
+  "reserved": "0",
+  "miscFrozen": "0",
+  "feeFrozen": "0",
+  "locks": []
+}
