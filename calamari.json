@@ -204,7 +204,6 @@
     },
     "balance": {
       "nonce": "7",
-      "tokenSymbol": "KMA",
       "free": "219989331282158684",
       "reserved": "400000000000000000",
       "miscFrozen": "0",
