@@ -125,6 +125,21 @@
     "metrics": {
       "calamari": "http://65.108.122.7:9615",
       "kusama": "http://65.108.122.7:9616"
+    },
+    "balance": {
+      "nonce": "4",
+      "tokenSymbol": "KMA",
+      "free": "10339241121518445",
+      "reserved": "400000000000000000",
+      "miscFrozen": "10000000000000000",
+      "feeFrozen": "0",
+      "locks": [
+        {
+          "id": "0x64656d6f63726163",
+          "amount": "10000000000000000",
+          "reasons": "Misc"
+        }
+      ]
     }
   },
   {
