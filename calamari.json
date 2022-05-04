@@ -305,6 +305,15 @@
     "metrics": {
       "calamari": "https://stats.calamari.themilkywaygang.com",
       "kusama": "https://stats.kasuma.themilkywaygang.com"
+    },
+    "balance": {
+      "nonce": "2",
+      "tokenSymbol": "KMA",
+      "free": "1082230829977904",
+      "reserved": "400000000000000000",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
