@@ -45,6 +45,15 @@
     "metrics": {
       "calamari": "https://para.metrics.hotdog.calamari.systems",
       "kusama": "https://relay.metrics.hotdog.calamari.systems"
+    },
+    "balance": {
+      "nonce": "0",
+      "tokenSymbol": "KMA",
+      "free": "24163734364202277",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
