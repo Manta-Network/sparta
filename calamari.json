@@ -619,6 +619,15 @@
     "metrics": {
       "calamari": "https://calamari.metrics.rocke7.net",
       "kusama": "https://kusama.metrics.rocke7.net"
+    },
+    "balance": {
+      "nonce": "10",
+      "tokenSymbol": "KMA",
+      "free": "500083101050812157",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
