@@ -324,6 +324,26 @@
     "metrics": {
       "calamari": "https://calamari.metrics.nettle.network",
       "kusama": "https://kusama.metrics.nettle.network"
+    },
+    "balance": {
+      "nonce": "9",
+      "tokenSymbol": "KMA",
+      "free": "410074858578326963",
+      "reserved": "0",
+      "miscFrozen": "58000000000000000",
+      "feeFrozen": "0",
+      "locks": [
+        {
+          "id": "0x63616c616d767374",
+          "amount": "58000000000000000",
+          "reasons": "Misc"
+        },
+        {
+          "id": "0x64656d6f63726163",
+          "amount": "10000000000000000",
+          "reasons": "Misc"
+        }
+      ]
     }
   },
   {
