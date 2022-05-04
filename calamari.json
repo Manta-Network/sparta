@@ -5,6 +5,15 @@
     "metrics": {
       "calamari": "https://para.metrics.crispy.calamari.systems",
       "kusama": "https://relay.metrics.crispy.calamari.systems"
+    },
+    "balance": {
+      "nonce": "0",
+      "tokenSymbol": "KMA",
+      "free": "23208254333693424",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
