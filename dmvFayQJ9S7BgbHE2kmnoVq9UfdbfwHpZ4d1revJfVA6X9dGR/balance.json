@@ -1,13 +1,13 @@
 {
   "at": {
-    "hash": "0x08cbfc7bb6b5f8b1a020b939370885a991580e1812fa1d16416bc203dc25a53c",
-    "height": "1299870"
+    "hash": "0xcf4662a5e479a000ee0ba18f36c95acadaa1f8a5a3d06330775353269e6dbda4",
+    "height": "1299879"
   },
-  "nonce": 2,
+  "nonce": "2",
   "tokenSymbol": "KMA",
-  "free": "0x000000000000000004aa9ec52399dfd7",
-  "reserved": "0x0000000000000000058d15e176280000",
-  "miscFrozen": 0,
-  "feeFrozen": 0,
+  "free": "336255691735556055",
+  "reserved": "400000000000000000",
+  "miscFrozen": "0",
+  "feeFrozen": "0",
   "locks": []
 }
