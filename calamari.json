@@ -105,6 +105,15 @@
     "metrics": {
       "calamari": "https://calamari.metrics.novgorodian.thgttg.com",
       "kusama": "https://kusama.metrics.novgorodian.thgttg.com"
+    },
+    "balance": {
+      "nonce": "2",
+      "tokenSymbol": "KMA",
+      "free": "495046729726711",
+      "reserved": "400000000000000000",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
