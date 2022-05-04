@@ -556,6 +556,15 @@
     "metrics": {
       "calamari": "http://calamari.staking4all.org:9615",
       "kusama": "http://calamari.staking4all.org:9616"
+    },
+    "balance": {
+      "nonce": "1",
+      "tokenSymbol": "KMA",
+      "free": "667759623062018451",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
