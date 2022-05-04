@@ -1,23 +1,23 @@
 {
   "at": {
-    "hash": "0xc8ef7ec0146aef18e03846fbcbe471c79dbfb15d60aa9107fd7c4c081976ea1c",
-    "height": "1299871"
+    "hash": "0x7f04a84287d91b19fda7d9ab53fd132122c7303ea8a9c2306ca11f6efc9fa09c",
+    "height": "1299881"
   },
-  "nonce": 14,
+  "nonce": "14",
   "tokenSymbol": "KMA",
-  "free": "0x0000000000000000060eaa393b90faa8",
-  "reserved": 0,
-  "miscFrozen": "0x0000000000000000008176b6eb54c000",
-  "feeFrozen": 0,
+  "free": "436473376690731688",
+  "reserved": "0",
+  "miscFrozen": "36440800000000000",
+  "feeFrozen": "0",
   "locks": [
     {
       "id": "0x63616c616d767374",
-      "amount": "0x000000000000000000611909307f9000",
+      "amount": "27330600000000000",
       "reasons": "Misc"
     },
     {
       "id": "0x64656d6f63726163",
-      "amount": "0x0000000000000000008176b6eb54c000",
+      "amount": "36440800000000000",
       "reasons": "Misc"
     }
   ]
