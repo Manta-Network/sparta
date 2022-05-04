@@ -65,6 +65,15 @@
     "metrics": {
       "calamari": "https://para.metrics.tasty.calamari.systems",
       "kusama": "https://relay.metrics.tasty.calamari.systems"
+    },
+    "balance": {
+      "nonce": "0",
+      "tokenSymbol": "KMA",
+      "free": "23675896454269085",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
