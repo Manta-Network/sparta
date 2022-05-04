@@ -466,6 +466,15 @@
     "metrics": {
       "calamari": "https://calamari.rhee.substake.app",
       "kusama": "https://kusama.rhee.substake.app"
+    },
+    "balance": {
+      "nonce": "0",
+      "tokenSymbol": "KMA",
+      "free": "0",
+      "reserved": "0",
+      "miscFrozen": "0",
+      "feeFrozen": "0",
+      "locks": []
     }
   },
   {
