@@ -1,0 +1,19 @@
+{
+  "at": {
+    "hash": "0xd1dac123b782accd46631aaeb01de9d318c4273ab16a5e7a5552a209e9aff20e",
+    "height": "1299856"
+  },
+  "nonce": "3",
+  "tokenSymbol": "KMA",
+  "free": "400102017913745135",
+  "reserved": "0",
+  "miscFrozen": "400002545200000000",
+  "feeFrozen": "0",
+  "locks": [
+    {
+      "id": "0x64656d6f63726163",
+      "amount": "400002545200000000",
+      "reasons": "Misc"
+    }
+  ]
+}
