@@ -1034,6 +1034,21 @@
     "metrics": {
       "calamari": "",
       "kusama": ""
+    },
+    "balance": {
+      "nonce": "5",
+      "tokenSymbol": "KMA",
+      "free": "20168618323275246",
+      "reserved": "0",
+      "miscFrozen": "8067400000000000",
+      "feeFrozen": "0",
+      "locks": [
+        {
+          "id": "0x63616c616d767374",
+          "amount": "8067400000000000",
+          "reasons": "Misc"
+        }
+      ]
     }
   }
 ]
