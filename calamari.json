@@ -946,6 +946,15 @@
     "metrics": {
       "calamari": "",
       "kusama": ""
+    },
+    "balance": {
+      "nonce": "2",
+      "free": "3746552506876",
+      "reserved": "0",
+      "locked": {
+        "misc": "0",
+        "fee": "0"
+      }
     }
   },
   {
