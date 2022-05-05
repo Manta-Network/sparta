@@ -766,14 +766,7 @@
       "free": "137782243494111180",
       "reserved": "0",
       "miscFrozen": "110000000000000000",
-      "feeFrozen": "0",
-      "locks": [
-        {
-          "id": "0x63616c616d767374",
-          "amount": "110000000000000000",
-          "reasons": "Misc"
-        }
-      ]
+      "feeFrozen": "0"
     }
   },
   {
