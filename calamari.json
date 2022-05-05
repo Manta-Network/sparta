@@ -43,10 +43,10 @@
       "kusama": "https://relay.metrics.hotdog.calamari.systems"
     },
     "balance": {
-      "nonce": "19",
-      "free": "6945035783261476",
+      "nonce": "0",
+      "free": "24165613400787398",
       "reserved": "0",
-      "miscFrozen": "6776000000000000",
+      "miscFrozen": "0",
       "feeFrozen": "0"
     },
     "session": {
