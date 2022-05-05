@@ -61,12 +61,11 @@
       "kusama": "https://relay.metrics.tasty.calamari.systems"
     },
     "balance": {
-      "nonce": "0",
-      "free": "23675896454269085",
+      "nonce": "19",
+      "free": "6945035783261476",
       "reserved": "0",
-      "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "miscFrozen": "6776000000000000",
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0xae06f5c31189ad71a94c3dee0e462619694db71821467dbe3d49ab06319add18"
