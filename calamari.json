@@ -246,11 +246,11 @@
       "kusama": "https://kusama.pithecus.co.uk"
     },
     "balance": {
-      "nonce": "4",
-      "free": "402997493710058232",
+      "nonce": "5",
+      "free": "402996867323783980",
       "reserved": "0",
       "locked": {
-        "misc": "0",
+        "misc": "1000000000000000",
         "fee": "0"
       }
     },
