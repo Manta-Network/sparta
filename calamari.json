@@ -115,18 +115,11 @@
       "kusama": "http://65.108.122.7:9616"
     },
     "balance": {
-      "nonce": "4",
-      "free": "10339241121518445",
-      "reserved": "400000000000000000",
-      "miscFrozen": "10000000000000000",
-      "feeFrozen": "0",
-      "locks": [
-        {
-          "id": "0x64656d6f63726163",
-          "amount": "10000000000000000",
-          "reasons": "Misc"
-        }
-      ]
+      "nonce": "19",
+      "free": "6945035783261476",
+      "reserved": "0",
+      "miscFrozen": "6776000000000000",
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0x3c8bc4b3518ce7a15c75ca02d86b0a6dadd6dcf721249df69340815a35cb240d"
