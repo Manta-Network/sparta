@@ -7,12 +7,11 @@
       "kusama": "https://relay.metrics.crispy.calamari.systems"
     },
     "balance": {
-      "nonce": "0",
-      "free": "23208254333693424",
+      "nonce": "19",
+      "free": "6945035783261476",
       "reserved": "0",
-      "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "miscFrozen": "6776000000000000",
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0x7c4e5ea112f816c85f2bc77383cca50b73af038e327d39dca94252a4553b897e"
