@@ -794,8 +794,7 @@
       "free": "0",
       "reserved": "0",
       "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "feeFrozen": "0"
     }
   },
   {
