@@ -478,8 +478,7 @@
       "free": "464276769296565328",
       "reserved": "0",
       "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0x6c079293cc6bbfb88c8befaa637bf3f2a2e7803a8f4436847342469be07ad462"
