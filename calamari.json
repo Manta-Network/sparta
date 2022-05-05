@@ -240,8 +240,7 @@
     }
   },
   {
-    "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
-    "status": "disqualified",
+    "ss58": "dmz1cxDw6nC5impJMZVfDwve5AG2s5AeaqSkZvQnEuqVwLYnL",
     "metrics": {
       "calamari": "https://calamari.pithecus.co.uk",
       "kusama": "https://kusama.pithecus.co.uk"
