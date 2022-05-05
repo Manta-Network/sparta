@@ -25,10 +25,10 @@
       "kusama": "https://relay.metrics.crunchy.calamari.systems"
     },
     "balance": {
-      "nonce": "19",
-      "free": "6945035783261476",
+      "nonce": "0",
+      "free": "24099015448827458",
       "reserved": "0",
-      "miscFrozen": "6776000000000000",
+      "miscFrozen": "0",
       "feeFrozen": "0"
     },
     "session": {
