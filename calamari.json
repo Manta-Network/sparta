@@ -241,7 +241,7 @@
   },
   {
     "ss58": "dmu8uRzeiS7CjrKFiSU6bKMftbvJ16o6C4Z1yymQnQkCcrNou",
-    "status": "active",
+    "status": "disqualified",
     "metrics": {
       "calamari": "https://calamari.pithecus.co.uk",
       "kusama": "https://kusama.pithecus.co.uk"
