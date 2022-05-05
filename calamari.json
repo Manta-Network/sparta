@@ -454,11 +454,11 @@
       "kusama": "https://kusama.metrics.letsnode.io"
     },
     "balance": {
-      "nonce": "10",
-      "free": "403644455509855473",
+      "nonce": "12",
+      "free": "403643202737889374",
       "reserved": "0",
       "locked": {
-        "misc": "0",
+        "misc": "203643729100000000",
         "fee": "0"
       }
     },
