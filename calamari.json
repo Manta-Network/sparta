@@ -239,17 +239,10 @@
     },
     "balance": {
       "nonce": "3",
-      "free": "50061814945144284",
+      "free": "50062190863663836",
       "reserved": "400000000000000000",
       "miscFrozen": "10000000000000000",
-      "feeFrozen": "0",
-      "locks": [
-        {
-          "id": "0x64656d6f63726163",
-          "amount": "10000000000000000",
-          "reasons": "Misc"
-        }
-      ]
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0xa2d852a507716444acd3576ef7eaaf2a8c59a7420953ebbd013c8919e8097958"
