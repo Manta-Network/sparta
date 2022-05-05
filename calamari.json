@@ -546,14 +546,7 @@
       "free": "400102017913745135",
       "reserved": "0",
       "miscFrozen": "400002545200000000",
-      "feeFrozen": "0",
-      "locks": [
-        {
-          "id": "0x64656d6f63726163",
-          "amount": "400002545200000000",
-          "reasons": "Misc"
-        }
-      ]
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0xe21dd479862ede93938800c82edd128f0230ba5c07c51d700cc5954c13f2ae0b"
