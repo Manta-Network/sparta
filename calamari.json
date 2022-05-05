@@ -10,8 +10,10 @@
       "nonce": "0",
       "free": "23209382110842675",
       "reserved": "0",
-      "miscFrozen": "0",
-      "feeFrozen": "0"
+      "locked": {
+        "misc": "0",
+        "fee": "0"
+      }
     },
     "session": {
       "aura": "0x7c4e5ea112f816c85f2bc77383cca50b73af038e327d39dca94252a4553b897e"
