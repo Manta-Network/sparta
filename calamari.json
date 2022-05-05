@@ -151,12 +151,11 @@
       "kusama": "https://kusama.metrics.cj.kmapro.de"
     },
     "balance": {
-      "nonce": "1",
-      "free": "1189961076589850",
-      "reserved": "400000000000000000",
-      "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "nonce": "19",
+      "free": "6945035783261476",
+      "reserved": "0",
+      "miscFrozen": "6776000000000000",
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0xe487137c1078d07d75c5e6d27fb5fa4b6b3584b01f003a9e23b88bc6734d0c74"
