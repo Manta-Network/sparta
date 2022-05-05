@@ -97,12 +97,11 @@
       "kusama": "https://kusama.metrics.novgorodian.thgttg.com"
     },
     "balance": {
-      "nonce": "2",
-      "free": "495046729726711",
-      "reserved": "400000000000000000",
-      "miscFrozen": "0",
-      "feeFrozen": "0",
-      "locks": []
+      "nonce": "19",
+      "free": "6945035783261476",
+      "reserved": "0",
+      "miscFrozen": "6776000000000000",
+      "feeFrozen": "0"
     },
     "session": {
       "aura": "0xd6856ad2ead4d66746c02e49b56ada447bc4f91bc598f0592af2182e1ce34b54"
