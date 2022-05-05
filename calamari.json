@@ -924,5 +924,33 @@
         "fee": "0"
       }
     }
+  },
+  {
+    "ss58": "dmycAZkzB1y4zuBGQgGBMQH7yUvpFXKtrP5avJkedXYPQ7KM9",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwwBw4wSCeUqEEseCG1A4Gi4wiAXkAc9XtepFDUBi37zamVq",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmwJJMTe2jEisqcf7PVuNQ2rs4AoTQft5zHXbS8kdXN39kqgP",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
+  },
+  {
+    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
   }
 ]
