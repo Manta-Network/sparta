@@ -187,10 +187,10 @@
       "kusama": "https://kusama.metrics.dp.stakebaby.com"
     },
     "balance": {
-      "nonce": "19",
-      "free": "6945035783261476",
-      "reserved": "0",
-      "miscFrozen": "6776000000000000",
+      "nonce": "7",
+      "free": "219990458845789317",
+      "reserved": "400000000000000000",
+      "miscFrozen": "0",
       "feeFrozen": "0"
     },
     "session": {
