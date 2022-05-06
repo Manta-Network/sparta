@@ -266,8 +266,8 @@
       "kusama": "https://kusama.brightlystake.com"
     },
     "balance": {
-      "nonce": "3",
-      "free": "50064821521925016",
+      "nonce": "5",
+      "free": "50063568753352591",
       "reserved": "400000000000000000",
       "locked": {
         "misc": "10000000000000000",
