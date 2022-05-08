@@ -305,8 +305,8 @@
       "kusama": "https://kusama.metrics.nettle.network"
     },
     "balance": {
-      "nonce": "9",
-      "free": "410074858578326963",
+      "nonce": "10",
+      "free": "410074232203020773",
       "reserved": "0",
       "locked": {
         "misc": "58000000000000000",
