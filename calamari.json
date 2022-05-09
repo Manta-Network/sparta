@@ -20,7 +20,6 @@
   },
   {
     "ss58": "dmu63DLez715hRyhzdigz6akxS2c9W6RQvrToUWuQ1hntcBwF",
-    "status": "invulnerable",
     "metrics": {
       "calamari": "https://para.metrics.crunchy.calamari.systems",
       "kusama": "https://relay.metrics.crunchy.calamari.systems"
