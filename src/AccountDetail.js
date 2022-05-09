@@ -6,7 +6,6 @@ import Row from 'react-bootstrap/Row';
 import Spinner from 'react-bootstrap/Spinner';
 import Table from 'react-bootstrap/Table';
 
-import { ApiPromise, WsProvider } from '@polkadot/api';
 import { decodeAddress } from '@polkadot/util-crypto';
 import { u8aToHex } from '@polkadot/util';
 
@@ -14,13 +13,6 @@ import BigNumber from 'bignumber.js';
 import Metric from './metric/Metric';
 
 import { dateDiff } from './utils';
-
-const wsProvider = new WsProvider('wss://ws.calamari.systems');
-const sidecars = [
-  'https://api.chilli.calamari.systems',
-  'https://api.jalapeno.calamari.systems',
-  'https://api.serrano.calamari.systems',
-];
 
 function AccountDetail() {
   const params = useParams();
@@ -47,7 +39,9 @@ function AccountDetail() {
       fetch(`https://raw.githubusercontent.com/Manta-Network/sparta/main/calamari.json`)
         .then(response => response.json())
         .then((collators) => {
-          const { metrics, status } = collators.find((c) => c.ss58 === account.ss58);
+          const { metrics, status, balance, session } = collators.find((c) => c.ss58 === account.ss58);
+          const free = (!!balance.free) ? BigNumber(balance.free).dividedBy(1e12) : 0;
+          const reserved = (!!balance.reserved) ? BigNumber(balance.reserved).dividedBy(1e12) : 0;
           setAccount((a) => ({
             ...a,
             status,
@@ -67,6 +61,33 @@ function AccountDetail() {
                     ? `candidate collator`
                     : `applicant`,
             },
+            balance: {
+              free,
+              reserved,
+              icon: {
+                class: (reserved >= 400000)
+                  ? `bi bi-lock-fill text-success`
+                  : (free >= 400000)
+                    ? `bi bi-unlock-fill text-success`
+                    : `bi bi-unlock text-danger`,
+                title: (reserved >= 400000)
+                  ? new Intl.NumberFormat().format(reserved)
+                  : new Intl.NumberFormat().format(free)
+              },
+              loading: false,
+            },
+            session: {
+              ...(!!session && !!session.aura) && { ...session },
+              icon: {
+                class: (!!session && !!session.aura)
+                  ? `bi bi-link-45deg text-success`
+                  : `bi bi-link-45deg text-danger`,
+                title: (!!session && !!session.aura)
+                  ? session.aura.toString()
+                  : `no session key binding`
+              },
+              loading: false,
+            }
           }));
           Object.keys(metrics).forEach((chain) => {
             if (!!metrics[chain]) {
@@ -116,79 +137,6 @@ function AccountDetail() {
   });
   useEffect(() => {
     if (!!params.ss58) {
-      fetch(`${sidecars[~~(sidecars.length * Math.random())]}/accounts/${params.ss58}/balance-info`)
-        .then(response => response.json())
-        .then((balance) => {
-          const free = BigNumber(balance.free).dividedBy(1e12);
-          const reserved = BigNumber(balance.reserved).dividedBy(1e12);
-          setAccount((a) => ({
-            ...a,
-            balance: {
-              free,
-              reserved,
-              icon: {
-                class: (reserved >= 400000)
-                  ? `bi bi-lock-fill text-success`
-                  : (free >= 400000)
-                    ? `bi bi-unlock-fill text-success`
-                    : `bi bi-unlock text-danger`,
-                title: (reserved >= 400000)
-                  ? new Intl.NumberFormat().format(reserved)
-                  : new Intl.NumberFormat().format(free)
-              },
-              loading: false,
-            },
-            nonce: balance.nonce
-          }));
-        })
-        .catch((error) => {
-          setAccount((a) => ({
-            ...a,
-            balance: {
-              error,
-              loading: false,
-            }
-          }));
-        });
-      ApiPromise.create({ provider: wsProvider })
-        .then((api) => {
-          api.query.session.nextKeys(params.ss58)
-            .then(
-              (nextKeys) => {
-                const sessionKeys = (nextKeys.isSome)
-                  ? nextKeys.unwrap()
-                  : {};
-                setAccount((a) => ({
-                  ...a,
-                  session: {
-                    ...(nextKeys.isSome) && { ...sessionKeys },
-                    icon: {
-                      class: (nextKeys.isSome)
-                        ? `bi bi-link-45deg text-success`
-                        : `bi bi-link-45deg text-danger`,
-                      title: (nextKeys.isSome)
-                        ? sessionKeys.aura.toString()
-                        : `no session key binding`
-                    },
-                    loading: false,
-                  }
-                }));
-              }
-            ).catch((error) => {
-              setAccount((a) => ({
-                ...a,
-                session: {
-                  error,
-                  icon: {
-                    class: `bi bi-link-45deg text-danger`,
-                    title: `no session key binding`
-                  },
-                  loading: false,
-                }
-              }));
-            });
-        })
-        .catch(console.error);
       Object.keys(metrics).forEach((chain) => {
         fetch(
           `https://metrics.sparta.pelagos.systems/${params.ss58}/${chain}.json`,

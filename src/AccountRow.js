@@ -5,7 +5,6 @@ import Identicon from '@polkadot/react-identicon';
 
 import Spinner from 'react-bootstrap/Spinner';
 
-import { ApiPromise, WsProvider } from '@polkadot/api';
 import { decodeAddress } from '@polkadot/util-crypto';
 import { u8aToHex } from '@polkadot/util';
 
@@ -13,23 +12,40 @@ import BigNumber from 'bignumber.js';
 
 import { dateDiff } from './utils';
 
-const wsProvider = new WsProvider('wss://ws.calamari.systems');
-const sidecars = [
-  'https://api.chilli.calamari.systems',
-  'https://api.jalapeno.calamari.systems',
-  'https://api.serrano.calamari.systems',
-];
-
 function AccountRow(props) {
   const navigate = useNavigate();
+  const balance = {
+    free: (!!props.collator.balance.free) ? BigNumber(props.collator.balance.free).dividedBy(1e12) : 0,
+    reserved: (!!props.collator.balance.reserved) ? BigNumber(props.collator.balance.reserved).dividedBy(1e12) : 0
+  };
   const [account, setAccount] = useState({
     ss58: props.collator.ss58,
     hex: u8aToHex(decodeAddress(props.collator.ss58)),
     balance: {
-      loading: true,
+      ...balance,
+      icon: {
+        class: (balance.reserved >= 400000)
+          ? `bi bi-lock-fill text-success`
+          : (balance.free >= 400000)
+            ? `bi bi-unlock-fill text-success`
+            : `bi bi-unlock text-danger`,
+        title: (balance.reserved >= 400000)
+          ? new Intl.NumberFormat().format(balance.reserved)
+          : new Intl.NumberFormat().format(balance.free)
+      },
+      loading: false,
     },
     session: {
-      loading: true,
+      ...props.collator.session,
+      icon: {
+        class: (!!props.collator.session && !!props.collator.session.aura)
+          ? `bi bi-link-45deg text-success`
+          : `bi bi-link-45deg text-danger`,
+        title: (!!props.collator.session && !!props.collator.session.aura)
+          ? props.collator.session.aura.toString()
+          : `no session key binding`
+      },
+      loading: false,
     },
     icon: {
       class: (props.collator.status === 'invulnerable')
@@ -66,79 +82,6 @@ function AccountRow(props) {
   });
   useEffect(() => {
     if (!!props.collator.ss58) {
-      fetch(`${sidecars[~~(sidecars.length * Math.random())]}/accounts/${props.collator.ss58}/balance-info`)
-        .then(response => response.json())
-        .then((balance) => {
-          const free = BigNumber(balance.free).dividedBy(1e12);
-          const reserved = BigNumber(balance.reserved).dividedBy(1e12);
-          setAccount((a) => ({
-            ...a,
-            balance: {
-              free,
-              reserved,
-              icon: {
-                class: (reserved >= 400000)
-                  ? `bi bi-lock-fill text-success`
-                  : (free >= 400000)
-                    ? `bi bi-unlock-fill text-success`
-                    : `bi bi-unlock text-danger`,
-                title: (reserved >= 400000)
-                  ? new Intl.NumberFormat().format(reserved)
-                  : new Intl.NumberFormat().format(free)
-              },
-              loading: false,
-            },
-            nonce: balance.nonce
-          }));
-        })
-        .catch((error) => {
-          setAccount((a) => ({
-            ...a,
-            balance: {
-              error,
-              loading: false,
-            }
-          }));
-        });
-      ApiPromise.create({ provider: wsProvider })
-        .then((api) => {
-          api.query.session.nextKeys(props.collator.ss58)
-            .then(
-              (nextKeys) => {
-                const sessionKeys = (nextKeys.isSome)
-                  ? nextKeys.unwrap()
-                  : {};
-                setAccount((a) => ({
-                  ...a,
-                  session: {
-                    ...(nextKeys.isSome) && { ...sessionKeys },
-                    icon: {
-                      class: (nextKeys.isSome)
-                        ? `bi bi-link-45deg text-success`
-                        : `bi bi-link-45deg text-danger`,
-                      title: (nextKeys.isSome)
-                        ? sessionKeys.aura.toString()
-                        : `no session key binding`
-                    },
-                    loading: false,
-                  }
-                }));
-              }
-            ).catch((error) => {
-              setAccount((a) => ({
-                ...a,
-                session: {
-                  error,
-                  icon: {
-                    class: `bi bi-link-45deg text-danger`,
-                    title: `no session key binding`
-                  },
-                  loading: false,
-                }
-              }));
-            });
-        })
-        .catch(console.error);
       ['calamari', 'kusama'].forEach((chain) => {
         if (!!props.collator.metrics[chain]) {
           const metricsUrl = new URL(props.collator.metrics[chain]);
@@ -291,16 +234,16 @@ function AccountRow(props) {
           Object.keys(metrics).map((chain) => (
             !!metrics[chain].loading
               ? (
-                  <Spinner animation="border" variant="secondary" size="sm">
+                  <Spinner animation="border" variant="secondary" size="sm" key={chain}>
                     <span className="visually-hidden">{chain} metrics lookup in progress</span>
                   </Spinner>
                 )
               : !!metrics[chain].error
                 ? (
-                    <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics[chain].error}`}></i>
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics[chain].error}`} key={chain}></i>
                   )
                 : (
-                    <i className={metrics[chain].sync.icon.class} title={metrics[chain].sync.icon.title}></i>
+                    <i className={metrics[chain].sync.icon.class} title={metrics[chain].sync.icon.title} key={chain}></i>
                   )
           ))
         }
@@ -310,27 +253,33 @@ function AccountRow(props) {
           Object.keys(alerts).map((chain) => (
             !!alerts[chain].loading
               ? (
-                  <Spinner animation="border" variant="secondary" size="sm">
+                  <Spinner animation="border" variant="secondary" size="sm" key={chain}>
                     <span className="visually-hidden">{chain} alerts lookup in progress</span>
                   </Spinner>
                 )
               : !!alerts[chain].error
                 ? (
-                    <i className={`bi bi-exclamation-circle text-danger`} title={`${alerts[chain].error}`}></i>
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`${alerts[chain].error}`} key={chain}></i>
                   )
-                : !!alerts[chain].alerts.length
-                  ? alerts[chain].alerts.map((alert) => (
-                      <a key={alert.fingerprint} href={alert.generatorURL}>
-                        <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={!!alert.annotations.message
-                          ? alert.annotations.message
-                          : !!alert.annotations.description
-                            ? alert.annotations.description
-                            : alert.annotations.summary}></i>
-                      </a>
-                    ))
-                  : (
-                      <i className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
-                    )
+                : (
+                    <div key={chain}>
+                      {
+                        !!alerts[chain].alerts.length
+                        ? alerts[chain].alerts.map((alert) => (
+                            <a key={alert.fingerprint} href={alert.generatorURL}>
+                              <i className={`bi bi-exclamation-diamond-fill text-${(alert.labels.severity === 'critical') ? 'danger' : 'warning'}`} title={!!alert.annotations.message
+                                ? alert.annotations.message
+                                : !!alert.annotations.description
+                                  ? alert.annotations.description
+                                  : alert.annotations.summary}></i>
+                            </a>
+                          ))
+                        : (
+                            <i key={alert.fingerprint} className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
+                          )
+                      }
+                    </div>
+                  )
           ))
         }
       </td>

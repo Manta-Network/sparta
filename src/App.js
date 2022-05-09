@@ -128,7 +128,7 @@ function App() {
               <strong>a binding to an aura session account</strong>. applications with a missing aura binding will only be considered after the binding has taken place.
             </li>
             <li>
-              <strong>metrics exposed</strong> to the pulse server at: <code>18.156.192.254</code>.
+              <strong>metrics exposed</strong> to the <a href="https://pulse.pelagos.systems/targets">pulse</a> server at: <code>18.156.192.254</code>.
             </li>
             <li>
               <strong>synced</strong> calamari and kusama blockchain databases.
@@ -142,7 +142,7 @@ function App() {
               rpc methods in the <code>unsafe</code> category are not exposed (automatic disqualification if <code>unsafe</code> rpc is discovered)
             </li>
             <li>
-              metrics endpoints are exposed, preferably over ssl.
+              metrics endpoints are exposed to <a href="https://pulse.pelagos.systems/targets">pulse</a>. nodes supplying metrics over ssl on port 443 with a valid ssl certificate, will be prioritised over nodes using plain http. ssl allows the metrics aggregator to validate that metrics are supplied by the authentic dns host noted in pulse configuration.
             </li>
             <li>
               length of time that metrics have been available and in the <code>up</code> state.

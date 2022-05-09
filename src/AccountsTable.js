@@ -3,20 +3,22 @@ import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 import AccountRow from './AccountRow';
 
+import BigNumber from 'bignumber.js';
+
 function AccountsTable() {
   const [collators, setCollators] = useState([]);
   useEffect(() => {
     if (!collators.length) {
       fetch(`https://raw.githubusercontent.com/Manta-Network/sparta/main/calamari.json`)
         .then(response => response.json())
-        .then(setCollators)
+        .then((collators) => setCollators(collators.filter((c) => (BigNumber(c.balance.free).dividedBy(1e12) >= 400000 || BigNumber(c.balance.reserved).dividedBy(1e12) >= 400000 || c.status === 'invulnerable') && c.metrics.calamari.startsWith('https://'))))
         .catch(console.error);
     }
   }, [collators.length]);
   return (
     <>
       <Row>
-        <h2>calamari collator list</h2>
+        <h2>calamari collators and eligible applicants</h2>
       </Row>
       <Row>
         <Table striped size="sm">
