@@ -39,7 +39,6 @@
   },
   {
     "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
-    "status": "invulnerable",
     "metrics": {
       "calamari": "https://para.metrics.hotdog.calamari.systems",
       "kusama": "https://relay.metrics.hotdog.calamari.systems"
