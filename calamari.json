@@ -1037,6 +1037,7 @@
     "session": {
       "aura": "0x4ae3a2b3b29294b8f7078b035406621cc49002639a4784743dce6d993b34fe5f"
     },
-    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq"
+    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
+    "status": "applicant"
   }
 ]
