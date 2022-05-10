@@ -1,0 +1,17 @@
+{
+  "balance": {
+    "free": "20168618323275246",
+    "locked": {
+      "fee": "0",
+      "misc": "8067400000000000"
+    },
+    "nonce": "5",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "",
+    "kusama": ""
+  },
+  "ss58": "dmxRC8PY2FbFhSjsx1RpcqJpiYoZ2ubGR8rAMhW3ocxpWkArh",
+  "status": "applicant"
+}
