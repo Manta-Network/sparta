@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "749132756969799141",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "9",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "",
+    "kusama": ""
+  },
+  "session": {
+    "aura": "0x92292e931cddfdecee26755de5117cb3c2ce9a5d2cb20d61677963fd5acee360"
+  },
+  "ss58": "dmwcJrQm4ShNd1ASnksCG465hchJKrjTGiSoFsC9vMJcgbsPV",
+  "status": "applicant"
+}
