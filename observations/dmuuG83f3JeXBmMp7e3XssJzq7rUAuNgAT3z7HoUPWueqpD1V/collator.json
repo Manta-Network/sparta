@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "419999372328263850",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "1",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://calamari.metrics.fundmybirthday.com",
+    "kusama": "https://kusama.metrics.fundmybirthday.com"
+  },
+  "session": {
+    "aura": "0xd6c307eb98e3d7f0e909dd77fe79b0e40caeb1ad416a08c02eec5e21df73eb5c"
+  },
+  "ss58": "dmuuG83f3JeXBmMp7e3XssJzq7rUAuNgAT3z7HoUPWueqpD1V",
+  "status": "applicant"
+}
