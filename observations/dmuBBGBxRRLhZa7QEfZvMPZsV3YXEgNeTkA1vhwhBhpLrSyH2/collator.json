@@ -1,0 +1,17 @@
+{
+  "balance": {
+    "free": "0",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "0",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "",
+    "kusama": ""
+  },
+  "ss58": "dmuBBGBxRRLhZa7QEfZvMPZsV3YXEgNeTkA1vhwhBhpLrSyH2",
+  "status": "applicant"
+}
