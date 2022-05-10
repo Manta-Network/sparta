@@ -1,0 +1,17 @@
+{
+  "balance": {
+    "free": "0",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "0",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://calamari.rhee.substake.app",
+    "kusama": "https://kusama.rhee.substake.app"
+  },
+  "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm",
+  "status": "applicant"
+}
