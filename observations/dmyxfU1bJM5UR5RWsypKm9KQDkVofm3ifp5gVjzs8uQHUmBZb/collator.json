@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "487468715033619816",
+    "locked": {
+      "fee": "0",
+      "misc": "16500000000000000"
+    },
+    "nonce": "8",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://calamari.pathrocknetwork.org",
+    "kusama": "https://kusama.pathrocknetwork.org"
+  },
+  "session": {
+    "aura": "0xc67d2ad7dcc35107cbd2bc14c6727bde13fe27fea448eddcce09937de1e09528"
+  },
+  "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
+  "status": "applicant"
+}
