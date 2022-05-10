@@ -344,8 +344,8 @@
       "kusama": "https://kusama.metrics.substake.app"
     },
     "balance": {
-      "nonce": "14",
-      "free": "436473376690731688",
+      "nonce": "15",
+      "free": "36441750157443080",
       "reserved": "0",
       "locked": {
         "misc": "36440800000000000",
