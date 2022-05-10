@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "501171064745249083",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "5",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "http://146.59.68.182:9615",
+    "kusama": "http://146.59.68.182:9616"
+  },
+  "session": {
+    "aura": "0x4ec9e1c7a763ad8ca59d37d3bb104c277a45869f86e9f5421e8f058e41b25971"
+  },
+  "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
+  "status": "applicant"
+}
