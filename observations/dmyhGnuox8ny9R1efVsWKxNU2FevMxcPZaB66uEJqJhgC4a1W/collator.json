@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "23694313574703740",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "0",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://para.metrics.tasty.calamari.systems",
+    "kusama": "https://relay.metrics.tasty.calamari.systems"
+  },
+  "session": {
+    "aura": "0xae06f5c31189ad71a94c3dee0e462619694db71821467dbe3d49ab06319add18"
+  },
+  "ss58": "dmyhGnuox8ny9R1efVsWKxNU2FevMxcPZaB66uEJqJhgC4a1W",
+  "status": "invulnerable"
+}
