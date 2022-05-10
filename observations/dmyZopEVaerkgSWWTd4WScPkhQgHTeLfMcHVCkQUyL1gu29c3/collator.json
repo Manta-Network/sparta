@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "500083101050812157",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "10",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://calamari.metrics.rocke7.net",
+    "kusama": "https://kusama.metrics.rocke7.net"
+  },
+  "session": {
+    "aura": "0xc221d9cc1149b1c0064e7dbc3cb9ba52fcb0dfdd366d705eae11074cf278d004"
+  },
+  "ss58": "dmyZopEVaerkgSWWTd4WScPkhQgHTeLfMcHVCkQUyL1gu29c3",
+  "status": "applicant"
+}
