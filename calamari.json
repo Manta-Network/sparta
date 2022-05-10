@@ -473,7 +473,8 @@
     "session": {
       "aura": "0x268ee3bc6aad5a0a949089a267162ac0df468d38276e086ce5d0f0f241700b39"
     },
-    "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4"
+    "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
+    "status": "applicant"
   },
   {
     "balance": {
