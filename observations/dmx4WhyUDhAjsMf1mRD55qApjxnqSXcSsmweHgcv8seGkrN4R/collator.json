@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "400997746076329002",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "2",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://calamari.metrics.staker.space",
+    "kusama": "https://kusama.metrics.staker.space"
+  },
+  "session": {
+    "aura": "0x76eef88907e65148963d94b8a34716ffa8a4a8271fbc50f08bc1bb781878ee63"
+  },
+  "ss58": "dmx4WhyUDhAjsMf1mRD55qApjxnqSXcSsmweHgcv8seGkrN4R",
+  "status": "applicant"
+}
