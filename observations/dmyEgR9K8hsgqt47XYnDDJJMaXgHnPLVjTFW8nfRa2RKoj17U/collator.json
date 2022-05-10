@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "1103654821574222",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "2",
+    "reserved": "400000000000000000"
+  },
+  "metrics": {
+    "calamari": "https://stats.calamari.themilkywaygang.com",
+    "kusama": "https://stats.kasuma.themilkywaygang.com"
+  },
+  "session": {
+    "aura": "0x2c618e8a2dfcacde897443bb3316517b93a43395611e5d8ae7193e7c7c369e4d"
+  },
+  "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
+  "status": "active"
+}
