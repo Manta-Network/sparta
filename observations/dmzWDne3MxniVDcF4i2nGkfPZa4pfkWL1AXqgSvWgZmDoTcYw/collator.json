@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "220004741581378647",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "7",
+    "reserved": "400000000000000000"
+  },
+  "metrics": {
+    "calamari": "https://calamari.metrics.dp.stakebaby.com",
+    "kusama": "https://kusama.metrics.dp.stakebaby.com"
+  },
+  "session": {
+    "aura": "0xfc7b1017bb908017991e1f7d49455d17ca09667b25bc837076b021e43d636d53"
+  },
+  "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
+  "status": "active"
+}
