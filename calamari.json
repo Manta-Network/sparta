@@ -433,7 +433,8 @@
       "calamari": "https://calamari.rhee.substake.app",
       "kusama": "https://kusama.rhee.substake.app"
     },
-    "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm"
+    "ss58": "dmzUQzg7MjgxQDSA73hezRUBo3GysC42q4pxJE8qExy1CMMAm",
+    "status": "applicant"
   },
   {
     "balance": {
