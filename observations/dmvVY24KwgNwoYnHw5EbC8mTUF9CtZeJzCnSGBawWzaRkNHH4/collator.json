@@ -1,12 +1,12 @@
 {
   "balance": {
-    "free": "403641949561207651",
+    "free": "3641949561207651",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
     "nonce": "14",
-    "reserved": "0"
+    "reserved": "400000000000000000"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.letsnode.io",
