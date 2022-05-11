@@ -1,12 +1,12 @@
 {
   "balance": {
-    "free": "487468715033619816",
+    "free": "87468715033619816",
     "locked": {
       "fee": "0",
       "misc": "16500000000000000"
     },
     "nonce": "8",
-    "reserved": "0"
+    "reserved": "400000000000000000"
   },
   "metrics": {
     "calamari": "https://calamari.pathrocknetwork.org",
