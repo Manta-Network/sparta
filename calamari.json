@@ -61,7 +61,7 @@
   },
   {
     "balance": {
-      "free": "23703335071773604",
+      "free": "23703710774567526",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -1059,5 +1059,5 @@
     },
     "ss58": "dmuazX1JVi1XSd3g7ifaQQnJpodUfmbJVgqP8LXvgXBnsPGtA",
     "status": "applicant"
-  }  
+  }
 ]
