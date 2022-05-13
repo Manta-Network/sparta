@@ -1,0 +1,20 @@
+{
+  "balance": {
+    "free": "599959373218232499",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "1",
+    "reserved": "0"
+  },
+  "metrics": {
+    "calamari": "https://metrics.calamari.mantanetwork.bitmanna.com",
+    "kusama": "https://metrics.kusama.mantanetwork.bitmanna.com"
+  },
+  "session": {
+    "aura": "0xe658ac6c96619a26d2e85fd5e1f655c0e152a254643a32dadb5305ee7d281d06"
+  },
+  "ss58": "dmuazX1JVi1XSd3g7ifaQQnJpodUfmbJVgqP8LXvgXBnsPGtA",
+  "status": "applicant"
+}
