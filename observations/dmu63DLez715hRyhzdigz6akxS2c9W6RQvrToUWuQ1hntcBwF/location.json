@@ -1,14 +1,14 @@
 {
-  "ip": "3.142.70.19",
+  "ip": "91.07.241.3",
   "city": {
-    "name": "Hilliard"
+    "name": null
   },
   "country": {
-    "code": "US",
-    "name": "United States"
+    "code": null,
+    "name": null
   },
   "coordinates": {
-    "latitude": "40.053184",
-    "longitude": "-83.128877"
+    "latitude": "null",
+    "longitude": "null"
   }
 }
