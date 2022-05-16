@@ -1,14 +1,14 @@
 {
-  "ip": "67.701.15.31",
+  "ip": "13.51.107.76",
   "city": {
-    "name": null
+    "name": "Stockholm"
   },
   "country": {
-    "code": null,
-    "name": null
+    "code": "SE",
+    "name": "Sweden"
   },
   "coordinates": {
-    "latitude": "null",
-    "longitude": "null"
+    "latitude": "59.332257",
+    "longitude": "18.060096"
   }
 }

@@ -113,17 +113,17 @@
     },
     "location": {
       "city": {
-        "name": null
+        "name": "Stockholm"
       },
       "coordinates": {
-        "latitude": "null",
-        "longitude": "null"
+        "latitude": "59.332257",
+        "longitude": "18.060096"
       },
       "country": {
-        "code": null,
-        "name": null
+        "code": "SE",
+        "name": "Sweden"
       },
-      "ip": "67.701.15.31"
+      "ip": "13.51.107.76"
     },
     "metrics": {
       "calamari": "https://para.metrics.tasty.calamari.systems",
