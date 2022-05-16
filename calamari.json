@@ -111,6 +111,20 @@
       "nonce": "0",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Kamianske"
+      },
+      "coordinates": {
+        "latitude": 47.6173,
+        "longitude": 34.4343
+      },
+      "country": {
+        "code": "UA",
+        "name": "Ukraine"
+      },
+      "ip": "185.144.99.91"
+    },
     "metrics": {
       "calamari": "https://para.metrics.tasty.calamari.systems",
       "kusama": "https://relay.metrics.tasty.calamari.systems"
