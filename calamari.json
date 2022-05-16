@@ -171,13 +171,27 @@
   },
   {
     "balance": {
-      "free": "525116804246740",
+      "free": "525868612482202",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
       "nonce": "2",
       "reserved": "400000000000000000"
+    },
+    "location": {
+      "city": {
+        "name": "Sofia"
+      },
+      "coordinates": {
+        "latitude": "42.6951",
+        "longitude": "23.325"
+      },
+      "country": {
+        "code": "BG",
+        "name": "Bulgaria"
+      },
+      "ip": "92.247.231.167"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.novgorodian.thgttg.com",
