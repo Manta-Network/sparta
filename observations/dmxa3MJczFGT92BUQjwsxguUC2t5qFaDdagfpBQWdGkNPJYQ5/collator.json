@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Kamianske"
+      "name": "Ljubljana"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "46.0671",
+      "longitude": "14.5776"
     },
     "country": {
-      "code": "UA",
-      "name": "Ukraine"
+      "code": "SI",
+      "name": "Slovenia"
     },
-    "ip": "185.144.99.91"
+    "ip": "31.7.194.202"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.calamari.anonstake.com",

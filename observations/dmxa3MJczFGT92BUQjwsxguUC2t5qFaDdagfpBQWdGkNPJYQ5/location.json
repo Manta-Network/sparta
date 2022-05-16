@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "31.7.194.202",
   "city": {
-    "name": "Kamianske"
+    "name": "Ljubljana"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "SI",
+    "name": "Slovenia"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": "46.0671",
+    "longitude": "14.5776"
   }
 }

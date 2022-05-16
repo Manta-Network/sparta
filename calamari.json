@@ -627,6 +627,20 @@
       "nonce": "5",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Ljubljana"
+      },
+      "coordinates": {
+        "latitude": "46.0671",
+        "longitude": "14.5776"
+      },
+      "country": {
+        "code": "SI",
+        "name": "Slovenia"
+      },
+      "ip": "31.7.194.202"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.calamari.anonstake.com",
       "kusama": "https://kusama.metrics.calamari.anonstake.com"
