@@ -539,6 +539,20 @@
       "nonce": "1",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Helsinki"
+      },
+      "coordinates": {
+        "latitude": "60.1719",
+        "longitude": "24.9347"
+      },
+      "country": {
+        "code": "FI",
+        "name": "Finland"
+      },
+      "ip": "65.108.98.242"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.fundmybirthday.com",
       "kusama": "https://kusama.metrics.fundmybirthday.com"
