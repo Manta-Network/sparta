@@ -69,13 +69,27 @@
   },
   {
     "balance": {
-      "free": "24193805581711802",
+      "free": "24194181276618393",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
       "nonce": "0",
       "reserved": "0"
+    },
+    "location": {
+      "city": {
+        "name": "Frankfurt am Main"
+      },
+      "coordinates": {
+        "latitude": "50.099209",
+        "longitude": "8.630393"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "18.197.229.195"
     },
     "metrics": {
       "calamari": "https://para.metrics.hotdog.calamari.systems",
