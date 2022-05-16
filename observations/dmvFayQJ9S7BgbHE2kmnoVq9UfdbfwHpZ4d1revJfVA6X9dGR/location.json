@@ -1,14 +1,14 @@
 {
-  "ip": "002.891.16.202",
+  "ip": "202.61.198.200",
   "city": {
-    "name": null
+    "name": "Karlsruhe"
   },
   "country": {
-    "code": null,
-    "name": null
+    "code": "DE",
+    "name": "Germany"
   },
   "coordinates": {
-    "latitude": "null",
-    "longitude": "null"
+    "latitude": "48.9966",
+    "longitude": "8.4756"
   }
 }
