@@ -1,14 +1,14 @@
 {
-  "ip": "18.197.229.195",
+  "ip": "591.922.791.81",
   "city": {
-    "name": "Frankfurt am Main"
+    "name": null
   },
   "country": {
-    "code": "DE",
-    "name": "Germany"
+    "code": null,
+    "name": null
   },
   "coordinates": {
-    "latitude": "50.099209",
-    "longitude": "8.630393"
+    "latitude": "null",
+    "longitude": "null"
   }
 }
