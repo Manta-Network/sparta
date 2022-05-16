@@ -1386,6 +1386,20 @@
       "nonce": "1",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Lake Worth"
+      },
+      "coordinates": {
+        "latitude": "26.5991",
+        "longitude": "-80.1284"
+      },
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "ip": "65.43.222.103"
+    },
     "metrics": {
       "calamari": "https://metrics.calamari.mantanetwork.bitmanna.com",
       "kusama": "https://metrics.kusama.mantanetwork.bitmanna.com"
