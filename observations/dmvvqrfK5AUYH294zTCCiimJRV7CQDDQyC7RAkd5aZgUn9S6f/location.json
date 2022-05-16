@@ -1,0 +1,14 @@
+{
+  "ip": "65.108.122.7",
+  "city": {
+    "name": "Helsinki"
+  },
+  "country": {
+    "code": "FI",
+    "name": "Finland"
+  },
+  "coordinates": {
+    "latitude": "60.1719",
+    "longitude": "24.9347"
+  }
+}
