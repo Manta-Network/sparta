@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": null
+      "name": "Frankfurt am Main"
     },
     "coordinates": {
-      "latitude": "null",
-      "longitude": "null"
+      "latitude": "50.113381",
+      "longitude": "8.671931"
     },
     "country": {
-      "code": null,
-      "name": null
+      "code": "DE",
+      "name": "Germany"
     },
-    "ip": "021.912.201.581"
+    "ip": "185.102.219.120"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.dp.stakebaby.com",
