@@ -687,8 +687,8 @@
       "reserved": "0"
     },
     "metrics": {
-      "calamari": "https://metrics.calamari.mantanetwork.bitmanna.com",
-      "kusama": "https://metrics.kusama.mantanetwork.bitmanna.com"
+      "calamari": "https://calamari.metrics.cryptech.com.ua",
+      "kusama": "https://kusama.metrics.cryptech.com.ua"
     },
     "session": {
       "aura": "0xe6a24fa3b3c171af609cad01c40d8f947bdbd19b2ee01986d71f466642d46964"
