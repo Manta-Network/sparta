@@ -11,17 +11,17 @@
     },
     "location": {
       "city": {
-        "name": null
+        "name": "Montreal"
       },
       "coordinates": {
-        "latitude": "null",
-        "longitude": "null"
+        "latitude": "45.463365",
+        "longitude": "-73.70517"
       },
       "country": {
-        "code": null,
-        "name": null
+        "code": "CA",
+        "name": "Canada"
       },
-      "ip": "561.301.381.53"
+      "ip": "35.183.103.165"
     },
     "metrics": {
       "calamari": "https://para.metrics.crispy.calamari.systems",
