@@ -780,6 +780,20 @@
       "nonce": "15",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Chiyoda"
+      },
+      "coordinates": {
+        "latitude": "35.694003",
+        "longitude": "139.753595"
+      },
+      "country": {
+        "code": "JP",
+        "name": "Japan"
+      },
+      "ip": "118.27.24.216"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.gostake.io",
       "kusama": "https://kusama.metrics.gostake.io"

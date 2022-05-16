@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "118.27.24.216",
   "city": {
-    "name": "Kamianske"
+    "name": "Chiyoda"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "JP",
+    "name": "Japan"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": "35.694003",
+    "longitude": "139.753595"
   }
 }
