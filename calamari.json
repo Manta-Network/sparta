@@ -225,13 +225,27 @@
   },
   {
     "balance": {
-      "free": "308270587217209",
+      "free": "308646282115870",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
       "nonce": "3",
       "reserved": "400000000000000000"
+    },
+    "location": {
+      "city": {
+        "name": "Warsaw"
+      },
+      "coordinates": {
+        "latitude": "52.2484",
+        "longitude": "21.0026"
+      },
+      "country": {
+        "code": "PL",
+        "name": "Poland"
+      },
+      "ip": "146.59.70.153"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.polkadotters.com",
