@@ -1,14 +1,14 @@
 {
-  "ip": "92.247.231.167",
+  "ip": "761.132.742.29",
   "city": {
-    "name": "Sofia"
+    "name": null
   },
   "country": {
-    "code": "BG",
-    "name": "Bulgaria"
+    "code": null,
+    "name": null
   },
   "coordinates": {
-    "latitude": "42.6951",
-    "longitude": "23.325"
+    "latitude": "null",
+    "longitude": "null"
   }
 }

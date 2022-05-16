@@ -181,17 +181,17 @@
     },
     "location": {
       "city": {
-        "name": "Sofia"
+        "name": null
       },
       "coordinates": {
-        "latitude": "42.6951",
-        "longitude": "23.325"
+        "latitude": "null",
+        "longitude": "null"
       },
       "country": {
-        "code": "BG",
-        "name": "Bulgaria"
+        "code": null,
+        "name": null
       },
-      "ip": "92.247.231.167"
+      "ip": "761.132.742.29"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.novgorodian.thgttg.com",
