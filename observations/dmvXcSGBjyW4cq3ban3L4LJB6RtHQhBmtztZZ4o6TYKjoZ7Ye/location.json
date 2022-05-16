@@ -1,0 +1,14 @@
+{
+  "ip": "155.138.138.183",
+  "city": {
+    "name": "Toronto"
+  },
+  "country": {
+    "code": "CA",
+    "name": "Canada"
+  },
+  "coordinates": {
+    "latitude": "43.6547",
+    "longitude": "-79.3623"
+  }
+}

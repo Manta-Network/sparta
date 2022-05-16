@@ -8,6 +8,20 @@
     "nonce": "1",
     "reserved": "0"
   },
+  "location": {
+    "city": {
+      "name": "Toronto"
+    },
+    "coordinates": {
+      "latitude": "43.6547",
+      "longitude": "-79.3623"
+    },
+    "country": {
+      "code": "CA",
+      "name": "Canada"
+    },
+    "ip": "155.138.138.183"
+  },
   "metrics": {
     "calamari": "http://155.138.138.183:9615",
     "kusama": "http://155.138.138.183:9616"
