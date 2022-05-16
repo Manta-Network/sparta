@@ -13,8 +13,8 @@
       "name": "Kamianske"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "47.6173",
+      "longitude": "34.4343"
     },
     "country": {
       "code": "UA",
