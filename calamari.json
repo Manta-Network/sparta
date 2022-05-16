@@ -437,6 +437,20 @@
       "nonce": "7",
       "reserved": "400000000000000000"
     },
+    "location": {
+      "city": {
+        "name": "Falkenstein"
+      },
+      "coordinates": {
+        "latitude": "50.4777",
+        "longitude": "12.3649"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "116.202.132.28"
+    },
     "metrics": {
       "calamari": "https://calamari.brightlystake.com",
       "kusama": "https://kusama.brightlystake.com"
