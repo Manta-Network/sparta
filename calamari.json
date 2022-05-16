@@ -267,6 +267,20 @@
       "nonce": "1",
       "reserved": "400000000000000000"
     },
+    "location": {
+      "city": {
+        "name": "Helsinki"
+      },
+      "coordinates": {
+        "latitude": "60.1719",
+        "longitude": "24.9347"
+      },
+      "country": {
+        "code": "FI",
+        "name": "Finland"
+      },
+      "ip": "65.108.47.116"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.cj.kmapro.de",
       "kusama": "https://kusama.metrics.cj.kmapro.de"

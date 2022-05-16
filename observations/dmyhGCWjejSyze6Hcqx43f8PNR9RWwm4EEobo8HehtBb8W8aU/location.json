@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "65.108.47.116",
   "city": {
-    "name": "Kamianske"
+    "name": "Helsinki"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "FI",
+    "name": "Finland"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": "60.1719",
+    "longitude": "24.9347"
   }
 }
