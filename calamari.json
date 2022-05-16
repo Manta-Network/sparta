@@ -874,6 +874,20 @@
       "nonce": "10",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Toronto"
+      },
+      "coordinates": {
+        "latitude": "43.64",
+        "longitude": "-79.433"
+      },
+      "country": {
+        "code": "CA",
+        "name": "Canada"
+      },
+      "ip": "172.67.137.94"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.rocke7.net",
       "kusama": "https://kusama.metrics.rocke7.net"

@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Kamianske"
+      "name": "Toronto"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "43.64",
+      "longitude": "-79.433"
     },
     "country": {
-      "code": "UA",
-      "name": "Ukraine"
+      "code": "CA",
+      "name": "Canada"
     },
-    "ip": "185.144.99.91"
+    "ip": "172.67.137.94"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.rocke7.net",
