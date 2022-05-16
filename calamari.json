@@ -593,6 +593,20 @@
       "nonce": "2",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Karlsruhe"
+      },
+      "coordinates": {
+        "latitude": "48.9966",
+        "longitude": "8.4756"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "85.190.134.37"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.staker.space",
       "kusama": "https://kusama.metrics.staker.space"
