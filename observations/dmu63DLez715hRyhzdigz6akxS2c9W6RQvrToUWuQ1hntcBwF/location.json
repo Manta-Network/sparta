@@ -8,7 +8,7 @@
     "name": "United States"
   },
   "coordinates": {
-    "latitude": 40.053184,
-    "longitude": -83.128877
+    "latitude": "40.053184",
+    "longitude": "-83.128877"
   }
 }
