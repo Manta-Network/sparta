@@ -1,14 +1,14 @@
 {
-  "ip": "611.74.801.56",
+  "ip": "65.108.47.116",
   "city": {
-    "name": null
+    "name": "Helsinki"
   },
   "country": {
-    "code": null,
-    "name": null
+    "code": "FI",
+    "name": "Finland"
   },
   "coordinates": {
-    "latitude": "null",
-    "longitude": "null"
+    "latitude": "60.1719",
+    "longitude": "24.9347"
   }
 }
