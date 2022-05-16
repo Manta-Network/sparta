@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Ashburn"
+      "name": null
     },
     "coordinates": {
-      "latitude": "39.017388",
-      "longitude": "-77.468037"
+      "latitude": "null",
+      "longitude": "null"
     },
     "country": {
-      "code": "US",
-      "name": "United States"
+      "code": null,
+      "name": null
     },
-    "ip": "3.235.252.150"
+    "ip": "051.252.532.3"
   },
   "metrics": {
     "calamari": "https://para.metrics.tender.calamari.systems",

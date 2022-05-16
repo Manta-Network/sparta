@@ -1,14 +1,14 @@
 {
-  "ip": "3.235.252.150",
+  "ip": "051.252.532.3",
   "city": {
-    "name": "Ashburn"
+    "name": null
   },
   "country": {
-    "code": "US",
-    "name": "United States"
+    "code": null,
+    "name": null
   },
   "coordinates": {
-    "latitude": "39.017388",
-    "longitude": "-77.468037"
+    "latitude": "null",
+    "longitude": "null"
   }
 }
