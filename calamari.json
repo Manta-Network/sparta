@@ -303,17 +303,17 @@
     },
     "location": {
       "city": {
-        "name": null
+        "name": "Paris"
       },
       "coordinates": {
-        "latitude": "null",
-        "longitude": "null"
+        "latitude": "48.8323",
+        "longitude": "2.4075"
       },
       "country": {
-        "code": null,
-        "name": null
+        "code": "FR",
+        "name": "France"
       },
-      "ip": "671.43.59.141"
+      "ip": "141.95.34.176"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.calamari.stakecraft.com",
