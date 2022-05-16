@@ -43,6 +43,20 @@
       "nonce": "0",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Hilliard"
+      },
+      "coordinates": {
+        "latitude": "40.053184",
+        "longitude": "-83.128877"
+      },
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "ip": "3.142.70.19"
+    },
     "metrics": {
       "calamari": "https://para.metrics.crunchy.calamari.systems",
       "kusama": "https://relay.metrics.crunchy.calamari.systems"
