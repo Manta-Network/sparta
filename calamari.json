@@ -471,6 +471,20 @@
       "nonce": "2",
       "reserved": "400000000000000000"
     },
+    "location": {
+      "city": {
+        "name": "Limburg an der Lahn"
+      },
+      "coordinates": {
+        "latitude": "50.3846",
+        "longitude": "8.0472"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "141.95.84.118"
+    },
     "metrics": {
       "calamari": "https://stats.calamari.themilkywaygang.com",
       "kusama": "https://stats.kasuma.themilkywaygang.com"
