@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "13.51.107.76",
   "city": {
-    "name": "Kamianske"
+    "name": "Stockholm"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "SE",
+    "name": "Sweden"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": "59.332257",
+    "longitude": "18.060096"
   }
 }

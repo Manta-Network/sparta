@@ -111,6 +111,20 @@
       "nonce": "0",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Stockholm"
+      },
+      "coordinates": {
+        "latitude": "59.332257",
+        "longitude": "18.060096"
+      },
+      "country": {
+        "code": "SE",
+        "name": "Sweden"
+      },
+      "ip": "13.51.107.76"
+    },
     "metrics": {
       "calamari": "https://para.metrics.tasty.calamari.systems",
       "kusama": "https://relay.metrics.tasty.calamari.systems"
