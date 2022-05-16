@@ -371,17 +371,17 @@
     },
     "location": {
       "city": {
-        "name": "Karlsruhe"
+        "name": null
       },
       "coordinates": {
-        "latitude": "48.9966",
-        "longitude": "8.4756"
+        "latitude": "null",
+        "longitude": "null"
       },
       "country": {
-        "code": "DE",
-        "name": "Germany"
+        "code": null,
+        "name": null
       },
-      "ip": "202.61.198.200"
+      "ip": "002.891.16.202"
     },
     "metrics": {
       "calamari": "https://stats.calamari.migusha.com",
