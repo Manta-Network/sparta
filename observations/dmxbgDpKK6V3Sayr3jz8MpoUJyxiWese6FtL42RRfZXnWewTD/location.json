@@ -1,0 +1,14 @@
+{
+  "ip": "146.59.68.182",
+  "city": {
+    "name": "Warsaw"
+  },
+  "country": {
+    "code": "PL",
+    "name": "Poland"
+  },
+  "coordinates": {
+    "latitude": "52.2484",
+    "longitude": "21.0026"
+  }
+}

@@ -8,6 +8,20 @@
     "nonce": "7",
     "reserved": "0"
   },
+  "location": {
+    "city": {
+      "name": "Warsaw"
+    },
+    "coordinates": {
+      "latitude": "52.2484",
+      "longitude": "21.0026"
+    },
+    "country": {
+      "code": "PL",
+      "name": "Poland"
+    },
+    "ip": "146.59.68.182"
+  },
   "metrics": {
     "calamari": "http://146.59.68.182:9615",
     "kusama": "http://146.59.68.182:9616"
