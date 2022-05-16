@@ -8,6 +8,20 @@
     "nonce": "2",
     "reserved": "400000000000000000"
   },
+  "location": {
+    "city": {
+      "name": "Kamianske"
+    },
+    "coordinates": {
+      "latitude": 47.6173,
+      "longitude": 34.4343
+    },
+    "country": {
+      "code": "UA",
+      "name": "Ukraine"
+    },
+    "ip": "185.144.99.91"
+  },
   "metrics": {
     "calamari": "https://calamari.metrics.novgorodian.thgttg.com",
     "kusama": "https://kusama.metrics.novgorodian.thgttg.com"
