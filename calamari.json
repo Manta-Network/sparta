@@ -235,17 +235,17 @@
     },
     "location": {
       "city": {
-        "name": "Warsaw"
+        "name": null
       },
       "coordinates": {
-        "latitude": "52.2484",
-        "longitude": "21.0026"
+        "latitude": "null",
+        "longitude": "null"
       },
       "country": {
-        "code": "PL",
-        "name": "Poland"
+        "code": null,
+        "name": null
       },
-      "ip": "146.59.70.153"
+      "ip": "351.07.95.641"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.polkadotters.com",
