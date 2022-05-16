@@ -1,0 +1,14 @@
+{
+  "ip": "51.195.63.206",
+  "city": {
+    "name": "Limburg an der Lahn"
+  },
+  "country": {
+    "code": "DE",
+    "name": "Germany"
+  },
+  "coordinates": {
+    "latitude": "50.3846",
+    "longitude": "8.0472"
+  }
+}

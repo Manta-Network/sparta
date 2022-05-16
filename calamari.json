@@ -848,6 +848,20 @@
       "nonce": "3",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Limburg an der Lahn"
+      },
+      "coordinates": {
+        "latitude": "50.3846",
+        "longitude": "8.0472"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "51.195.63.206"
+    },
     "metrics": {
       "calamari": "http://51.195.63.206:9615",
       "kusama": "http://51.195.63.206:9616"
