@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "3.142.70.19",
   "city": {
-    "name": "Kamianske"
+    "name": "Hilliard"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "US",
+    "name": "United States"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": 40.053184,
+    "longitude": -83.128877
   }
 }
