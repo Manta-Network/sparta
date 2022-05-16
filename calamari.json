@@ -327,13 +327,27 @@
   },
   {
     "balance": {
-      "free": "220015266076683425",
+      "free": "220015641983106514",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
       "nonce": "7",
       "reserved": "400000000000000000"
+    },
+    "location": {
+      "city": {
+        "name": "Frankfurt am Main"
+      },
+      "coordinates": {
+        "latitude": "50.113381",
+        "longitude": "8.671931"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "185.102.219.120"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.dp.stakebaby.com",
