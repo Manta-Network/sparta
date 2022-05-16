@@ -12,6 +12,10 @@ import BigNumber from 'bignumber.js';
 
 import { dateDiff } from './utils';
 
+function getFlag(countryCode) {
+  return String.fromCodePoint(...[...countryCode.toUpperCase()].map(c => c.charCodeAt() + 0x1F1A5));
+}
+
 function AccountRow(props) {
   const navigate = useNavigate();
   const balance = {
@@ -62,6 +66,12 @@ function AccountRow(props) {
           : (props.collator.status === 'candidate')
             ? `candidate collator`
             : `applicant`,
+    },
+    ...(!!props.collator.location) && {
+      location: {
+        ...props.collator.location,
+        flag: getFlag(props.collator.location.country.code),
+      },
     },
   });
   const [alerts, setAlerts] = useState({
@@ -182,6 +192,15 @@ function AccountRow(props) {
         <span style={{cursor: 'pointer', marginLeft: '0.5em'}}>{account.ss58.slice(0, 5)}...{account.ss58.slice(44)}</span>
       </td>
       <td style={{cursor: 'pointer'}}>
+        {
+          (!!account.location)
+            ? (
+                <span title={`${account.location.city.name}, ${account.location.country.name}`} style={{marginRight: '0.5em'}}>
+                  {account.location.flag}
+                </span>
+              )
+            : null
+        }
         {
           (!!metrics.calamari.name)
             ? metrics.calamari.name

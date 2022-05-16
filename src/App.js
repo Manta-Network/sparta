@@ -119,7 +119,7 @@ function App() {
           </p>
           <ul>
             <li>
-              <strong>a collator account id</strong> in calamari network format. applications with a missing or incorrectly formatted account id are not being considered for shortlisting.
+              <strong>a collator account id</strong> in calamari network format (always starts with <code>dm</code>). applications with a missing or incorrectly formatted account id are not being considered for shortlisting.
             </li>
             <li>
               <strong>a free balance</strong> greater than the minimum reserve of 400,000 (four hundred thousand) KMA. applications with a free balance lower than the minimum reserve will only be considered after the balance meets the minimum requirement.
