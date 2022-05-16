@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Kamianske"
+      "name": "Prague"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "50.0883",
+      "longitude": "14.4124"
     },
     "country": {
-      "code": "UA",
-      "name": "Ukraine"
+      "code": "CZ",
+      "name": "Czechia"
     },
-    "ip": "185.144.99.91"
+    "ip": "78.80.47.139"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.nettle.network",
