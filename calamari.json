@@ -395,13 +395,27 @@
   },
   {
     "balance": {
-      "free": "3007265792169386",
+      "free": "3008768996533768",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
       "nonce": "10",
       "reserved": "400000000000000000"
+    },
+    "location": {
+      "city": {
+        "name": "Helsinki"
+      },
+      "coordinates": {
+        "latitude": "60.1719",
+        "longitude": "24.9347"
+      },
+      "country": {
+        "code": "FI",
+        "name": "Finland"
+      },
+      "ip": "65.21.131.8"
     },
     "metrics": {
       "calamari": "https://calamari.pithecus.co.uk",
