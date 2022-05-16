@@ -746,6 +746,20 @@
       "nonce": "15",
       "reserved": "400000000000000000"
     },
+    "location": {
+      "city": {
+        "name": "Warsaw"
+      },
+      "coordinates": {
+        "latitude": "52.2484",
+        "longitude": "21.0026"
+      },
+      "country": {
+        "code": "PL",
+        "name": "Poland"
+      },
+      "ip": "95.214.55.74"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.letsnode.io",
       "kusama": "https://kusama.metrics.letsnode.io"
