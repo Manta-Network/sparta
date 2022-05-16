@@ -1,14 +1,14 @@
 {
-  "ip": "185.144.99.91",
+  "ip": "141.95.34.176",
   "city": {
-    "name": "Kamianske"
+    "name": "Paris"
   },
   "country": {
-    "code": "UA",
-    "name": "Ukraine"
+    "code": "FR",
+    "name": "France"
   },
   "coordinates": {
-    "latitude": 47.6173,
-    "longitude": 34.4343
+    "latitude": "48.8323",
+    "longitude": "2.4075"
   }
 }

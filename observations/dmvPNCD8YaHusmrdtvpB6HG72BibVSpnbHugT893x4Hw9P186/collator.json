@@ -1,6 +1,6 @@
 {
   "balance": {
-    "free": "10118653166382773",
+    "free": "10119404980644577",
     "locked": {
       "fee": "0",
       "misc": "0"
@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Kamianske"
+      "name": "Paris"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "48.8323",
+      "longitude": "2.4075"
     },
     "country": {
-      "code": "UA",
-      "name": "Ukraine"
+      "code": "FR",
+      "name": "France"
     },
-    "ip": "185.144.99.91"
+    "ip": "141.95.34.176"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.calamari.stakecraft.com",
