@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Kamianske"
+      "name": "Karlsruhe"
     },
     "coordinates": {
-      "latitude": 47.6173,
-      "longitude": 34.4343
+      "latitude": "48.9966",
+      "longitude": "8.4756"
     },
     "country": {
-      "code": "UA",
-      "name": "Ukraine"
+      "code": "DE",
+      "name": "Germany"
     },
-    "ip": "185.144.99.91"
+    "ip": "202.61.198.200"
   },
   "metrics": {
     "calamari": "https://stats.calamari.migusha.com",

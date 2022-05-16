@@ -369,6 +369,20 @@
       "nonce": "2",
       "reserved": "400000000000000000"
     },
+    "location": {
+      "city": {
+        "name": "Karlsruhe"
+      },
+      "coordinates": {
+        "latitude": "48.9966",
+        "longitude": "8.4756"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "202.61.198.200"
+    },
     "metrics": {
       "calamari": "https://stats.calamari.migusha.com",
       "kusama": "https://stats.kasuma.migusha.com"
