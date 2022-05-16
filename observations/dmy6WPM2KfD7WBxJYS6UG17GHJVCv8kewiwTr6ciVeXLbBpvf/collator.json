@@ -8,9 +8,23 @@
     "nonce": "2",
     "reserved": "0"
   },
+  "location": {
+    "city": {
+      "name": "Kamianske"
+    },
+    "coordinates": {
+      "latitude": 47.6173,
+      "longitude": 34.4343
+    },
+    "country": {
+      "code": "UA",
+      "name": "Ukraine"
+    },
+    "ip": "185.144.99.91"
+  },
   "metrics": {
-    "calamari": "",
-    "kusama": ""
+    "calamari": "https://calamari.metrics.cryptech.com.ua",
+    "kusama": "https://kusama.metrics.cryptech.com.ua"
   },
   "session": {
     "aura": "0xe6a24fa3b3c171af609cad01c40d8f947bdbd19b2ee01986d71f466642d46964"
