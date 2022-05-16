@@ -1,0 +1,14 @@
+{
+  "ip": "185.144.99.91",
+  "city": {
+    "name": "Kamianske"
+  },
+  "country": {
+    "code": "UA",
+    "name": "Ukraine"
+  },
+  "coordinates": {
+    "latitude": 47.6173,
+    "longitude": 34.4343
+  }
+}
