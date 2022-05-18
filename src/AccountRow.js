@@ -223,12 +223,11 @@ function AccountRow(props) {
     }
   }, [props.collator.ss58, props.collator.metrics]);
   return (
-    <tr onClick={() => navigate(`/${account.ss58}`)}>
-      <td style={{cursor: 'pointer'}}>
+    <tr>
+      <td>
         <Identicon value={account.ss58} size={20} theme={`substrate`} title={account.ss58} />
-        <span style={{cursor: 'pointer', marginLeft: '0.5em'}}>{account.ss58.slice(0, 5)}...{account.ss58.slice(44)}</span>
-      </td>
-      <td style={{cursor: 'pointer'}}>
+        <span style={{marginLeft: '0.5em'}}>{account.ss58}</span>
+        <br />
         {
           (!!account.location)
             ? (
@@ -249,17 +248,17 @@ function AccountRow(props) {
             : null
         }
       </td>
-      <td style={{cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{cursor: 'pointer'}}>
         {
           (!!metrics.calamari.version)
             ? `${metrics.calamari.version.split('-')[0]}-${metrics.calamari.version.split('-')[1]}`
             : null
         }
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         <i className={account.icon.class} title={account.icon.title}></i>
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!account.balance.loading
             ? (
@@ -272,7 +271,7 @@ function AccountRow(props) {
               )
         }
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!account.session.loading
             ? (
@@ -285,7 +284,7 @@ function AccountRow(props) {
               )
         }
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         {
           Object.keys(metrics).map((chain) => (
             !!metrics[chain].loading
@@ -304,7 +303,7 @@ function AccountRow(props) {
           ))
         }
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         {
           Object.keys(alerts).map((chain) => (
             !!alerts[chain].loading
@@ -339,7 +338,7 @@ function AccountRow(props) {
           ))
         }
       </td>
-      <td style={{textAlign:'center', cursor: 'pointer'}}>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
         {
           !!metrics.calamari.loading
             ? (

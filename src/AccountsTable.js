@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { useEffect, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
@@ -25,10 +26,7 @@ function AccountsTable() {
           <thead>
             <tr>
               <th>
-                account
-              </th>
-              <th>
-                node
+                collator
               </th>
               <th>
                 version
@@ -53,9 +51,22 @@ function AccountsTable() {
               </th>
             </tr>
           </thead>
-          <tbody>
-            {collators.map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
-          </tbody>
+          {
+            [...new Set(collators.map(c => c.status))].map((status) => (
+              <Fragment key={status}>
+                <thead>
+                  <tr>
+                    <th colSpan="8">
+                      {status}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {collators.filter((c) => c.status === status).map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
+                </tbody>
+              </Fragment>
+            ))
+          }
         </Table>
       </Row>
     </>
