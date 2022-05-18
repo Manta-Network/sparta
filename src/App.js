@@ -3,6 +3,7 @@ import Badge from 'react-bootstrap/Badge';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Table from 'react-bootstrap/Table';
 import AccountDetail from './AccountDetail';
 import AccountsTable from './AccountsTable';
 
@@ -17,122 +18,225 @@ function App() {
           </Routes>
         </Col>
         <Col md="auto">
-          <p style={{padding: '5px', borderBottom: '1px solid #cccccc'}}>
-            <strong>legend</strong>
-          </p>
-          <ul>
-            <li>
-              collator status
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-shield-lock-fill" style={{ marginRight: '0.5em'}}></i>
+          <Table size="sm">
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  legend
+                </th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  collator status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="bi bi-shield-lock-fill"></i>
+                </td>
+                <td>
                   invulnerable
-                </li>
-                <li>
-                  <i className="bi bi-shield-shaded" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-shield-shaded"></i>
+                </td>
+                <td>
                   active
-                </li>
-                <li>
-                  <i className="bi bi-shield-check" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-shield-check"></i>
+                </td>
+                <td>
                   candidate
-                </li>
-                <li>
-                  <i className="bi bi-shield" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-shield"></i>
+                </td>
+                <td>
                   applicant
-                </li>
-              </ul>
-            </li>
-            <li>
-              bond balance status
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-lock-fill text-success" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  bond balance status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="bi bi-lock-fill text-success"></i>
+                </td>
+                <td>
                   reserved
-                </li>
-                <li>
-                  <i className="bi bi-unlock-fill text-success" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-unlock-fill text-success"></i>
+                </td>
+                <td>
                   free
-                </li>
-                <li>
-                  <i className="bi bi-unlock text-danger" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-unlock text-danger"></i>
+                </td>
+                <td>
                   missing
-                </li>
-              </ul>
-            </li>
-            <li>
-              session binding status
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-link-45deg text-success" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  session binding status
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="bi bi-link-45deg text-success"></i>
+                </td>
+                <td>
                   aura bound
-                </li>
-                <li>
-                  <i className="bi bi-link-45deg text-danger" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-link-45deg text-danger"></i>
+                </td>
+                <td>
                   aura unbound
-                </li>
-              </ul>
-            </li>
-            <li>
-              sync status (calamari, kusama)
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-arrow-repeat text-success" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  sync status (calamari, kusama)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="bi bi-arrow-repeat text-success"></i>
+                </td>
+                <td>
                   best block within ten<br />
                   blocks of target
-                </li>
-                <li>
-                  <i className="bi bi-arrow-repeat text-warning" style={{ marginRight: '0.5em'}}></i>
-                  best block not within<br />
-                  ten blocks of target
-                </li>
-                <li>
-                  <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-arrow-repeat text-warning"></i>
+                </td>
+                <td>
+                  best block not within ten<br />
+                  blocks of target
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-exclamation-circle text-danger"></i>
+                </td>
+                <td>
                   metrics endpoint unknown
-                </li>
-              </ul>
-            </li>
-            <li>
-              alert status (calamari, kusama)
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
-                  <i className="bi bi-activity text-success" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  alert status (calamari, kusama)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className="bi bi-activity text-success"></i>
+                </td>
+                <td>
                   no active alerts
-                </li>
-                <li>
-                  <i className="bi bi-exclamation-diamond-fill text-warning" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-exclamation-diamond-fill text-warning"></i>
+                </td>
+                <td>
                   warning alert firing
-                </li>
-                <li>
-                  <i className="bi bi-exclamation-diamond-fill text-danger" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-exclamation-diamond-fill text-danger"></i>
+                </td>
+                <td>
                   critical alert firing
-                </li>
-                <li>
-                  <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-exclamation-circle text-danger"></i>
+                </td>
+                <td>
                   metrics endpoint unknown
-                </li>
-              </ul>
-            </li>
-            <li>
-              uptime status (calamari, kusama)
-              <ul style={{ listStyleType: 'none', marginTop: 0}}>
-                <li>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
+                  uptime status (calamari, kusama)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
                   <Badge pill bg="success" style={{ marginRight: '0.5em'}}>0</Badge>
-                  node has been up<br />
-                  consistently for 10 days
-                </li>
-                <li>
+                </td>
+                <td>
+                  up consistently for 10 days
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <Badge pill bg="warning" style={{ marginRight: '0.5em'}}>2</Badge>
-                  node has been unreachable less than<br />
-                  three times in the last 10 days
-                </li>
-                <li>
+                </td>
+                <td>
+                  unreachable once or twice<br />
+                  in the last 10 days
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <Badge pill bg="danger" style={{ marginRight: '0.5em'}}>3</Badge>
-                  node has been unreachable three<br />
-                  times or more in the last 10 days
-                </li>
-              </ul>
-            </li>
-          </ul>
+                </td>
+                <td>
+                  unreachable three times or<br />
+                  more in the last 10 days
+                </td>
+              </tr>
+            </tbody>
+          </Table>
         </Col>
       </Row>
       <Row>
