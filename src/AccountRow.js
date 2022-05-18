@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import Identicon from '@polkadot/react-identicon';
 
+import Badge from 'react-bootstrap/Badge';
 import Spinner from 'react-bootstrap/Spinner';
 
 import { decodeAddress } from '@polkadot/util-crypto';
@@ -90,6 +91,14 @@ function AccountRow(props) {
       loading: true
     },
   });
+  const [outages, setOutages] = useState({
+    calamari: {
+      loading: true
+    },
+    kusama: {
+      loading: true
+    },
+  });
   useEffect(() => {
     if (!!props.collator.ss58) {
       ['calamari', 'kusama'].forEach((chain) => {
@@ -116,9 +125,37 @@ function AccountRow(props) {
                 }
               }));
             });
+          const encodedQuery = encodeURIComponent(`changes(ALERTS_FOR_STATE{alertname="offline",instance="${instance}"}[10d])`);
+          fetch(`https://pulse.pelagos.systems/api/v1/query?query=${encodedQuery}`)
+            .then(response => response.json())
+            .then((outages) => {
+              setOutages((o) => ({
+                ...o,
+                [chain]: {
+                  outages: (!!outages.data.result.length) ? parseInt(outages.data.result[0].value[1]) : 0,
+                  loading: false,
+                }
+              }));
+            })
+            .catch((error) => {
+              setOutages((o) => ({
+                ...o,
+                [chain]: {
+                  error,
+                  loading: false,
+                }
+              }));
+            });
         } else {
           setAlerts((a) => ({
             ...a,
+            [chain]: {
+              error: `${chain} metrics endpoint unknown`,
+              loading: false,
+            }
+          }));
+          setOutages((o) => ({
+            ...o,
             [chain]: {
               error: `${chain} metrics endpoint unknown`,
               loading: false,
@@ -294,7 +331,7 @@ function AccountRow(props) {
                             </a>
                           ))
                         : (
-                            <i key={alert.fingerprint} className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
+                            <i className={`bi bi-activity text-success`} title={`no active ${chain} alerts`}></i>
                           )
                       }
                     </div>
@@ -319,6 +356,32 @@ function AccountRow(props) {
                     {dateDiff(metrics.calamari.process.start, null, 'significant')}
                   </span>
                 )
+        }
+        <br />
+        {
+          Object.keys(outages).map((chain) => (
+            !!outages[chain].loading
+              ? (
+                  <Spinner animation="border" variant="secondary" size="sm" key={chain}>
+                    <span className="visually-hidden">{chain} outages lookup in progress</span>
+                  </Spinner>
+                )
+              : !!outages[chain].error
+                ? (
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`${outages[chain].error}`} key={chain}></i>
+                  )
+                : (
+                    <Badge key={chain} title={`${outages[chain].outages} ${chain} outages in the last 10 days`} pill bg={
+                      (outages[chain].outages === 0)
+                        ? 'success'
+                        : (outages[chain].outages < 3)
+                          ? 'warning'
+                          : 'danger'
+                    }>
+                      {outages[chain].outages}
+                    </Badge>
+                  )
+          ))
         }
       </td>
     </tr>

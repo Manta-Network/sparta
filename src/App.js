@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import Badge from 'react-bootstrap/Badge';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -72,15 +73,17 @@ function App() {
               </ul>
             </li>
             <li>
-              sync status
+              sync status (calamari, kusama)
               <ul style={{ listStyleType: 'none', marginTop: 0}}>
                 <li>
                   <i className="bi bi-arrow-repeat text-success" style={{ marginRight: '0.5em'}}></i>
-                  best block within ten blocks of target
+                  best block within ten<br />
+                  blocks of target
                 </li>
                 <li>
                   <i className="bi bi-arrow-repeat text-warning" style={{ marginRight: '0.5em'}}></i>
-                  best block not within ten blocks of target
+                  best block not within<br />
+                  ten blocks of target
                 </li>
                 <li>
                   <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
@@ -89,7 +92,7 @@ function App() {
               </ul>
             </li>
             <li>
-              alert status
+              alert status (calamari, kusama)
               <ul style={{ listStyleType: 'none', marginTop: 0}}>
                 <li>
                   <i className="bi bi-activity text-success" style={{ marginRight: '0.5em'}}></i>
@@ -106,6 +109,26 @@ function App() {
                 <li>
                   <i className="bi bi-exclamation-circle text-danger" style={{ marginRight: '0.5em'}}></i>
                   metrics endpoint unknown
+                </li>
+              </ul>
+            </li>
+            <li>
+              uptime status (calamari, kusama)
+              <ul style={{ listStyleType: 'none', marginTop: 0}}>
+                <li>
+                  <Badge pill bg="success" style={{ marginRight: '0.5em'}}>0</Badge>
+                  node has been up<br />
+                  consistently for 10 days
+                </li>
+                <li>
+                  <Badge pill bg="warning" style={{ marginRight: '0.5em'}}>2</Badge>
+                  node has been unreachable less than<br />
+                  three times in the last 10 days
+                </li>
+                <li>
+                  <Badge pill bg="danger" style={{ marginRight: '0.5em'}}>3</Badge>
+                  node has been unreachable three<br />
+                  times or more in the last 10 days
                 </li>
               </ul>
             </li>
