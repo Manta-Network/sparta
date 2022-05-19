@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
+import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -204,6 +205,39 @@ function App() {
             <thead>
               <tr>
                 <th colSpan="2">
+                  ssl status (calamari, kusama)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <i className={`bi bi-shield-fill-check text-success`}></i>
+                </td>
+                <td>
+                  ssl metrics url
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className={`bi bi-shield-x text-warning`}></i>
+                </td>
+                <td>
+                  http metrics url
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i className="bi bi-exclamation-circle text-danger"></i>
+                </td>
+                <td>
+                  no metrics url
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colSpan="2">
                   uptime status (calamari, kusama)
                 </th>
               </tr>
@@ -249,7 +283,32 @@ function App() {
               <strong>a collator account id</strong> in calamari network format (always starts with <code>dm</code>). applications with a missing or incorrectly formatted account id are not being considered for shortlisting.
             </li>
             <li>
-              <strong>a free balance</strong> greater than the minimum reserve of 400,000 (four hundred thousand) KMA. applications with a free balance lower than the minimum reserve will only be considered after the balance meets the minimum requirement.
+              <strong>a free balance</strong>, which is <em>transferable</em>, greater than the required reserve of 400,000 (four hundred thousand) KMA. applications with a free balance lower than the minimum reserve will only be considered after the balance meets the minimum requirement.
+              <Card style={{ borderLeft: '10px solid #ffc107', backgroundColor: 'rgba(255,229,100,.3)' }}>
+                <Card.Body>
+                  <Card.Title>
+                    <i class="bi bi-exclamation-diamond-fill"></i>
+                    &nbsp;
+                    note
+                  </Card.Title>
+                  <Card.Text>
+                    <ul>
+                      <li>
+                        the entire collator bond amount of <code>400000</code> kma must be a <em>transferable</em> balance which is available to spend and not <em>frozen</em>, <em>locked</em>, <em>staked</em> or <em>reserved</em> in any way.
+                      </li>
+                      <li>
+                        the bond remains in the collator account in a <em>reserved</em> state and is not transferable whilst the collator is active.
+                      </li>
+                      <li>
+                        when <strong>voting from a collator account</strong>, the <em>vote value</em> should be for an amount less than the free account balance, minus the candidacy bond.
+                        <br />
+                        for example: a collator account with a free balance of <code>400100</code> kma, should set the vote value to an amount less than <code>100</code> kma to prevent locking any portion of the collator bond,
+                        which would cause a <code>collatorselection(NewDesiredCandidates)</code> call to fail with a <code>LiquidityRestrictions</code> exception.
+                      </li>
+                    </ul>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </li>
             <li>
               <strong>a binding to an aura session account</strong>. applications with a missing aura binding will only be considered after the binding has taken place.

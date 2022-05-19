@@ -26,6 +26,10 @@ function AccountRow(props) {
   const [account, setAccount] = useState({
     ss58: props.collator.ss58,
     hex: u8aToHex(decodeAddress(props.collator.ss58)),
+    ssl: {
+      calamari: props.collator.metrics.calamari.startsWith('https://') ? 1 : props.collator.metrics.calamari.startsWith('http://') ? 0 : -1,
+      kusama: props.collator.metrics.kusama.startsWith('https://') ? 1 : props.collator.metrics.kusama.startsWith('http://') ? 0 : -1,
+    },
     balance: {
       ...balance,
       icon: {
@@ -334,6 +338,23 @@ function AccountRow(props) {
                           )
                       }
                     </div>
+                  )
+          ))
+        }
+      </td>
+      <td onClick={() => navigate(`/${account.ss58}`)} style={{textAlign:'center', cursor: 'pointer'}}>
+        {
+          Object.keys(account.ssl).map((chain) => (
+            (account.ssl[chain] === 1)
+              ? (
+                  <i className={`bi bi-shield-fill-check text-success`} title={`${chain} ssl metrics url`} key={chain}></i>
+                )
+              : (account.ssl[chain] === 0)
+                ? (
+                    <i className={`bi bi-shield-x text-warning`} title={`${chain} http metrics url`} key={chain}></i>
+                  )
+                : (
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`no ${chain} metrics url`}></i>
                   )
           ))
         }
