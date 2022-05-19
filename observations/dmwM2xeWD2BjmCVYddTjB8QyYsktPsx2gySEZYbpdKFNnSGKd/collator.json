@@ -1,0 +1,34 @@
+{
+  "balance": {
+    "free": "600089373231810840",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "1",
+    "reserved": "0"
+  },
+  "location": {
+    "city": {
+      "name": "Kamianske"
+    },
+    "coordinates": {
+      "latitude": "47.6173",
+      "longitude": "34.4343"
+    },
+    "country": {
+      "code": "UA",
+      "name": "Ukraine"
+    },
+    "ip": "185.144.99.64"
+  },
+  "metrics": {
+    "calamari": "https://calamari.metrics.fullstack.biz.ua",
+    "kusama": "https://kusama.metrics.fullstack.biz.ua"
+  },
+  "session": {
+    "aura": "0xea5e321648a6a079ffba1d2c9db76945e00bd94beab6c29a74a6cb5626adca55"
+  },
+  "ss58": "dmwM2xeWD2BjmCVYddTjB8QyYsktPsx2gySEZYbpdKFNnSGKd",
+  "status": "eligible"
+}
