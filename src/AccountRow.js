@@ -243,7 +243,9 @@ function AccountRow(props) {
         }
         {
           (!!metrics.calamari.name)
-            ? metrics.calamari.name
+            ? (
+                <strong>{metrics.calamari.name}</strong>
+              )
             : null
         }
         {

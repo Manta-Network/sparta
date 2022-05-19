@@ -6,8 +6,6 @@ import Tabs from 'react-bootstrap/Tabs';
 import Table from 'react-bootstrap/Table';
 import AccountRow from './AccountRow';
 
-import BigNumber from 'bignumber.js';
-
 function AccountsTable() {
   const [collators, setCollators] = useState([]);
   useEffect(() => {
