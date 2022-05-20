@@ -1510,6 +1510,20 @@
       "nonce": "0",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Nuremberg"
+      },
+      "coordinates": {
+        "latitude": "49.405",
+        "longitude": "11.1617"
+      },
+      "country": {
+        "code": "DE",
+        "name": "Germany"
+      },
+      "ip": "167.86.92.111"
+    },
     "metrics": {
       "calamari": "https://metrics.calamari.calamari.kooltek68.com",
       "kusama": "https://metrics.kusama.calamari.kooltek68.com"

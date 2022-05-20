@@ -1,0 +1,14 @@
+{
+  "ip": "167.86.92.111",
+  "city": {
+    "name": "Nuremberg"
+  },
+  "country": {
+    "code": "DE",
+    "name": "Germany"
+  },
+  "coordinates": {
+    "latitude": "49.405",
+    "longitude": "11.1617"
+  }
+}
