@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { useEffect, useState } from 'react';
+import Badge from 'react-bootstrap/Badge';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -25,8 +26,14 @@ function AccountsTable() {
       <Row>
         <Tabs defaultActiveKey="eligible">
           {
-            [...new Set(collators.map(c => c.status))].map((status) => (
-              <Tab key={status} eventKey={status} title={status}>
+            [...new Set(collators.map(c => c.status))].map((status) => ({ status, count: collators.filter(c => c.status === status).length })).map((tab) => (
+              <Tab key={tab.status} eventKey={tab.status} title={
+                (
+                  <span>
+                    {tab.status} <Badge pill bg="secondary">{tab.count}</Badge>
+                  </span>
+                )
+              }>
                 <Table striped size="sm">
                   <thead>
                     <tr>
@@ -60,7 +67,7 @@ function AccountsTable() {
                     </tr>
                   </thead>
                   <tbody>
-                    {collators.filter((c) => c.status === status).map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
+                    {collators.filter((c) => c.status === tab.status).map((collator) => (<AccountRow key={collator.ss58} collator={collator} />))}
                   </tbody>
                 </Table>
               </Tab>

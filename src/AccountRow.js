@@ -20,15 +20,15 @@ function getFlag(countryCode) {
 function AccountRow(props) {
   const navigate = useNavigate();
   const balance = {
-    free: (!!props.collator.balance.free) ? BigNumber(props.collator.balance.free).dividedBy(1e12) : 0,
-    reserved: (!!props.collator.balance.reserved) ? BigNumber(props.collator.balance.reserved).dividedBy(1e12) : 0
+    free: (!!props.collator.balance && !!props.collator.balance.free) ? BigNumber(props.collator.balance.free).dividedBy(1e12) : 0,
+    reserved: (!!props.collator.balance && !!props.collator.balance.reserved) ? BigNumber(props.collator.balance.reserved).dividedBy(1e12) : 0
   };
   const [account, setAccount] = useState({
     ss58: props.collator.ss58,
     hex: u8aToHex(decodeAddress(props.collator.ss58)),
     ssl: {
-      calamari: props.collator.metrics.calamari.startsWith('https://') ? 1 : props.collator.metrics.calamari.startsWith('http://') ? 0 : -1,
-      kusama: props.collator.metrics.kusama.startsWith('https://') ? 1 : props.collator.metrics.kusama.startsWith('http://') ? 0 : -1,
+      calamari: (!!props.collator.metrics && !!props.collator.metrics.calamari && props.collator.metrics.calamari.startsWith('https://')) ? 1 : props.collator.metrics.calamari.startsWith('http://') ? 0 : -1,
+      kusama: (!!props.collator.metrics && !!props.collator.metrics.kusama && props.collator.metrics.kusama.startsWith('https://')) ? 1 : props.collator.metrics.kusama.startsWith('http://') ? 0 : -1,
     },
     balance: {
       ...balance,
@@ -150,6 +150,58 @@ function AccountRow(props) {
                 }
               }));
             });
+          fetch(
+            `https://metrics.sparta.pelagos.systems/${props.collator.ss58}/${chain}.json`,
+            {
+              method: 'GET',
+              mode: 'cors',
+              cache: 'no-cache',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+            },
+          )
+            .then(response => response.json())
+            .then((chainMetrics) => {
+              const blockHeightMetrics = chainMetrics.find((m) => m.name === 'substrate_block_height');
+              const block = {
+                height: {
+                  help: blockHeightMetrics.help,
+                  best: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'best').value),
+                  finalized: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'finalized').value),
+                  target: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'sync_target').value),
+                }
+              };
+              setMetrics((m) => ({
+                ...m,
+                [chain]: {
+                  name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
+                  version: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.version,
+                  process: {
+                    start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
+                  },
+                  block,
+                  sync: {
+                    icon: {
+                      class: ((block.height.target - block.height.best) <= 10)
+                        ? `bi bi-arrow-repeat text-success`
+                        : `bi bi-arrow-repeat text-warning`,
+                      title: `${block.height.best} / ${block.height.target}`
+                    },
+                  },
+                  loading: false,
+                }
+              }));
+            })
+            .catch((error) => {
+              setMetrics((m) => ({
+                ...m,
+                [chain]: {
+                  error,
+                  loading: false,
+                }
+              }));
+            });
         } else {
           setAlerts((a) => ({
             ...a,
@@ -165,59 +217,14 @@ function AccountRow(props) {
               loading: false,
             }
           }));
+          setMetrics((m) => ({
+            ...m,
+            [chain]: {
+              error: `${chain} metrics endpoint unknown`,
+              loading: false,
+            }
+          }));
         }
-        fetch(
-          `https://metrics.sparta.pelagos.systems/${props.collator.ss58}/${chain}.json`,
-          {
-            method: 'GET',
-            mode: 'cors',
-            cache: 'no-cache',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          },
-        )
-          .then(response => response.json())
-          .then((chainMetrics) => {
-            const blockHeightMetrics = chainMetrics.find((m) => m.name === 'substrate_block_height');
-            const block = {
-              height: {
-                help: blockHeightMetrics.help,
-                best: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'best').value),
-                finalized: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'finalized').value),
-                target: Number(blockHeightMetrics.metrics.find((h) => h.labels.status === 'sync_target').value),
-              }
-            };
-            setMetrics((m) => ({
-              ...m,
-              [chain]: {
-                name: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.name,
-                version: chainMetrics.find((m) => m.name === 'substrate_build_info').metrics[0].labels.version,
-                process: {
-                  start: new Date(Number(chainMetrics.find((m) => m.name === 'substrate_process_start_time_seconds').metrics[0].value) * 1000),
-                },
-                block,
-                sync: {
-                  icon: {
-                    class: ((block.height.target - block.height.best) <= 10)
-                      ? `bi bi-arrow-repeat text-success`
-                      : `bi bi-arrow-repeat text-warning`,
-                    title: `${block.height.best} / ${block.height.target}`
-                  },
-                },
-                loading: false,
-              }
-            }));
-          })
-          .catch((error) => {
-            setMetrics((m) => ({
-              ...m,
-              [chain]: {
-                error,
-                loading: false,
-              }
-            }));
-          });
       });
       return () => {
         setAccount((a) => (a));
