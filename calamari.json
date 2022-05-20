@@ -1501,10 +1501,20 @@
     "status": "eligible"
   },
   {
+    "balance": {
+      "free": "0",
+      "locked": {
+        "fee": "0",
+        "misc": "0"
+      },
+      "nonce": "0",
+      "reserved": "0"
+    },
     "metrics": {
       "calamari": "",
       "kusama": ""
     },
-    "ss58": "dmwG5e8mLXatMFb3rDEXeydFNH9L4kArACiRE68KFc2AiF7YE"
+    "ss58": "dmwG5e8mLXatMFb3rDEXeydFNH9L4kArACiRE68KFc2AiF7YE",
+    "status": "applicant"
   }
 ]
