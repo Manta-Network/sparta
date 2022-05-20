@@ -1499,5 +1499,12 @@
     },
     "ss58": "dmwM2xeWD2BjmCVYddTjB8QyYsktPsx2gySEZYbpdKFNnSGKd",
     "status": "eligible"
+  },
+  {
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    },
+    "ss58": "dmwG5e8mLXatMFb3rDEXeydFNH9L4kArACiRE68KFc2AiF7YE"
   }
 ]
