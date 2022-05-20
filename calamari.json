@@ -1501,6 +1501,10 @@
     "status": "eligible"
   },
   {
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    },
     "ss58": "dmwM2xeWD2BjmCVYddTjB8QyYsktPsx2gySEZYbpdKFNnSGKd",
   }
 ]
