@@ -7,14 +7,23 @@ import Tabs from 'react-bootstrap/Tabs';
 import Table from 'react-bootstrap/Table';
 import AccountRow from './AccountRow';
 
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+  return array;
+}
+
 function AccountsTable() {
   const [collators, setCollators] = useState([]);
   useEffect(() => {
     if (!collators.length) {
       fetch(`https://raw.githubusercontent.com/Manta-Network/sparta/main/calamari.json`)
         .then(response => response.json())
-        .then(setCollators)
-        //.then((collators) => setCollators(collators.filter((c) => (BigNumber(c.balance.free).dividedBy(1e12) >= 400000 || BigNumber(c.balance.reserved).dividedBy(1e12) >= 400000 || c.status === 'invulnerable') && c.metrics.calamari.startsWith('https://'))))
+        .then((collators) => setCollators(shuffle(collators)))
         .catch(console.error);
     }
   }, [collators.length]);
@@ -26,7 +35,8 @@ function AccountsTable() {
       <Row>
         <Tabs defaultActiveKey="eligible">
           {
-            [...new Set(collators.map(c => c.status))].map((status) => ({ status, count: collators.filter(c => c.status === status).length })).map((tab) => (
+            /*[...new Set(collators.map(c => c.status))]*/
+            ['invulnerable', 'active', 'eligible', 'funded', 'applicant'].reverse().map((status) => ({ status, count: collators.filter(c => c.status === status).length })).map((tab) => (
               <Tab key={tab.status} eventKey={tab.status} title={
                 (
                   <span>
