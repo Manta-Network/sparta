@@ -1511,8 +1511,8 @@
       "reserved": "0"
     },
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "https://calamari.kooltek68.com/calamari",
+      "kusama": "https://calamari.kooltek68.com/kusama"
     },
     "ss58": "dmwG5e8mLXatMFb3rDEXeydFNH9L4kArACiRE68KFc2AiF7YE",
     "status": "applicant"
