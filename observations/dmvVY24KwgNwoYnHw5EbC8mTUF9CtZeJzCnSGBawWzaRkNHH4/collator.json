@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.letsnode.io",
     "kusama": "https://kusama.metrics.letsnode.io"
   },
-  "session": {
-    "aura": "0x405e2a7f0098d7a1fb327fc5ba2521db3beb7060a2631ca39005aed247175922"
-  },
   "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
   "status": "active"
 }
