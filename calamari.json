@@ -1422,6 +1422,20 @@
       "nonce": "2",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Sydney"
+      },
+      "coordinates": {
+        "latitude": "-33.8979",
+        "longitude": "151.1897"
+      },
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "ip": "45.63.31.28"
+    },
     "metrics": {
       "calamari": "",
       "kusama": ""
@@ -1555,10 +1569,34 @@
     "status": "eligible"
   },
   {
+    "balance": {
+      "free": "407546222039354003",
+      "locked": {
+        "fee": "0",
+        "misc": "0"
+      },
+      "nonce": "2",
+      "reserved": "0"
+    },
+    "location": {
+      "city": {
+        "name": "Sydney"
+      },
+      "coordinates": {
+        "latitude": "-33.8979",
+        "longitude": "151.1897"
+      },
+      "country": {
+        "code": "AU",
+        "name": "Australia"
+      },
+      "ip": "45.63.31.28"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.yowcloud.com",
       "kusama": "https://kusama.metrics.yowcloud.com"
     },
-    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq"
+    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
+    "status": "funded"
   }
 ]

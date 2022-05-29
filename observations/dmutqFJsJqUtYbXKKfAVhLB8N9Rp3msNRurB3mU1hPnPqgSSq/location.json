@@ -1,0 +1,14 @@
+{
+  "ip": "45.63.31.28",
+  "city": {
+    "name": "Sydney"
+  },
+  "country": {
+    "code": "AU",
+    "name": "Australia"
+  },
+  "coordinates": {
+    "latitude": "-33.8979",
+    "longitude": "151.1897"
+  }
+}
