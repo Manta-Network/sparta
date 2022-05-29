@@ -1553,5 +1553,12 @@
     },
     "ss58": "dmuPiPzqGwuKsik8XLLPPi2xHCEwADyrfxakgiQbjtYEh7bDy",
     "status": "eligible"
+  },
+  {
+    "metrics": {
+      "calamari": "https://calamari.metrics.yowcloud.com",
+      "kusama": "https://kusama.metrics.yowcloud.com"
+    },
+    "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq"
   }
 ]
