@@ -1,7 +1,7 @@
 [
   {
     "balance": {
-      "free": "23254486252266077",
+      "free": "23253734674407415",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -35,7 +35,7 @@
   },
   {
     "balance": {
-      "free": "24146750015603782",
+      "free": "24143743126655345",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -69,7 +69,7 @@
   },
   {
     "balance": {
-      "free": "24210717350308296",
+      "free": "24208838295392370",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -103,7 +103,7 @@
   },
   {
     "balance": {
-      "free": "23719872946291563",
+      "free": "23719121130208634",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -137,7 +137,7 @@
   },
   {
     "balance": {
-      "free": "23209944526689276",
+      "free": "23209568615320128",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -171,7 +171,7 @@
   },
   {
     "balance": {
-      "free": "540152441617177",
+      "free": "538272667245532",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -205,7 +205,7 @@
   },
   {
     "balance": {
-      "free": "10372443247888405",
+      "free": "10370940093478189",
       "locked": {
         "fee": "0",
         "misc": "10000000000000000"
@@ -239,7 +239,7 @@
   },
   {
     "balance": {
-      "free": "325558235173265",
+      "free": "324430363222808",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -273,7 +273,7 @@
   },
   {
     "balance": {
-      "free": "1224916126849101",
+      "free": "1224164364359662",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -307,7 +307,7 @@
   },
   {
     "balance": {
-      "free": "10129176848934634",
+      "free": "10128049127872566",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -341,7 +341,7 @@
   },
   {
     "balance": {
-      "free": "220028796259850786",
+      "free": "220027668789903801",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -375,7 +375,7 @@
   },
   {
     "balance": {
-      "free": "336290270950936533",
+      "free": "336288015749764691",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -409,7 +409,7 @@
   },
   {
     "balance": {
-      "free": "3024931500465458",
+      "free": "3023803740909106",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -443,7 +443,7 @@
   },
   {
     "balance": {
-      "free": "50090131007448244",
+      "free": "50089003530202922",
       "locked": {
         "fee": "0",
         "misc": "10000000000000000"
@@ -477,7 +477,7 @@
   },
   {
     "balance": {
-      "free": "1126206018335288",
+      "free": "1123574675764998",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -545,12 +545,12 @@
   },
   {
     "balance": {
-      "free": "1001000790585168",
+      "free": "20000124140180475",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "2",
+      "nonce": "1",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -599,7 +599,7 @@
   },
   {
     "balance": {
-      "free": "999249467938524",
+      "free": "998873568709785",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -667,7 +667,7 @@
   },
   {
     "balance": {
-      "free": "20000001188403066",
+      "free": "19998873518403940",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -701,7 +701,7 @@
   },
   {
     "balance": {
-      "free": "120000000000000000",
+      "free": "0",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -718,7 +718,7 @@
   },
   {
     "balance": {
-      "free": "87498785716204139",
+      "free": "87496906418532632",
       "locked": {
         "fee": "0",
         "misc": "16500000000000000"
@@ -786,7 +786,7 @@
   },
   {
     "balance": {
-      "free": "25490927743384167",
+      "free": "25489800487897121",
       "locked": {
         "fee": "0",
         "misc": "9900000000000000"
@@ -908,12 +908,12 @@
   },
   {
     "balance": {
-      "free": "500082474302068497",
+      "free": "500083101050812157",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "11",
+      "nonce": "10",
       "reserved": "0"
     },
     "location": {
@@ -935,19 +935,19 @@
       "kusama": "https://kusama.metrics.rocke7.net"
     },
     "session": {
-      "aura": "0x0c9c87def713548bf26e780ab4f078ad33de6a41a5fbd2b5c11971cb1ae13612"
+      "aura": "0xc221d9cc1149b1c0064e7dbc3cb9ba52fcb0dfdd366d705eae11074cf278d004"
     },
     "ss58": "dmyZopEVaerkgSWWTd4WScPkhQgHTeLfMcHVCkQUyL1gu29c3",
     "status": "eligible"
   },
   {
     "balance": {
-      "free": "184956904615",
+      "free": "811705618114",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "8",
+      "nonce": "7",
       "reserved": "0"
     },
     "location": {
@@ -969,7 +969,7 @@
       "kusama": "http://146.59.68.182:9616"
     },
     "session": {
-      "aura": "0x46c670d1275681bc3b209050108162a9c730f6374f2a422e7669b571e84a1553"
+      "aura": "0x4ec9e1c7a763ad8ca59d37d3bb104c277a45869f86e9f5421e8f058e41b25971"
     },
     "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
     "status": "applicant"
@@ -1414,7 +1414,7 @@
   },
   {
     "balance": {
-      "free": "407546222039354003",
+      "free": "9296919034003",
       "locked": {
         "fee": "0",
         "misc": "0"
@@ -1430,7 +1430,7 @@
       "aura": "0x4ae3a2b3b29294b8f7078b035406621cc49002639a4784743dce6d993b34fe5f"
     },
     "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
-    "status": "funded"
+    "status": "applicant"
   },
   {
     "balance": {
