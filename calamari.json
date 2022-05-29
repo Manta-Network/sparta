@@ -965,8 +965,8 @@
       "ip": "146.59.68.182"
     },
     "metrics": {
-      "calamari": "http://146.59.68.182:9615",
-      "kusama": "http://146.59.68.182:9616"
+      "calamari": "https://calamari.metrics.calamari.info",
+      "kusama": "https://kusama.metrics.calamari.info"
     },
     "session": {
       "aura": "0x46c670d1275681bc3b209050108162a9c730f6374f2a422e7669b571e84a1553"
