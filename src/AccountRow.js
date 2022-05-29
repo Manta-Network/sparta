@@ -19,9 +19,20 @@ function getFlag(countryCode) {
 
 function AccountRow(props) {
   const navigate = useNavigate();
+  const [free, reserved, fee, misc] = [
+    (!!props.collator.balance && !!props.collator.balance.free) ? BigNumber(props.collator.balance.free).dividedBy(1e12) : 0,
+    (!!props.collator.balance && !!props.collator.balance.reserved) ? BigNumber(props.collator.balance.reserved).dividedBy(1e12) : 0,
+    (!!props.collator.balance && !!props.collator.balance.locked && !!props.collator.balance.locked.fee) ? BigNumber(props.collator.balance.locked.fee).dividedBy(1e12) : 0,
+    (!!props.collator.balance && !!props.collator.balance.locked && !!props.collator.balance.locked.misc) ? BigNumber(props.collator.balance.locked.misc).dividedBy(1e12) : 0,
+  ];
   const balance = {
-    free: (!!props.collator.balance && !!props.collator.balance.free) ? BigNumber(props.collator.balance.free).dividedBy(1e12) : 0,
-    reserved: (!!props.collator.balance && !!props.collator.balance.reserved) ? BigNumber(props.collator.balance.reserved).dividedBy(1e12) : 0
+    free,
+    reserved,
+    locked: {
+      fee,
+      misc
+    },
+    transferable: (free.minus(reserved).minus(fee).minus(misc))
   };
   const [account, setAccount] = useState({
     ss58: props.collator.ss58,
@@ -35,12 +46,12 @@ function AccountRow(props) {
       icon: {
         class: (balance.reserved >= 400000)
           ? `bi bi-lock-fill text-success`
-          : (balance.free >= 400000)
+          : (balance.transferable >= 400000)
             ? `bi bi-unlock-fill text-success`
             : `bi bi-unlock text-danger`,
         title: (balance.reserved >= 400000)
           ? new Intl.NumberFormat().format(balance.reserved)
-          : new Intl.NumberFormat().format(balance.free)
+          : new Intl.NumberFormat().format(balance.transferable)
       },
       loading: false,
     },
