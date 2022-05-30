@@ -23,12 +23,12 @@
     "ip": "51.195.63.206"
   },
   "metrics": {
-    "calamari": "http://51.195.63.206:9615",
-    "kusama": "http://51.195.63.206:9616"
+    "calamari": "https://calamari.metrics.sunshineautos.autos",
+    "kusama": "https://kusama.metrics.sunshineautos.autos"
   },
   "session": {
     "aura": "0xe27476188af245127236b150c4f0fd6e78b23ecb22a3bbac632ff05ef13ab057"
   },
   "ss58": "dmuaG34aVnxirpMsHXu6Mg7RxNN3cxG74ZyjLVEgvzNqBXm2U",
-  "status": "funded"
+  "status": "eligible"
 }
