@@ -1414,12 +1414,12 @@
   },
   {
     "balance": {
-      "free": "407546222039354003",
+      "free": "407545595291639826",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "2",
+      "nonce": "3",
       "reserved": "0"
     },
     "location": {
@@ -1441,7 +1441,7 @@
       "kusama": ""
     },
     "session": {
-      "aura": "0x4ae3a2b3b29294b8f7078b035406621cc49002639a4784743dce6d993b34fe5f"
+      "aura": "0x662d5090f713cbdba3c59f5d9d2537a4b748237a53f0c764dab2c86e2c33871f"
     },
     "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
     "status": "funded"
@@ -1570,12 +1570,12 @@
   },
   {
     "balance": {
-      "free": "407546222039354003",
+      "free": "407545595291639826",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "2",
+      "nonce": "3",
       "reserved": "0"
     },
     "location": {
@@ -1595,6 +1595,9 @@
     "metrics": {
       "calamari": "https://calamari.metrics.yowcloud.com",
       "kusama": "https://kusama.metrics.yowcloud.com"
+    },
+    "session": {
+      "aura": "0x662d5090f713cbdba3c59f5d9d2537a4b748237a53f0c764dab2c86e2c33871f"
     },
     "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
     "status": "funded"
