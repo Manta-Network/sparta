@@ -1524,6 +1524,20 @@
       "nonce": "10",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Roubaix"
+      },
+      "coordinates": {
+        "latitude": "50.6974",
+        "longitude": "3.178"
+      },
+      "country": {
+        "code": "FR",
+        "name": "France"
+      },
+      "ip": "141.94.243.95"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.redesignmypage.com",
       "kusama": "https://kusama.metrics.redesignmypage.com"
