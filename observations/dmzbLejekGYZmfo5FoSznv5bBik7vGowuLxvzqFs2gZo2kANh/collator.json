@@ -26,6 +26,9 @@
     "calamari": "https://para.metrics.tender.calamari.systems",
     "kusama": "https://relay.metrics.tender.calamari.systems"
   },
+  "session": {
+    "aura": "0x6efd8d34a7139069ff8eb2cfe94af804a74f3084db80b6d052c0b5e300e78602"
+  },
   "ss58": "dmzbLejekGYZmfo5FoSznv5bBik7vGowuLxvzqFs2gZo2kANh",
   "status": "invulnerable"
 }
