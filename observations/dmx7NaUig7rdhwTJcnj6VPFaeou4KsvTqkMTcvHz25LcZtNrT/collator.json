@@ -26,6 +26,9 @@
     "calamari": "https://calamari.brightlystake.com",
     "kusama": "https://kusama.brightlystake.com"
   },
+  "session": {
+    "aura": "0xa2d852a507716444acd3576ef7eaaf2a8c59a7420953ebbd013c8919e8097958"
+  },
   "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
   "status": "active"
 }
