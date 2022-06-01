@@ -1,0 +1,14 @@
+{
+  "ip": "141.94.253.206",
+  "city": {
+    "name": "Gravelines"
+  },
+  "country": {
+    "code": "FR",
+    "name": "France"
+  },
+  "coordinates": {
+    "latitude": "50.9855",
+    "longitude": "2.1322"
+  }
+}
