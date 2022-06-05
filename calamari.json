@@ -129,6 +129,9 @@
       "calamari": "https://para.metrics.hotdog.calamari.systems",
       "kusama": "https://relay.metrics.hotdog.calamari.systems"
     },
+    "session": {
+      "aura": "0xba3ca0dcf9e7515da2ad6ad37aba358ac8dfc727d791f6607d5779f934323859"
+    },
     "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
     "status": "invulnerable"
   },
