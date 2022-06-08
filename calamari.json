@@ -1474,6 +1474,9 @@
       "calamari": "https://calamari.metrics.yowcloud.com",
       "kusama": "https://kusama.metrics.yowcloud.com"
     },
+    "session": {
+      "aura": "0x662d5090f713cbdba3c59f5d9d2537a4b748237a53f0c764dab2c86e2c33871f"
+    },
     "ss58": "dmutqFJsJqUtYbXKKfAVhLB8N9Rp3msNRurB3mU1hPnPqgSSq",
     "status": "applicant"
   },
