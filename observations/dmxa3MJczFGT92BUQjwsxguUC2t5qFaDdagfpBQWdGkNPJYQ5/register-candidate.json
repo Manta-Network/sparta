@@ -1,10 +1,10 @@
 {
-  "proposal_id": 44,
-  "created_block": 1403234,
-  "updated_block": 1407077,
-  "aye_votes": 3,
+  "proposal_id": 49,
+  "created_block": 1506122,
+  "updated_block": 0,
+  "aye_votes": 0,
   "nay_votes": 0,
-  "status": "executed",
+  "status": "proposed",
   "proposal_hash": "0x6d951892d0777a736b5f14e31d83420db923b6790cf8bbf80001d9deff4124db",
   "proposer": {
     "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
@@ -21,85 +21,15 @@
   "call_name": "register_candidate",
   "params": "[{\"name\":\"new_candidate\",\"type\":\"[U8; 32]\",\"value\":\"0xa0c7b5feaa8d1ca9d0d704310ff0e326e5184ab0728620e7bc6354b5d5eca62c\"}]",
   "pre_image": null,
-  "votes": [
-    {
-      "account": {
-        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
-      },
-      "passed": true,
-      "extrinsic_hash": "0xa4229e8e808ec8e23f85613f9625af0bdf023e4219a8d23864a03b51e3eaedc3",
-      "extrinsic_index": "1407077-2",
-      "voting_time": 1653399960
-    },
-    {
-      "account": {
-        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
-      },
-      "passed": true,
-      "extrinsic_hash": "0xdf95a665099e0b7f32084f12fdaf6f963d728abf05a39e35f4dadf3294d0176a",
-      "extrinsic_index": "1403466-2",
-      "voting_time": 1653345840
-    },
-    {
-      "account": {
-        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
-      },
-      "passed": true,
-      "extrinsic_hash": "0x9ee1934ab71c43fd00369b372829861afdf9e5e21e4e7cbcbd0b5980f38f4dae",
-      "extrinsic_index": "1403461-2",
-      "voting_time": 1653345780
-    }
-  ],
+  "votes": null,
   "timeline": [
     {
-      "block": 1409201,
-      "status": "approved",
-      "time": 1653431730,
-      "prophecy": false,
-      "index": 4,
-      "extrinsic_index": "1409201-2",
-      "params": null
-    },
-    {
-      "block": 1409201,
-      "status": "closed",
-      "time": 1653431730,
-      "prophecy": false,
-      "index": 3,
-      "extrinsic_index": "1409201-2",
-      "params": null
-    },
-    {
-      "block": 1409201,
-      "status": "executed",
-      "time": 1653431730,
-      "prophecy": false,
-      "index": 5,
-      "extrinsic_index": "1409201-2",
-      "params": null
-    },
-    {
-      "block": 1403234,
+      "block": 1506122,
       "status": "proposed",
-      "time": 1653342402,
+      "time": 1654838875,
       "prophecy": false,
       "index": 0,
-      "extrinsic_index": "1403234-2",
+      "extrinsic_index": "1506122-2",
       "params": null
     }
   ]
