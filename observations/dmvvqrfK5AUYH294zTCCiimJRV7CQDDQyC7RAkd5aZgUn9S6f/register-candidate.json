@@ -1,0 +1,106 @@
+{
+  "proposal_id": 8,
+  "created_block": 1050896,
+  "updated_block": 1051178,
+  "aye_votes": 3,
+  "nay_votes": 0,
+  "status": "executed",
+  "proposal_hash": "0x0d059a2724a63289120ac74c2fd904c3384a9b06afdd72af2de828dc9a95ca1f",
+  "proposer": {
+    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
+    "display": "",
+    "judgements": null,
+    "account_index": "",
+    "identity": false,
+    "parent": null
+  },
+  "member_count": 3,
+  "executed_success": true,
+  "value": "0",
+  "call_module": "CollatorSelection",
+  "call_name": "register_candidate",
+  "params": "[{\"name\":\"new_candidate\",\"type\":\"[U8; 32]\",\"value\":\"0x582cb4ac80b9db8aa58b9be8e1c276359e8a8fbe84c3e74b1a75cc839f7b2214\"}]",
+  "pre_image": null,
+  "votes": [
+    {
+      "account": {
+        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb",
+        "display": "",
+        "judgements": null,
+        "account_index": "",
+        "identity": false,
+        "parent": null
+      },
+      "passed": true,
+      "extrinsic_hash": "0x9f6c72b269b41a816b6b35e11d211fd3bca7ac6a28fbaceb01ce017d3f9da588",
+      "extrinsic_index": "1051178-2",
+      "voting_time": 1646416752
+    },
+    {
+      "account": {
+        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt",
+        "display": "",
+        "judgements": null,
+        "account_index": "",
+        "identity": false,
+        "parent": null
+      },
+      "passed": true,
+      "extrinsic_hash": "0x48ad6bc101928ba48a4e64df7b02e3724f1dd3b680fcfca4a1ef13cfd517eef4",
+      "extrinsic_index": "1050960-2",
+      "voting_time": 1646412294
+    },
+    {
+      "account": {
+        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
+        "display": "",
+        "judgements": null,
+        "account_index": "",
+        "identity": false,
+        "parent": null
+      },
+      "passed": true,
+      "extrinsic_hash": "0x66293adc1f0a88d40891c1400b6ff9aebe7eb1a0d2bd073b59c5dc433acc28ed",
+      "extrinsic_index": "1050898-2",
+      "voting_time": 1646410962
+    }
+  ],
+  "timeline": [
+    {
+      "block": 1051207,
+      "status": "approved",
+      "time": 1646417310,
+      "prophecy": false,
+      "index": 4,
+      "extrinsic_index": "1051207-2",
+      "params": null
+    },
+    {
+      "block": 1051207,
+      "status": "closed",
+      "time": 1646417310,
+      "prophecy": false,
+      "index": 3,
+      "extrinsic_index": "1051207-2",
+      "params": null
+    },
+    {
+      "block": 1051207,
+      "status": "executed",
+      "time": 1646417310,
+      "prophecy": false,
+      "index": 7,
+      "extrinsic_index": "1051207-2",
+      "params": null
+    },
+    {
+      "block": 1050896,
+      "status": "proposed",
+      "time": 1646410926,
+      "prophecy": false,
+      "index": 0,
+      "extrinsic_index": "1050896-2",
+      "params": null
+    }
+  ]
+}
