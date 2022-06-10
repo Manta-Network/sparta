@@ -1,0 +1,13 @@
+{
+  "event_index": "1409202-2",
+  "block_num": 1409202,
+  "extrinsic_idx": 2,
+  "module_id": "collatorselection",
+  "event_id": "CandidateAdded",
+  "params": "[{\"type\":\"[U8; 32]\",\"type_name\":\"AccountId\",\"value\":\"0xfe9321839877bd73155d713b29bae0e4d32e31baf9ebddbfaa6d863ee6296a2a\"},{\"type\":\"U128\",\"type_name\":\"BalanceOf\",\"value\":\"400000000000000000\"}]",
+  "phase": 0,
+  "event_idx": 6,
+  "extrinsic_hash": "0x115f32d4325b688b7239d15b5a991e56627edcda239ddd5080207603c16cffc5",
+  "finalized": true,
+  "block_timestamp": 1653431754
+}
