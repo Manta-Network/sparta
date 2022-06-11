@@ -26,6 +26,9 @@
     "calamari": "https://calamari.metrics.calamari.stakecraft.com",
     "kusama": "https://kusama.metrics.calamari.stakecraft.com"
   },
+  "session": {
+    "aura": "0xd21453f970e664168af721e1b42755cc8c556568ed4577c5e08b36036d6b4e0e"
+  },
   "ss58": "dmvPNCD8YaHusmrdtvpB6HG72BibVSpnbHugT893x4Hw9P186",
   "status": "active"
 }
