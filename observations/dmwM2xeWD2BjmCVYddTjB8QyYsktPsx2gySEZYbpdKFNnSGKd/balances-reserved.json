@@ -1,0 +1,13 @@
+{
+  "event_index": "1515140-2",
+  "block_num": 1515140,
+  "extrinsic_idx": 2,
+  "module_id": "balances",
+  "event_id": "Reserved",
+  "params": "[{\"type\":\"[U8; 32]\",\"type_name\":\"AccountId\",\"value\":\"0x6a9ff8e19459d45d4663dfb72ba36ec7b04ff220f162688b8d78d550cb730426\"},{\"type\":\"U128\",\"type_name\":\"Balance\",\"value\":\"400000000000000000\"}]",
+  "phase": 0,
+  "event_idx": 5,
+  "extrinsic_hash": "0x02f283dab58c6b750ad2bec9956eb6e6a963066d8dd463c49ec4c9eec7b73c31",
+  "finalized": true,
+  "block_timestamp": 1654965654
+}
