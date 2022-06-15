@@ -1,0 +1,31 @@
+{
+  "balance": {
+    "free": "0",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "0",
+    "reserved": "0"
+  },
+  "location": {
+    "city": {
+      "name": "Toronto"
+    },
+    "coordinates": {
+      "latitude": "43.6456",
+      "longitude": "-79.4569"
+    },
+    "country": {
+      "code": "CA",
+      "name": "Canada"
+    },
+    "ip": "104.21.11.150"
+  },
+  "metrics": {
+    "calamari": "https://calamari-metrics.validatrium.club",
+    "kusama": "https://kusama-metrics.validatrium.club"
+  },
+  "ss58": "dmup6erAb8iJHQ2UXyHkA1G6m1hnSLRM55PdSD7DDbN1Ww4ZN",
+  "status": "applicant"
+}
