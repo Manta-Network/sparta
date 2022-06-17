@@ -1,6 +1,6 @@
 {
   "balance": {
-    "free": "0",
+    "free": "400198660000000000",
     "locked": {
       "fee": "0",
       "misc": "0"
@@ -27,5 +27,5 @@
     "kusama": "https://kusama-metrics.validatrium.club"
   },
   "ss58": "dmup6erAb8iJHQ2UXyHkA1G6m1hnSLRM55PdSD7DDbN1Ww4ZN",
-  "status": "applicant"
+  "status": "funded"
 }
