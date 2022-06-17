@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "400198660000000000",
+    "free": "400198033268038578",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "0",
+    "nonce": "1",
     "reserved": "0"
   },
   "location": {
@@ -26,6 +26,9 @@
     "calamari": "https://calamari-metrics.validatrium.club",
     "kusama": "https://kusama-metrics.validatrium.club"
   },
+  "session": {
+    "aura": "0x9e0021f363ee45c721daf3bc5567f5ec1ed5aa7924ead07bc3cef15ce5139a5c"
+  },
   "ss58": "dmup6erAb8iJHQ2UXyHkA1G6m1hnSLRM55PdSD7DDbN1Ww4ZN",
-  "status": "funded"
+  "status": "eligible"
 }
