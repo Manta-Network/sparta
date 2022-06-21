@@ -7,12 +7,7 @@
   "status": "executed",
   "proposal_hash": "0xaff90bf4260da14a2383ac77fb5dedba3e3b6e13d98501e880a58dea5ef3189f",
   "proposer": {
-    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
-    "display": "",
-    "judgements": null,
-    "account_index": "",
-    "identity": false,
-    "parent": null
+    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
   },
   "member_count": 3,
   "executed_success": true,
@@ -24,12 +19,7 @@
   "votes": [
     {
       "account": {
-        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
+        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
       },
       "passed": true,
       "extrinsic_hash": "0xe3f478a22d8016e60c94842f028ae8fde3a6767aaab565cd5adbfe7a5e19afc2",
@@ -38,12 +28,7 @@
     },
     {
       "account": {
-        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
+        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
       },
       "passed": true,
       "extrinsic_hash": "0x89af52d4d32dae7580cc49c4c685df05f206040f898240c787538f09dc0ca12b",
@@ -52,12 +37,7 @@
     },
     {
       "account": {
-        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms",
-        "display": "",
-        "judgements": null,
-        "account_index": "",
-        "identity": false,
-        "parent": null
+        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
       },
       "passed": true,
       "extrinsic_hash": "0x951d4b987798d19cd3fea9dc1fa43b80247984f98afabe3c1e2ea7cb4790a638",
