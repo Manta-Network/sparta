@@ -632,11 +632,38 @@
     "status": "applicant"
   },
   {
+    "balance": {
+      "free": "474655238600431021",
+      "locked": {
+        "fee": "0",
+        "misc": "0"
+      },
+      "nonce": "1",
+      "reserved": "0"
+    },
+    "location": {
+      "city": {
+        "name": "Toronto"
+      },
+      "coordinates": {
+        "latitude": "43.6456",
+        "longitude": "-79.4569"
+      },
+      "country": {
+        "code": "CA",
+        "name": "Canada"
+      },
+      "ip": "104.26.12.108"
+    },
     "metrics": {
       "calamari": "https://calamari-metrics.bwarelabs.com",
       "kusama": "https://kusama-metrics.bwarelabs.com"
     },
-    "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu"
+    "session": {
+      "aura": "0x30593309d3434b648245df04f328cd782cdae3c2e4866b0952cd5c0335284111"
+    },
+    "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu",
+    "status": "eligible"
   },
   {
     "balance": {
