@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.calamari.info",
     "kusama": "https://kusama.metrics.calamari.info"
   },
-  "session": {
-    "aura": "0x46c670d1275681bc3b209050108162a9c730f6374f2a422e7669b571e84a1553"
-  },
   "ss58": "dmxbgDpKK6V3Sayr3jz8MpoUJyxiWese6FtL42RRfZXnWewTD",
-  "status": "eligible"
+  "status": "funded"
 }
