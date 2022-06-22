@@ -632,6 +632,13 @@
     "status": "applicant"
   },
   {
+    "metrics": {
+      "calamari": "https://calamari-metrics.bwarelabs.com",
+      "kusama": "https://kusama-metrics.bwarelabs.com"
+    },
+    "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu"
+  },
+  {
     "balance": {
       "free": "1025182069526718",
       "locked": {
