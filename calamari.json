@@ -629,24 +629,11 @@
     "status": "applicant"
   },
   {
-    "balance": {
-	  "free": "474655238600431000",
-      "locked": {
-        "fee": "0",
-        "misc": "0"
-      },
-      "nonce": "1",
-      "reserved": "0"
-    },
     "metrics": {
-      "calamari": "https://calamari-metrics.bwarelabs.com/metrics",
-      "kusama": "https://kusama-metrics.bwarelabs.com/metrics"
+      "calamari": "https://calamari-metrics.bwarelabs.com",
+      "kusama": "https://kusama-metrics.bwarelabs.com"
     },
-    "session": {
-      "aura": "0x30593309d3434b648245df04f328cd782cdae3c2e4866b0952cd5c0335284111"
-    },
-    "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu",
-    "status": "applicant"
+    "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu"
   },
   {
     "balance": {
