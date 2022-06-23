@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Identicon from '@polkadot/react-identicon';
 
+import Accordion from 'react-bootstrap/Accordion';
 import Row from 'react-bootstrap/Row';
 import Spinner from 'react-bootstrap/Spinner';
+import Tab from 'react-bootstrap/Tab';
 import Table from 'react-bootstrap/Table';
+import Tabs from 'react-bootstrap/Tabs';
 
 import { decodeAddress } from '@polkadot/util-crypto';
 import { u8aToHex } from '@polkadot/util';
@@ -197,7 +200,7 @@ function AccountDetail() {
     }
   }, [metrics, params.ss58]);
   return (
-    <>
+    <Fragment>
       <Row>
         <h2>
           <Identicon value={account.ss58} theme={`substrate`} title={account.ss58} /> {account.ss58}
@@ -208,7 +211,7 @@ function AccountDetail() {
           <thead>
             {
               Object.keys(metrics).map((chain, i) => (
-                <tr>
+                <tr key={i}>
                   <th>{chain}</th>
                   <th>
                     {metrics[chain].name}
@@ -402,59 +405,43 @@ function AccountDetail() {
             }
           </tbody>
         </Table>
-        {
-          Object.keys(metrics).map((chain, i) => (
-            <Table key={i}>
-              <thead>
-                <tr>
-                  <th colSpan={2}>{chain} metrics</th>
-                </tr>
-              </thead>
-              <tbody>
+        <Tabs defaultActiveKey="calamari">
+          {
+            Object.keys(metrics).map((chain, cI) => (
+              <Tab key={cI} eventKey={chain} title={
+                (
+                  <span>
+                    {chain} metrics
+                  </span>
+                )
+              }>
                 {
-                  (!metrics[chain] || !!metrics[chain].loading)
+                  (!!metrics[chain].metrics)
                     ? (
-                        <tr>
-                          <th>metrics</th>
-                          <td>
-                            <Spinner animation="border" variant="secondary" size="sm">
-                              <span className="visually-hidden">{chain} metrics lookup in progress</span>
-                            </Spinner>
-                          </td>
-                        </tr>
+                        <Accordion defaultActiveKey={metrics[chain].metrics[0].name}>
+                          {
+                            metrics[chain].metrics.map((metric, mI) => (
+                              <Accordion.Item key={mI} eventKey={metric.name}>
+                                <Accordion.Header>
+                                  {metric.type.toLowerCase()}: {metric.name.replace('polkadot_', '').replace('substrate_', '').replaceAll('_', ' ')}
+                                </Accordion.Header>
+                                <Accordion.Body>
+                                  {metric.help.toLowerCase()}
+                                  <Metric {...metric} />
+                                </Accordion.Body>
+                              </Accordion.Item>
+                            ))
+                          }
+                        </Accordion>
                       )
-                    : !!metrics[chain].error
-                      ? (
-                          <tr>
-                            <th>metrics</th>
-                            <td>
-                              <i className={`bi bi-exclamation-circle text-danger`} title={`${metrics[chain].error}`}></i>
-                            </td>
-                          </tr>
-                        )
-                      : (
-                          metrics[chain].metrics.map((metric, i) => (
-                            <tr key={i}>
-                              <td>
-                                <strong>
-                                  {metric.name.replaceAll('_', ' ')}
-                                </strong>
-                                <br />
-                                {metric.type.toLowerCase()}: {metric.help.toLowerCase()}
-                              </td>
-                              <td>
-                                <Metric {...metric} />
-                              </td>
-                            </tr>
-                          ))
-                        )
+                    : null
                 }
-              </tbody>
-            </Table>
-          ))
-        }
+              </Tab>
+            ))
+          }
+        </Tabs>
       </Row>
-    </>
+    </Fragment>
   );
 }
 

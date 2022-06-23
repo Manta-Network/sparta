@@ -287,7 +287,7 @@ function App() {
               <Card style={{ borderLeft: '10px solid #ffc107', backgroundColor: 'rgba(255,229,100,.3)' }}>
                 <Card.Body>
                   <Card.Title>
-                    <i class="bi bi-exclamation-diamond-fill"></i>
+                    <i className="bi bi-exclamation-diamond-fill"></i>
                     &nbsp;
                     note
                   </Card.Title>

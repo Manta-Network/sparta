@@ -374,7 +374,7 @@ function AccountRow(props) {
                     <i className={`bi bi-shield-x text-warning`} title={`${chain} http metrics url`} key={chain}></i>
                   )
                 : (
-                    <i className={`bi bi-exclamation-circle text-danger`} title={`no ${chain} metrics url`}></i>
+                    <i className={`bi bi-exclamation-circle text-danger`} title={`no ${chain} metrics url`} key={chain}></i>
                   )
           ))
         }
