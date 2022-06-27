@@ -398,8 +398,8 @@
       "ip": "185.102.219.120"
     },
     "metrics": {
-      "calamari": "https://calamari.metrics.dp.stakebaby.com",
-      "kusama": "https://kusama.metrics.dp.stakebaby.com"
+      "calamari": "https://calamari.metrics.ws.stakebaby.com",
+      "kusama": "https://kusama.metrics.ws.stakebaby.com"
     },
     "session": {
       "aura": "0xa459aba5aaec65a1aef2ad4c22befc3b831a08170afb1f15846dad5ae32aa837"
