@@ -1,6 +1,6 @@
 {
   "balance": {
-    "free": "15068658212292581",
+    "free": "15069034102900577",
     "locked": {
       "fee": "0",
       "misc": "12760000000000000"
@@ -25,9 +25,6 @@
   "metrics": {
     "calamari": "https://calamari.metrics.nettle.network",
     "kusama": "https://kusama.metrics.nettle.network"
-  },
-  "session": {
-    "aura": "0xba3e1934f465541be461b8da351eda8a928cee80f862fe99f219c85dc11fb747"
   },
   "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
   "status": "active"
