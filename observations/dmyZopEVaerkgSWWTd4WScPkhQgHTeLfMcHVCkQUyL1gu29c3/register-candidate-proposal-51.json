@@ -7,7 +7,7 @@
   "status": "executed",
   "proposal_hash": "0x7b1264465905ef254cc245c82120a41fedd666c32418c65f7467450de805007b",
   "proposer": {
-    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
+    "address": ""
   },
   "member_count": 3,
   "executed_success": true,
@@ -19,7 +19,7 @@
   "votes": [
     {
       "account": {
-        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
+        "address": ""
       },
       "passed": true,
       "extrinsic_hash": "0x1e505e7d55499b398464a9e51005ef2fc20d2a6f09483166c1a764a477a08bfb",
@@ -28,7 +28,7 @@
     },
     {
       "account": {
-        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
+        "address": ""
       },
       "passed": true,
       "extrinsic_hash": "0xd9d58790b81be9c02fb250b8e42fed4978fd3ce8e58f9058375ced1a191b6cd9",
@@ -37,7 +37,7 @@
     },
     {
       "account": {
-        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
+        "address": ""
       },
       "passed": true,
       "extrinsic_hash": "0x506e6112fa086ee438ce665a891d5fca4e88e1958ae5a3b013f815fa974c4b67",
