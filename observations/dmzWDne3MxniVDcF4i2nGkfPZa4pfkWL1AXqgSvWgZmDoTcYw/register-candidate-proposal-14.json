@@ -7,7 +7,7 @@
   "status": "executed",
   "proposal_hash": "0xc6a8018e5ba7d6cf2e33261f7920de19dcb50625552419c4d4aa1c2b3a6b87b2",
   "proposer": {
-    "address": ""
+    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
   },
   "member_count": 3,
   "executed_success": true,
@@ -37,7 +37,7 @@
     },
     {
       "account": {
-        "address": ""
+        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
       },
       "passed": true,
       "extrinsic_hash": "0x9eee0a185412eafbd92c67e24f488eef2593ea3c34e6307b98e2ebe2b5b39df0",
