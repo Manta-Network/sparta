@@ -19,7 +19,7 @@
   "votes": [
     {
       "account": {
-        "address": ""
+        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
       },
       "passed": true,
       "extrinsic_hash": "0x7f58f696961c4f3eeb79a40add80df7388a8957aed55e3fec92d899e1ee8effb",
@@ -28,7 +28,7 @@
     },
     {
       "account": {
-        "address": ""
+        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
       },
       "passed": true,
       "extrinsic_hash": "0xb6242cbbfb42cdee0ebc9311ee945700295443ed76bdfaa9206d9db349f27218",
