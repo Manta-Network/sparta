@@ -521,17 +521,17 @@
     },
     "location": {
       "city": {
-        "name": "Limburg an der Lahn"
+        "name": "Vienna"
       },
       "coordinates": {
-        "latitude": "50.3846",
-        "longitude": "8.0472"
+        "latitude": "48.1932",
+        "longitude": "16.3747"
       },
       "country": {
-        "code": "DE",
-        "name": "Germany"
+        "code": "AT",
+        "name": "Austria"
       },
-      "ip": "141.95.84.118"
+      "ip": "89.58.16.100"
     },
     "metrics": {
       "calamari": "https://stats.calamari.themilkywaygang.com",
