@@ -26,6 +26,9 @@
     "calamari": "https://calamari.metrics.favoursanywhere.com",
     "kusama": "https://kusama.metrics.favoursanywhere.com"
   },
+  "session": {
+    "aura": "0xfaf8de8a2a21357a6f7c8e0ebd99a757b25eed6c5af07684e1d1eca36f449f0d"
+  },
   "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
   "status": "active"
 }
