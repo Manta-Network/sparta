@@ -1,0 +1,41 @@
+{
+  "proposal_id": 61,
+  "created_block": 1738748,
+  "updated_block": 1738772,
+  "aye_votes": 1,
+  "nay_votes": 0,
+  "status": "proposed",
+  "proposal_hash": "0x7354bb81c49780b9f58521ac5cc50ed3e8e1d7efa2242faae1fff40b422dae31",
+  "proposer": {
+    "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
+  },
+  "member_count": 3,
+  "executed_success": true,
+  "value": "0",
+  "call_module": "CollatorSelection",
+  "call_name": "register_candidate",
+  "params": "[{\"name\":\"new_candidate\",\"type\":\"[U8; 32]\",\"value\":\"0xcee890a1d38b4f71f0cc4066c71cd0a6a03b95fa1b6ce07bc1fa729985dc2948\"}]",
+  "pre_image": null,
+  "votes": [
+    {
+      "account": {
+        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
+      },
+      "passed": true,
+      "extrinsic_hash": "0x16b92e0dc24cd31d18fceabd67d2987747531cfd2adc0c62634250019f9dd49d",
+      "extrinsic_index": "1738772-2",
+      "voting_time": 1658257740
+    }
+  ],
+  "timeline": [
+    {
+      "block": 1738748,
+      "status": "proposed",
+      "time": 1658257392,
+      "prophecy": false,
+      "index": 0,
+      "extrinsic_index": "1738748-2",
+      "params": null
+    }
+  ]
+}
