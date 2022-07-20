@@ -1,8 +1,8 @@
 {
   "proposal_id": 63,
   "created_block": 1738755,
-  "updated_block": 1738816,
-  "aye_votes": 2,
+  "updated_block": 1743313,
+  "aye_votes": 3,
   "nay_votes": 0,
   "status": "proposed",
   "proposal_hash": "0x6e10c28bd532521f346aefdb89ea8a665a1a7dac399a8e1a21291e350d129cef",
@@ -17,6 +17,15 @@
   "params": "[{\"name\":\"new_candidate\",\"type\":\"[U8; 32]\",\"value\":\"0x26cb90385dc30aa8e62f80239cf429ff5542188f703e14370387ae3fa285426f\"}]",
   "pre_image": null,
   "votes": [
+    {
+      "account": {
+        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
+      },
+      "passed": true,
+      "extrinsic_hash": "0x0162ebb5f30ca73555f77fbb27da377e58b13001c9398e19e022376690138190",
+      "extrinsic_index": "1743313-2",
+      "voting_time": 1658324862
+    },
     {
       "account": {
         "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
