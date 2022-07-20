@@ -1,12 +1,12 @@
 {
   "balance": {
-    "free": "806620455042773536",
+    "free": "406620455042773536",
     "locked": {
       "fee": "0",
       "misc": "304763250000000000"
     },
     "nonce": "8",
-    "reserved": "0"
+    "reserved": "400000000000000000"
   },
   "location": {
     "city": {
@@ -30,5 +30,5 @@
     "aura": "0x361e8e0ea8a6198f1cb8baf48b93b585b07a55d3c2966623cf122dec685d9946"
   },
   "ss58": "dmycXK86XZfJV8CuJWoufuY3wq5mnRwhzQmsfQjDvNypyrUDM",
-  "status": "eligible"
+  "status": "applicant"
 }
