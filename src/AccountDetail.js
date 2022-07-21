@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Identicon from '@polkadot/react-identicon';
 
 import Accordion from 'react-bootstrap/Accordion';
+import Badge from 'react-bootstrap/Badge';
 import Row from 'react-bootstrap/Row';
 import Spinner from 'react-bootstrap/Spinner';
 import Tab from 'react-bootstrap/Tab';
@@ -422,8 +423,22 @@ function AccountDetail() {
                           {
                             metrics[chain].metrics.map((metric, mI) => (
                               <Accordion.Item key={mI} eventKey={metric.name}>
-                                <Accordion.Header>
-                                  {metric.type.toLowerCase()}: {metric.name.replace('polkadot_', '').replace('substrate_', '').replaceAll('_', ' ')}
+                                <Accordion.Header style={{display: 'grid', gridTemplateColumns: '1fr max-content max-content', alignItems: 'center', gridGap: '10px'}}>
+                                  <span>
+                                    {metric.name.replace('polkadot_', '').replace('substrate_', '').replaceAll('_', ' ')}
+                                    <sup class="text-muted" style={{marginLeft: '0.3em'}}>
+                                      {metric.type.toLowerCase()}
+                                    </sup>
+                                  </span>
+                                  {
+                                    (metric.metrics.length === 1 && !['substrate_build_info'].includes(metric.name))
+                                      ? (
+                                          <Badge pill style={{marginLeft: '0.5em'}} bg="dark">
+                                            {metric.metrics[0].value}
+                                          </Badge>
+                                        )
+                                      : null
+                                  }
                                 </Accordion.Header>
                                 <Accordion.Body>
                                   {metric.help.toLowerCase()}

@@ -61,14 +61,6 @@ function Histogram(props) {
           ))
         }
       </dl>
-      {
-        /*
-        <pre>
-          {JSON.stringify(m, null, 2)}
-        </pre>
-        
-        */
-      }
     </Fragment>
   ));
 }
