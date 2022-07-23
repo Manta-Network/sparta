@@ -26,6 +26,9 @@
     "calamari": "https://calamari.metrics.cj.kmapro.de",
     "kusama": "https://kusama.metrics.cj.kmapro.de"
   },
+  "session": {
+    "aura": "0xe487137c1078d07d75c5e6d27fb5fa4b6b3584b01f003a9e23b88bc6734d0c74"
+  },
   "ss58": "dmyhGCWjejSyze6Hcqx43f8PNR9RWwm4EEobo8HehtBb8W8aU",
   "status": "active"
 }
