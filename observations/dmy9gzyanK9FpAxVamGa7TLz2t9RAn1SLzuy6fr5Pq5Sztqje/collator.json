@@ -12,6 +12,9 @@
     "calamari": "",
     "kusama": ""
   },
+  "session": {
+    "aura": "0x6e0370461686d00923cf134322b2565992d8705887cfdf9fc774e4fcf01e146b"
+  },
   "ss58": "dmy9gzyanK9FpAxVamGa7TLz2t9RAn1SLzuy6fr5Pq5Sztqje",
   "status": "funded"
 }
