@@ -1683,5 +1683,12 @@
     },
     "ss58": "dmup6erAb8iJHQ2UXyHkA1G6m1hnSLRM55PdSD7DDbN1Ww4ZN",
     "status": "active"
+  },
+  {
+    "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w",
+    "metrics": {
+      "calamari": "",
+      "kusama": ""
+    }
   }
 ]
