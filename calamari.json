@@ -1685,10 +1685,20 @@
     "status": "active"
   },
   {
+    "balance": {
+      "free": "406858731226032919",
+      "locked": {
+        "fee": "0",
+        "misc": "0"
+      },
+      "nonce": "3",
+      "reserved": "0"
+    },
     "metrics": {
       "calamari": "",
       "kusama": ""
     },
-    "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w"
+    "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w",
+    "status": "funded"
   }
 ]
