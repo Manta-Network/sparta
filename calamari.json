@@ -1686,17 +1686,20 @@
   },
   {
     "balance": {
-      "free": "406858731226032919",
+      "free": "406856852041023358",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "3",
+      "nonce": "6",
       "reserved": "0"
     },
     "metrics": {
       "calamari": "",
       "kusama": ""
+    },
+    "session": {
+      "aura": "0xe6bab5a22b64876fa0804be315681aad52b39725ea8c42a476b0c3a851d21e26"
     },
     "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w",
     "status": "funded"
