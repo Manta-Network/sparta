@@ -1695,8 +1695,8 @@
       "reserved": "0"
     },
     "metrics": {
-      "calamari": "",
-      "kusama": ""
+      "calamari": "http://209.222.101.3:9615",
+      "kusama": "http://209.222.101.3:9116"
     },
     "session": {
       "aura": "0xe6bab5a22b64876fa0804be315681aad52b39725ea8c42a476b0c3a851d21e26"
