@@ -1,0 +1,14 @@
+{
+  "ip": "209.222.101.3",
+  "city": {
+    "name": "Miami"
+  },
+  "country": {
+    "code": "US",
+    "name": "United States"
+  },
+  "coordinates": {
+    "latitude": "25.5972",
+    "longitude": "-80.4048"
+  }
+}
