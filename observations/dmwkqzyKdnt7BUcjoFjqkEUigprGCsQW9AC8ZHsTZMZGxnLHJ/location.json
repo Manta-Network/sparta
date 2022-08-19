@@ -1,0 +1,14 @@
+{
+  "ip": "65.109.22.172",
+  "city": {
+    "name": "Tuusula"
+  },
+  "country": {
+    "code": "FI",
+    "name": "Finland"
+  },
+  "coordinates": {
+    "latitude": "60.4102",
+    "longitude": "25.0095"
+  }
+}

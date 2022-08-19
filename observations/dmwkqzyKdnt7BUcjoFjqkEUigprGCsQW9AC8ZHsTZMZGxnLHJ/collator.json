@@ -1,0 +1,34 @@
+{
+  "balance": {
+    "free": "411902891874319085",
+    "locked": {
+      "fee": "0",
+      "misc": "0"
+    },
+    "nonce": "5",
+    "reserved": "0"
+  },
+  "location": {
+    "city": {
+      "name": "Tuusula"
+    },
+    "coordinates": {
+      "latitude": "60.4102",
+      "longitude": "25.0095"
+    },
+    "country": {
+      "code": "FI",
+      "name": "Finland"
+    },
+    "ip": "65.109.22.172"
+  },
+  "metrics": {
+    "calamari": "https://calamari-para-metrics.thedottybird.com",
+    "kusama": "https://calamari-relay-metrics.thedottybird.com"
+  },
+  "session": {
+    "aura": "0x7cc8f7ae75fa8c2e8deb07fd0f0e528784f70e626114aaea40e5f73772512166"
+  },
+  "ss58": "dmwkqzyKdnt7BUcjoFjqkEUigprGCsQW9AC8ZHsTZMZGxnLHJ",
+  "status": "eligible"
+}
