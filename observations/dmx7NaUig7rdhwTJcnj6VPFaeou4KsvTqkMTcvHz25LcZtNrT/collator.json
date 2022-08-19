@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "50164163406303956",
+    "free": "50177816929817979",
     "locked": {
       "fee": "0",
       "misc": "10000000000000000"
     },
-    "nonce": "7",
+    "nonce": "8",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.brightlystake.com"
   },
   "session": {
-    "aura": "0xa2d852a507716444acd3576ef7eaaf2a8c59a7420953ebbd013c8919e8097958"
+    "aura": "0x1e9ef0e879d1df2d1347d56f5d1e221291ada4a1a644fff88b29ce15e62b1230"
   },
   "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
   "status": "active"
