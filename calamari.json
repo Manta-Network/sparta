@@ -137,12 +137,12 @@
   },
   {
     "balance": {
-      "free": "23851038854179203",
+      "free": "23850411491566963",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "0",
+      "nonce": "1",
       "reserved": "0"
     },
     "location": {
