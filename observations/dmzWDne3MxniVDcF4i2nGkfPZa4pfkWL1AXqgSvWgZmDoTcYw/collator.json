@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "220125502495457429",
+    "free": "220125251027345856",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "8",
+    "nonce": "9",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.ws.stakebaby.com"
   },
   "session": {
-    "aura": "0xa459aba5aaec65a1aef2ad4c22befc3b831a08170afb1f15846dad5ae32aa837"
+    "aura": "0x3ac3587a1beb24f6b5b0d81d28350195b0cfa18a0a557928a4351c5cdbb73645"
   },
   "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
   "status": "active"
