@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "15123402073469063",
+    "free": "15122774710856823",
     "locked": {
       "fee": "0",
       "misc": "12760000000000000"
     },
-    "nonce": "14",
+    "nonce": "15",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.nettle.network"
   },
   "session": {
-    "aura": "0xba3e1934f465541be461b8da351eda8a928cee80f862fe99f219c85dc11fb747"
+    "aura": "0xc295c7b9b8de7ed96bf8aafbe2d01f7b45e5f5dc7fbe37d19a2032c7ec417c60"
   },
   "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
   "status": "active"
