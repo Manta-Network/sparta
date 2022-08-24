@@ -735,12 +735,12 @@
   },
   {
     "balance": {
-      "free": "20099094247774312",
+      "free": "20097839522549832",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "4",
+      "nonce": "6",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -762,7 +762,7 @@
       "kusama": "https://kusama.metrics.favoursanywhere.com"
     },
     "session": {
-      "aura": "0xfaf8de8a2a21357a6f7c8e0ebd99a757b25eed6c5af07684e1d1eca36f449f0d"
+      "aura": "0xe0d904501d11ada43e47bf04c4164377daea27061ec3f0f76ba929e43426b70b"
     },
     "ss58": "dmzEUqQGSWsFewzpomYcjhLYkeSAvHYwEoKzG2yXcF8YQoJkL",
     "status": "active"
