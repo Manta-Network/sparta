@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "74693316405197713",
+    "free": "74693440777540178",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "2",
+    "nonce": "3",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama-metrics.bwarelabs.com"
   },
   "session": {
-    "aura": "0x48ad5eec8bef961acda8240a437251b5500b48d0bf0add48526ce3d938ecf21d"
+    "aura": "0xda1ee292cdea3d42d7ccfb71ee6aa24c937d6415a545f851d4713fca583bb432"
   },
   "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu",
   "status": "active"
