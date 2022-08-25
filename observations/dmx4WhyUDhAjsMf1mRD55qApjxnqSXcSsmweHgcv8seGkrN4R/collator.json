@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "1099593162934308",
+    "free": "1098965800322068",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "2",
+    "nonce": "3",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.staker.space"
   },
   "session": {
-    "aura": "0x76eef88907e65148963d94b8a34716ffa8a4a8271fbc50f08bc1bb781878ee63"
+    "aura": "0x5c812b821853262e6d85dfb01a5cf6fa94d62805bb5077c7c41114e520a92450"
   },
   "ss58": "dmx4WhyUDhAjsMf1mRD55qApjxnqSXcSsmweHgcv8seGkrN4R",
   "status": "active"
