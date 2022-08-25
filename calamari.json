@@ -1550,12 +1550,12 @@
   },
   {
     "balance": {
-      "free": "200185956578682698",
+      "free": "200185329216070458",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "1",
+      "nonce": "2",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -1577,7 +1577,7 @@
       "kusama": "https://kusama.metrics.fullstack.biz.ua"
     },
     "session": {
-      "aura": "0xea5e321648a6a079ffba1d2c9db76945e00bd94beab6c29a74a6cb5626adca55"
+      "aura": "0x585945c0addd48e382bf797238c9a66ddbea49b0bc9f4a1ebd886dfe895eac01"
     },
     "ss58": "dmwM2xeWD2BjmCVYddTjB8QyYsktPsx2gySEZYbpdKFNnSGKd",
     "status": "active"
