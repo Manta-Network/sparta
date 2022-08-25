@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "10223906894830395",
+    "free": "10223655420686038",
     "locked": {
       "fee": "0",
       "misc": "100000000000000"
     },
-    "nonce": "6",
+    "nonce": "7",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.cryptech.com.ua"
   },
   "session": {
-    "aura": "0xb6a778c061e92a689e398923deeb2905be955901ecc2a02732d5abf71bb2a141"
+    "aura": "0x14ca6e6a36d750cd3cc6f0a3a52ae09f74e3ea3cabea77db4a6f4c74b1e34d48"
   },
   "ss58": "dmy6WPM2KfD7WBxJYS6UG17GHJVCv8kewiwTr6ciVeXLbBpvf",
   "status": "active"
