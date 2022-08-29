@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "195122787875549498",
+    "free": "195122160512937258",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "9",
+    "nonce": "10",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.calamari.anonstake.com"
   },
   "session": {
-    "aura": "0x7ade2b999e0713d6649fffac449e9b7304531cde21df0d468d92dcf3ce8eae1e"
+    "aura": "0x088cfd40c19d44aba1afab3e3ced87255eaf651ef1e5ccf24aaa77053a5fff13"
   },
   "ss58": "dmxa3MJczFGT92BUQjwsxguUC2t5qFaDdagfpBQWdGkNPJYQ5",
   "status": "active"
