@@ -273,12 +273,12 @@
   },
   {
     "balance": {
-      "free": "427502707481225",
+      "free": "427069164850875",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "3",
+      "nonce": "4",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -300,7 +300,7 @@
       "kusama": "https://kusama.metrics.polkadotters.com"
     },
     "session": {
-      "aura": "0x321ab38709b9940c72dcbe3f983c94b8ad6013e62387018c5b385c8168d3b410"
+      "aura": "0x5283e3d748e68d1842aef08132a3d9dbe651c8949b1d925e531dcc96f8ac9972"
     },
     "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
     "status": "active"
