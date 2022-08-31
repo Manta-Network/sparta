@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "336496779149327749",
+    "free": "336496345616697399",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "2",
+    "nonce": "3",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://stats.kasuma.migusha.com"
   },
   "session": {
-    "aura": "0x7e59dd143f4382b415bf6893a3c95be69c8452f41d296f379a789ec60381173e"
+    "aura": "0x006443f8b9217d2607e948b395d19de2f39a707712b72fedcba0bf6268820449"
   },
   "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
   "status": "active"
