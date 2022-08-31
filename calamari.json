@@ -1618,12 +1618,12 @@
   },
   {
     "balance": {
-      "free": "3451705348126132",
+      "free": "3451271495495782",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "4",
+      "nonce": "5",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -1645,7 +1645,7 @@
       "kusama": "https://metrics.kusama.calamari.kooltek68.com"
     },
     "session": {
-      "aura": "0xc0ec6e846e5847307ef5bf4b75c04187fb59d560c733648ad6458f8436da9fe0"
+      "aura": "0x66d8c504524670c57c21ef12b9779109803ce8818c3a40f9a1fcad96b93b2e1c"
     },
     "ss58": "dmuPiPzqGwuKsik8XLLPPi2xHCEwADyrfxakgiQbjtYEh7bDy",
     "status": "active"
