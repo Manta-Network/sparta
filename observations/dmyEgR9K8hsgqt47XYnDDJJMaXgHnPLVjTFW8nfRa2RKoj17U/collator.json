@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "1219230816935989",
+    "free": "1218797284305639",
     "locked": {
       "fee": "0",
       "misc": "0"
     },
-    "nonce": "3",
+    "nonce": "4",
     "reserved": "400000000000000000"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://stats.kasuma.themilkywaygang.com"
   },
   "session": {
-    "aura": "0xac7cfa68302c2308f159f8c675cea2e7ba1fb55a86c8ac7f203769845a8d3535"
+    "aura": "0xcefcf3b0155a0be0afd61c7637bdcb454c2de9d70ec398aeabf714d9a2e01315"
   },
   "ss58": "dmyEgR9K8hsgqt47XYnDDJJMaXgHnPLVjTFW8nfRa2RKoj17U",
   "status": "active"
