@@ -1652,12 +1652,12 @@
   },
   {
     "balance": {
-      "free": "259455624611445",
+      "free": "259281309375426",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "3",
+      "nonce": "4",
       "reserved": "400000000000000000"
     },
     "location": {
@@ -1679,7 +1679,7 @@
       "kusama": "https://kusama-metrics.validatrium.club"
     },
     "session": {
-      "aura": "0x98d672858d55733d52a5c16b579502ebe9b1f26ec997a45b86bd440c1968c05c"
+      "aura": "0x0c45836d36663b36135cba6f6b039a520bb9244b55aaab54f45de47ce874cc5f"
     },
     "ss58": "dmup6erAb8iJHQ2UXyHkA1G6m1hnSLRM55PdSD7DDbN1Ww4ZN",
     "status": "active"
