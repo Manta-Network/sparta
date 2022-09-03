@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Miami"
+      "name": "Tuusula"
     },
     "coordinates": {
-      "latitude": "25.5972",
-      "longitude": "-80.4048"
+      "latitude": "60.3533",
+      "longitude": "24.9851"
     },
     "country": {
-      "code": "US",
-      "name": "United States"
+      "code": "FI",
+      "name": "Finland"
     },
-    "ip": "209.222.101.3"
+    "ip": "65.109.38.185"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.orangeskies.ru",
