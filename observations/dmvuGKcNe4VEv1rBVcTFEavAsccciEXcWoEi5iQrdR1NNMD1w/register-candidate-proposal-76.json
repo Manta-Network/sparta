@@ -4,7 +4,7 @@
   "updated_block": 2032269,
   "aye_votes": 3,
   "nay_votes": 0,
-  "status": "proposed",
+  "status": "executed",
   "proposal_hash": "0x8ae25bc8b5cbf167fb03487f1089f5b4a67ebe26386194c247cc1d5339eccfba",
   "proposer": {
     "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
@@ -46,6 +46,33 @@
     }
   ],
   "timeline": [
+    {
+      "block": 2033056,
+      "status": "approved",
+      "time": 1662774198,
+      "prophecy": false,
+      "index": 5,
+      "extrinsic_index": "2033056-3",
+      "params": null
+    },
+    {
+      "block": 2033056,
+      "status": "closed",
+      "time": 1662774198,
+      "prophecy": false,
+      "index": 4,
+      "extrinsic_index": "2033056-3",
+      "params": null
+    },
+    {
+      "block": 2033056,
+      "status": "executed",
+      "time": 1662774198,
+      "prophecy": false,
+      "index": 8,
+      "extrinsic_index": "2033056-3",
+      "params": null
+    },
     {
       "block": 2032194,
       "status": "proposed",
