@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Prague"
+      "name": "Trinec"
     },
     "coordinates": {
-      "latitude": "50.0883",
-      "longitude": "14.4124"
+      "latitude": "49.7031",
+      "longitude": "18.6129"
     },
     "country": {
       "code": "CZ",
       "name": "Czechia"
     },
-    "ip": "78.80.47.139"
+    "ip": "78.80.47.235"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.nettle.network",

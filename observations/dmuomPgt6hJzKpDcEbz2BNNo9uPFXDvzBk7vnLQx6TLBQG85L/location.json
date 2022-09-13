@@ -1,14 +1,14 @@
 {
-  "ip": "78.80.47.139",
+  "ip": "78.80.47.235",
   "city": {
-    "name": "Prague"
+    "name": "Trinec"
   },
   "country": {
     "code": "CZ",
     "name": "Czechia"
   },
   "coordinates": {
-    "latitude": "50.0883",
-    "longitude": "14.4124"
+    "latitude": "49.7031",
+    "longitude": "18.6129"
   }
 }
