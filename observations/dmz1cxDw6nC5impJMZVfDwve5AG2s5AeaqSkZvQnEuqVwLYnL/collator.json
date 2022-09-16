@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Helsinki"
+      "name": "Boulogne-Billancourt"
     },
     "coordinates": {
-      "latitude": "60.1719",
-      "longitude": "24.9347"
+      "latitude": "48.8384",
+      "longitude": "2.2446"
     },
     "country": {
-      "code": "FI",
-      "name": "Finland"
+      "code": "FR",
+      "name": "France"
     },
-    "ip": "65.21.131.8"
+    "ip": "178.170.41.17"
   },
   "metrics": {
     "calamari": "https://calamari.pithecus.co.uk",
