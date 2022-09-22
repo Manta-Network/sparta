@@ -26,6 +26,9 @@
     "calamari": "https://calamari.pathrocknetwork.org",
     "kusama": "https://kusama.pathrocknetwork.org"
   },
+  "session": {
+    "aura": "0x447b8cfaef5649f629a213b98360d2fc404ca5f3daac8577d39f587d1a555745"
+  },
   "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
   "status": "active"
 }
