@@ -1178,12 +1178,12 @@
   },
   {
     "balance": {
-      "free": "400198115562038878",
+      "free": "400197681709408528",
       "locked": {
         "fee": "0",
         "misc": "0"
       },
-      "nonce": "3",
+      "nonce": "4",
       "reserved": "0"
     },
     "metrics": {
@@ -1191,7 +1191,7 @@
       "kusama": ""
     },
     "session": {
-      "aura": "0x98f97f3f043743e84dbeec0a0450791ecc3d6e8fc7febe75e75db7a27576720e"
+      "aura": "0x420aed5579a37484659ad9ad60c7ba34b6f586714e3508bdf32748816dc93d1e"
     },
     "ss58": "dmyhNFR1qUuA8efaYvpW75qGKrYfzrK8ejygttHojeL4ujzUb",
     "status": "funded"
