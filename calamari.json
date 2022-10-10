@@ -786,12 +786,12 @@
   },
   {
     "balance": {
-      "free": "400010131378961725",
+      "free": "400009697526324990",
       "locked": {
         "fee": "400000000000000000",
         "misc": "400000000000000000"
       },
-      "nonce": "17",
+      "nonce": "18",
       "reserved": "0"
     },
     "location": {
@@ -813,7 +813,7 @@
       "kusama": "https://kusama.pathrocknetwork.org"
     },
     "session": {
-      "aura": "0x447b8cfaef5649f629a213b98360d2fc404ca5f3daac8577d39f587d1a555745"
+      "aura": "0x769450eaef2c0e4453a8b7599253d7952582929d15353c128b2690e7259acc3c"
     },
     "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
     "status": "active"
