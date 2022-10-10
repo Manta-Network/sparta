@@ -1,11 +1,11 @@
 {
   "balance": {
-    "free": "425584814996650831",
+    "free": "425584381144014096",
     "locked": {
       "fee": "400000000000000000",
       "misc": "400000000000000000"
     },
-    "nonce": "16",
+    "nonce": "17",
     "reserved": "0"
   },
   "location": {
@@ -27,7 +27,7 @@
     "kusama": "https://kusama.metrics.gostake.io"
   },
   "session": {
-    "aura": "0xfec295b11fb13e1d8072630e944735bc86250dd9e3c33f3bf0b9ce732a8ba77b"
+    "aura": "0xf46806ad5208d4ae03447bfc2c8be155c0688153a58f03c7b5264135b1ee370c"
   },
   "ss58": "dmzh2ESTJAy1MJ8Ekg9zs1653HFBUqCQeErihJZSHfFXGgNUh",
   "status": "active"
