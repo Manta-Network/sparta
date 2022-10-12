@@ -796,17 +796,17 @@
     },
     "location": {
       "city": {
-        "name": "Moscow Oblast"
+        "name": "London"
       },
       "coordinates": {
         "latitude": "55.9155",
         "longitude": "37.8263"
       },
       "country": {
-        "code": "RU",
-        "name": "Russia"
+        "code": "UK",
+        "name": "United Kingdom"
       },
-      "ip": "185.40.6.142"
+      "ip": "54.37.244.57"
     },
     "metrics": {
       "calamari": "https://calamari.pathrocknetwork.org",
