@@ -830,17 +830,17 @@
     },
     "location": {
       "city": {
-        "name": "Warsaw"
+        "name": "Helsinki"
       },
       "coordinates": {
-        "latitude": "52.2484",
-        "longitude": "21.0026"
+        "latitude": "60.1792",
+        "longitude": "24.9337"
       },
       "country": {
-        "code": "PL",
-        "name": "Poland"
+        "code": "FI",
+        "name": "Finland"
       },
-      "ip": "95.214.55.74"
+      "ip": "65.108.131.103"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.letsnode.io",
