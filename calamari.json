@@ -817,12 +817,12 @@
   },
   {
     "balance": {
-      "free": "413254685298014102",
+      "free": "413254294743868232",
       "locked": {
         "fee": "400000000000000000",
         "misc": "400000000000000000"
       },
-      "nonce": "20",
+      "nonce": "21",
       "reserved": "0"
     },
     "location": {
@@ -844,7 +844,7 @@
       "kusama": "https://kusama.metrics.letsnode.io"
     },
     "session": {
-      "aura": "0x205768d2b7cbf1f70698c2419f30eaa24309533608a3300d2f8038b32747fc0c"
+      "aura": "0x4088a672efcf7b3f7b982b1dd0f6e3a3e4b2dbef34140d486f504f104e19160c"
     },
     "ss58": "dmvVY24KwgNwoYnHw5EbC8mTUF9CtZeJzCnSGBawWzaRkNHH4",
     "status": "active"
