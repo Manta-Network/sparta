@@ -1,14 +1,14 @@
 {
-  "ip": "185.40.6.142",
+  "ip": "54.37.244.57",
   "city": {
-    "name": "Moscow Oblast"
+    "name": "London"
   },
   "country": {
-    "code": "RU",
-    "name": "Russia"
+    "code": "GB",
+    "name": "United Kingdom"
   },
   "coordinates": {
-    "latitude": "55.9155",
-    "longitude": "37.8263"
+    "latitude": "51.5164",
+    "longitude": "-0.093"
   }
 }
