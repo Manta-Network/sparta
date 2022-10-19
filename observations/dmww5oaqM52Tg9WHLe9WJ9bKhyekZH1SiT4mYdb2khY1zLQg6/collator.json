@@ -12,6 +12,9 @@
     "calamari": "https://calamari.metrics.substake.app",
     "kusama": "https://kusama.metrics.substake.app"
   },
+  "session": {
+    "aura": "0x90f7fdb544db4da30bc73f60f91d1a8a2260eecb32120b10b3ec6bc7b1a8211d"
+  },
   "ss58": "dmww5oaqM52Tg9WHLe9WJ9bKhyekZH1SiT4mYdb2khY1zLQg6",
   "status": "applicant"
 }
