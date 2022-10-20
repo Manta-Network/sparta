@@ -1,6 +1,6 @@
 {
   "balance": {
-    "free": "652805243539948317",
+    "free": "652805286836428419",
     "locked": {
       "fee": "642237754674615876",
       "misc": "642237754674615876"
@@ -30,5 +30,5 @@
     "aura": "0x5c812b821853262e6d85dfb01a5cf6fa94d62805bb5077c7c41114e520a92450"
   },
   "ss58": "dmx4WhyUDhAjsMf1mRD55qApjxnqSXcSsmweHgcv8seGkrN4R",
-  "status": "candidate"
+  "status": "active"
 }
