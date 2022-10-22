@@ -1,6 +1,6 @@
 {
   "balance": {
-    "free": "450523709441926619",
+    "free": "451500556989370218",
     "locked": {
       "fee": "400000000000000000",
       "misc": "400000000000000000"
@@ -25,9 +25,6 @@
   "metrics": {
     "calamari": "https://calamari.metrics.polkadotters.com",
     "kusama": "https://kusama.metrics.polkadotters.com"
-  },
-  "session": {
-    "aura": "0x5283e3d748e68d1842aef08132a3d9dbe651c8949b1d925e531dcc96f8ac9972"
   },
   "ss58": "dmvoKqM8n2PVKyiYhm5VpMMnzMdk1z1WZAYDJEDmSLSqRgrbQ",
   "status": "active"
