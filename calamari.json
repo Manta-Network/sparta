@@ -1150,9 +1150,6 @@
       "calamari": "https://calamari.metrics.cryptech.com.ua",
       "kusama": "https://kusama.metrics.cryptech.com.ua"
     },
-    "session": {
-      "aura": "0x14ca6e6a36d750cd3cc6f0a3a52ae09f74e3ea3cabea77db4a6f4c74b1e34d48"
-    },
     "ss58": "dmy6WPM2KfD7WBxJYS6UG17GHJVCv8kewiwTr6ciVeXLbBpvf",
     "status": "active"
   },
