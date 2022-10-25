@@ -1686,12 +1686,12 @@
   },
   {
     "balance": {
-      "free": "453868293179104084",
+      "free": "453867859326469199",
       "locked": {
         "fee": "400000000000000000",
         "misc": "400000000000000000"
       },
-      "nonce": "11",
+      "nonce": "12",
       "reserved": "0"
     },
     "location": {
@@ -1713,7 +1713,7 @@
       "kusama": "https://kusama.metrics.orangeskies.ru"
     },
     "session": {
-      "aura": "0xb489edd9600aeaf096d7a6402f6ff39493b5bf4f208fc5794f6a02a7d9643778"
+      "aura": "0xded01482cf87d08fe604d21d20b156fd71ac4c5beae4bf99a0963b0e6df6103a"
     },
     "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w",
     "status": "active"
