@@ -659,9 +659,6 @@
       "calamari": "https://calamari-metrics.bwarelabs.com",
       "kusama": "https://kusama-metrics.bwarelabs.com"
     },
-    "session": {
-      "aura": "0xda1ee292cdea3d42d7ccfb71ee6aa24c937d6415a545f851d4713fca583bb432"
-    },
     "ss58": "dmzbaFDDoYwXrX7Fa5mT2SfLapMZD8dynXPH4JviFEmMQz9Fu",
     "status": "active"
   },
