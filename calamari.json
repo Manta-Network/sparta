@@ -880,9 +880,6 @@
       "calamari": "https://calamari.metrics.gostake.io",
       "kusama": "https://kusama.metrics.gostake.io"
     },
-    "session": {
-      "aura": "0xf46806ad5208d4ae03447bfc2c8be155c0688153a58f03c7b5264135b1ee370c"
-    },
     "ss58": "dmzh2ESTJAy1MJ8Ekg9zs1653HFBUqCQeErihJZSHfFXGgNUh",
     "status": "active"
   },
