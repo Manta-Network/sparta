@@ -26,6 +26,9 @@
     "calamari": "https://calamari.metrics.rocke7.net",
     "kusama": "https://kusama.metrics.rocke7.net"
   },
+  "session": {
+    "aura": "0xe2bacb379eb4c336345ae73875b577008a3ddacf0ce006e2adec605492a19455"
+  },
   "ss58": "dmyZopEVaerkgSWWTd4WScPkhQgHTeLfMcHVCkQUyL1gu29c3",
   "status": "active"
 }
