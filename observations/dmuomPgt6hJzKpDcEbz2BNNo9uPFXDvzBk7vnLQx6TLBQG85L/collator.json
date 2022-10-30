@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.nettle.network",
     "kusama": "https://kusama.metrics.nettle.network"
   },
-  "session": {
-    "aura": "0xc295c7b9b8de7ed96bf8aafbe2d01f7b45e5f5dc7fbe37d19a2032c7ec417c60"
-  },
   "ss58": "dmuomPgt6hJzKpDcEbz2BNNo9uPFXDvzBk7vnLQx6TLBQG85L",
   "status": "active"
 }
