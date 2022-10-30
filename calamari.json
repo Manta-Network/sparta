@@ -701,7 +701,7 @@
   },
   {
     "balance": {
-      "free": "691539948813510636",
+      "free": "692305440067339736",
       "locked": {
         "fee": "400000000000000000",
         "misc": "400000000000000000"
@@ -726,9 +726,6 @@
     "metrics": {
       "calamari": "https://calamari.metrics.calamari.anonstake.com",
       "kusama": "https://kusama.metrics.calamari.anonstake.com"
-    },
-    "session": {
-      "aura": "0x088cfd40c19d44aba1afab3e3ced87255eaf651ef1e5ccf24aaa77053a5fff13"
     },
     "ss58": "dmxa3MJczFGT92BUQjwsxguUC2t5qFaDdagfpBQWdGkNPJYQ5",
     "status": "active"
