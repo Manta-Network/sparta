@@ -35,7 +35,7 @@
   },
   {
     "balance": {
-      "free": "501313420552467255",
+      "free": "501313507147636829",
       "locked": {
         "fee": "400000000000000000",
         "misc": "400000000000000000"
@@ -60,9 +60,6 @@
     "metrics": {
       "calamari": "https://para.metrics.crispy.calamari.systems",
       "kusama": "https://relay.metrics.crispy.calamari.systems"
-    },
-    "session": {
-      "aura": "0x7c4e5ea112f816c85f2bc77383cca50b73af038e327d39dca94252a4553b897e"
     },
     "ss58": "dmxjZSec4Xj3xz3nBEwSHjQSnRGhvcoB4eRabkiw7pSDuv8fW",
     "status": "invulnerable"
