@@ -26,9 +26,6 @@
     "calamari": "https://metrics.calamari.calamari.kooltek68.com",
     "kusama": "https://metrics.kusama.calamari.kooltek68.com"
   },
-  "session": {
-    "aura": "0x66d8c504524670c57c21ef12b9779109803ce8818c3a40f9a1fcad96b93b2e1c"
-  },
   "ss58": "dmuPiPzqGwuKsik8XLLPPi2xHCEwADyrfxakgiQbjtYEh7bDy",
   "status": "active"
 }
