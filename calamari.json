@@ -934,6 +934,9 @@
       "calamari": "https://calamari.metrics.sunshineautos.autos",
       "kusama": "https://kusama.metrics.sunshineautos.autos"
     },
+    "session": {
+      "aura": "0xa0e21cdc613d7201543e510b1c15d017a0d8d75b5c16ba163e7d48d4613a9d4f"
+    },
     "ss58": "dmuaG34aVnxirpMsHXu6Mg7RxNN3cxG74ZyjLVEgvzNqBXm2U",
     "status": "active"
   },
