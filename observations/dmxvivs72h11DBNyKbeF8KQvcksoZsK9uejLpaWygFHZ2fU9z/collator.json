@@ -26,9 +26,6 @@
     "calamari": "https://para.metrics.hotdog.calamari.systems",
     "kusama": "https://relay.metrics.hotdog.calamari.systems"
   },
-  "session": {
-    "aura": "0xb283eba4458f8678830d6a4f29962f5b9c52f0d5d7410187fa6d363a3b4eb532"
-  },
   "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
   "status": "invulnerable"
 }
