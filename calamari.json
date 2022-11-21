@@ -244,11 +244,8 @@
       "calamari": "http://65.108.122.7:9615",
       "kusama": "http://65.108.122.7:9616"
     },
-    "session": {
-      "aura": "0x4cb3529c00dd02ce67db055a9281b1a9469df9404260cda47da680d4cfa22177"
-    },
     "ss58": "dmvvqrfK5AUYH294zTCCiimJRV7CQDDQyC7RAkd5aZgUn9S6f",
-    "status": "active"
+    "status": "applicant"
   },
   {
     "balance": {
