@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.redesignmypage.com",
     "kusama": "https://kusama.metrics.redesignmypage.com"
   },
-  "session": {
-    "aura": "0x22b828e7804b5fec5eef53a0daa11960abe7482e4d35acbe1174506ace94f248"
-  },
   "ss58": "dmxyqP33GNwS6mA8bsWHQjeyKJM2eUVeCueER44b254ZCMy23",
-  "status": "active"
+  "status": "applicant"
 }
