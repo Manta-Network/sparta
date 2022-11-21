@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.fullstack.biz.ua",
     "kusama": "https://kusama.metrics.fullstack.biz.ua"
   },
-  "session": {
-    "aura": "0x585945c0addd48e382bf797238c9a66ddbea49b0bc9f4a1ebd886dfe895eac01"
-  },
   "ss58": "dmwM2xeWD2BjmCVYddTjB8QyYsktPsx2gySEZYbpdKFNnSGKd",
-  "status": "active"
+  "status": "applicant"
 }
