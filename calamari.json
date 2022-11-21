@@ -743,11 +743,8 @@
       "calamari": "https://calamari.pathrocknetwork.org",
       "kusama": "https://kusama.pathrocknetwork.org"
     },
-    "session": {
-      "aura": "0xcccc366e353713455316178b08f4ffda5e076f8c76e22aaee04c9bb3dd846875"
-    },
     "ss58": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb",
-    "status": "active"
+    "status": "applicant"
   },
   {
     "balance": {
