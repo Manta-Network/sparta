@@ -430,11 +430,8 @@
       "calamari": "https://calamari.pithecus.co.uk",
       "kusama": "https://kusama.pithecus.co.uk"
     },
-    "session": {
-      "aura": "0x363851a8aae3b11145683f76c215d3de894ab10ed1c25211f5b9a233faadf061"
-    },
     "ss58": "dmz1cxDw6nC5impJMZVfDwve5AG2s5AeaqSkZvQnEuqVwLYnL",
-    "status": "active"
+    "status": "applicant"
   },
   {
     "balance": {
