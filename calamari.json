@@ -1706,9 +1706,6 @@
       "calamari": "https://calamari.metrics.orangeskies.ru",
       "kusama": "https://kusama.metrics.orangeskies.ru"
     },
-    "session": {
-      "aura": "0xded01482cf87d08fe604d21d20b156fd71ac4c5beae4bf99a0963b0e6df6103a"
-    },
     "ss58": "dmvuGKcNe4VEv1rBVcTFEavAsccciEXcWoEi5iQrdR1NNMD1w",
     "status": "active"
   },
