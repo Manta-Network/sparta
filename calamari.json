@@ -461,11 +461,8 @@
       "calamari": "https://calamari.brightlystake.com",
       "kusama": "https://kusama.brightlystake.com"
     },
-    "session": {
-      "aura": "0x1e9ef0e879d1df2d1347d56f5d1e221291ada4a1a644fff88b29ce15e62b1230"
-    },
     "ss58": "dmx7NaUig7rdhwTJcnj6VPFaeou4KsvTqkMTcvHz25LcZtNrT",
-    "status": "active"
+    "status": "applicant"
   },
   {
     "balance": {
