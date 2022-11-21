@@ -26,9 +26,6 @@
     "calamari": "https://calamari.metrics.ws.stakebaby.com",
     "kusama": "https://kusama.metrics.ws.stakebaby.com"
   },
-  "session": {
-    "aura": "0x3ac3587a1beb24f6b5b0d81d28350195b0cfa18a0a557928a4351c5cdbb73645"
-  },
   "ss58": "dmzWDne3MxniVDcF4i2nGkfPZa4pfkWL1AXqgSvWgZmDoTcYw",
-  "status": "active"
+  "status": "applicant"
 }
