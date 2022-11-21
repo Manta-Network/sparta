@@ -26,9 +26,6 @@
     "calamari": "https://para.metrics.crunchy.calamari.systems",
     "kusama": "https://relay.metrics.crunchy.calamari.systems"
   },
-  "session": {
-    "aura": "0xe6cd4aa48cfb4638c90b2b4965e28f6f0eabdc261c545a31917243ad7c45d633"
-  },
   "ss58": "dmu63DLez715hRyhzdigz6akxS2c9W6RQvrToUWuQ1hntcBwF",
   "status": "invulnerable"
 }
