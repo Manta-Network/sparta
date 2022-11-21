@@ -399,11 +399,8 @@
       "calamari": "https://stats.calamari.migusha.com",
       "kusama": "https://stats.kasuma.migusha.com"
     },
-    "session": {
-      "aura": "0xa280d1ac65255102b9223e858d93d9f5b53e6e26ec04ea0a14d9c68bb6d5ae20"
-    },
     "ss58": "dmvFayQJ9S7BgbHE2kmnoVq9UfdbfwHpZ4d1revJfVA6X9dGR",
-    "status": "active"
+    "status": "applicant"
   },
   {
     "balance": {
