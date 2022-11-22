@@ -1,8 +1,8 @@
 {
   "proposal_id": 18,
   "created_block": 1223435,
-  "updated_block": 1232879,
-  "aye_votes": 3,
+  "updated_block": 1223437,
+  "aye_votes": 1,
   "nay_votes": 0,
   "status": "executed",
   "proposal_hash": "0x0b4241b786936cb929b3f75c2828b804618eed1bd65f13971a6a38a5a386b1b8",
@@ -28,12 +28,39 @@
     },
     {
       "account": {
+        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
+      },
+      "passed": true,
+      "extrinsic_hash": "0x0617aa282ff959ae6302d6c5188cf470826ea3a2480896e4512a6cead30a2ab5",
+      "extrinsic_index": "1232879-3",
+      "voting_time": 1650208542
+    },
+    {
+      "account": {
         "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
       },
       "passed": true,
       "extrinsic_hash": "0xd0899bbcc22256d1057ec08b9eda55c98717e63ccfa818f8913b4962ad3203e0",
       "extrinsic_index": "1232755-2",
       "voting_time": 1650205675
+    },
+    {
+      "account": {
+        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
+      },
+      "passed": true,
+      "extrinsic_hash": "0xd0899bbcc22256d1057ec08b9eda55c98717e63ccfa818f8913b4962ad3203e0",
+      "extrinsic_index": "1232755-2",
+      "voting_time": 1650205675
+    },
+    {
+      "account": {
+        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
+      },
+      "passed": true,
+      "extrinsic_hash": "0xe57e4079c7a6f2ba655df101843d690767ea1e107edad5c2fc5701e869f27d42",
+      "extrinsic_index": "1223437-2",
+      "voting_time": 1649989008
     },
     {
       "account": {
