@@ -28,39 +28,12 @@
     },
     {
       "account": {
-        "address": "dmuataakX4CbNQ6FwCwRswsScxmyEcCR8gERVNY2ZSk51eiDb"
-      },
-      "passed": true,
-      "extrinsic_hash": "0x6b0d29c50318ea58c3264ebd065fc3594034e2d782a7a1a41c22ff8c49731257",
-      "extrinsic_index": "1232878-2",
-      "voting_time": 1650208524
-    },
-    {
-      "account": {
         "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
       },
       "passed": true,
       "extrinsic_hash": "0xc981e34d2b96524dc70ac9fe4e9cee54840f02ed9dbe8566510338ccf0f8616e",
       "extrinsic_index": "1232752-2",
       "voting_time": 1650205596
-    },
-    {
-      "account": {
-        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
-      },
-      "passed": true,
-      "extrinsic_hash": "0xc981e34d2b96524dc70ac9fe4e9cee54840f02ed9dbe8566510338ccf0f8616e",
-      "extrinsic_index": "1232752-2",
-      "voting_time": 1650205596
-    },
-    {
-      "account": {
-        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
-      },
-      "passed": true,
-      "extrinsic_hash": "0x5b3db4f9e329d4479928afbec30042a00ea674b8250db745d221b2acb88e1e39",
-      "extrinsic_index": "1223436-2",
-      "voting_time": 1649988996
     },
     {
       "account": {
