@@ -28,24 +28,6 @@
     },
     {
       "account": {
-        "address": "dmyuhenRom5EBAEB255nwPTzaJu8aPxwisVtrkcHGy4UJeBms"
-      },
-      "passed": true,
-      "extrinsic_hash": "0xa20861c64892dc0dfb90352fdd3c1797ee8474a4e9251c42e4f60961059bfc53",
-      "extrinsic_index": "2028013-3",
-      "voting_time": 1662698802
-    },
-    {
-      "account": {
-        "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
-      },
-      "passed": true,
-      "extrinsic_hash": "0xa3b97c3fdacaeab7d5eb506e9addee286b89cc3760c31268730f3cfe07ae0d84",
-      "extrinsic_index": "2027953-3",
-      "voting_time": 1662697884
-    },
-    {
-      "account": {
         "address": "dmuVLQW7f2MeZ7PDfkXDtKGSHjd3mB8pePqnuwbmoE5ypssYt"
       },
       "passed": true,
