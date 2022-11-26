@@ -679,17 +679,17 @@
     },
     "location": {
       "city": {
-        "name": "Helsinki"
+        "name": "Gravelines"
       },
       "coordinates": {
-        "latitude": "60.1719",
-        "longitude": "24.9347"
+        "latitude": "50.9855",
+        "longitude": "2.1322"
       },
       "country": {
-        "code": "FI",
-        "name": "Finland"
+        "code": "FR",
+        "name": "France"
       },
-      "ip": "65.108.111.237"
+      "ip": "146.59.149.91"
     },
     "metrics": {
       "calamari": "https://calamari.metrics.favoursanywhere.com",
