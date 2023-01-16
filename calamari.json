@@ -121,7 +121,7 @@
       "kusama": "https://relay.metrics.hotdog.calamari.systems"
     },
     "ss58": "dmxvivs72h11DBNyKbeF8KQvcksoZsK9uejLpaWygFHZ2fU9z",
-    "status": "applicant"
+    "status": "invulnerable"
   },
   {
     "balance": {
