@@ -567,6 +567,20 @@
       "nonce": "15",
       "reserved": "0"
     },
+    "location": {
+      "city": {
+        "name": "Mountain View"
+      },
+      "coordinates": {
+        "latitude": "37.4043",
+        "longitude": "-122.0748"
+      },
+      "country": {
+        "code": "US",
+        "name": "United States"
+      },
+      "ip": "216.239.32.21"
+    },
     "metrics": {
       "calamari": "https://calamari.metrics.substake.app",
       "kusama": "https://kusama.metrics.substake.app"
