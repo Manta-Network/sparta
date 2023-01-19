@@ -90,7 +90,7 @@
       "kusama": "https://relay.metrics.crunchy.calamari.systems"
     },
     "ss58": "dmu63DLez715hRyhzdigz6akxS2c9W6RQvrToUWuQ1hntcBwF",
-    "status": "applicant"
+    "status": "invulnerable"
   },
   {
     "balance": {
