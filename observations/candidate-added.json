@@ -1,0 +1,13 @@
+{
+  "event_index": "2196747-0",
+  "block_num": 2196747,
+  "extrinsic_idx": 0,
+  "module_id": "collatorselection",
+  "event_id": "CandidateAdded",
+  "params": "",
+  "phase": 2,
+  "event_idx": 11,
+  "extrinsic_hash": "",
+  "finalized": true,
+  "block_timestamp": 0
+}
