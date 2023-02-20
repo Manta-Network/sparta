@@ -1,13 +1,13 @@
 {
-  "event_index": "1942956-2",
-  "block_num": 1942956,
+  "event_index": "1856879-2",
+  "block_num": 1856879,
   "extrinsic_idx": 2,
   "module_id": "balances",
   "event_id": "Reserved",
   "params": "",
   "phase": 0,
   "event_idx": 3,
-  "extrinsic_hash": "0xfa43b3931733c0639bf2fdfa163c167cb0adb587c5c057e73f34eda737c83922",
+  "extrinsic_hash": "0x15cf6d1b368b27c2259308f4306edfd3e6b5ba586a037dbb785b0f3af90c2856",
   "finalized": true,
   "block_timestamp": 0
 }
