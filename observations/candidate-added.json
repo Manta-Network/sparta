@@ -1,13 +1,13 @@
 {
-  "event_index": "1409202-2",
-  "block_num": 1409202,
+  "event_index": "1409199-2",
+  "block_num": 1409199,
   "extrinsic_idx": 2,
   "module_id": "collatorselection",
   "event_id": "CandidateAdded",
   "params": "",
   "phase": 0,
   "event_idx": 6,
-  "extrinsic_hash": "0x115f32d4325b688b7239d15b5a991e56627edcda239ddd5080207603c16cffc5",
+  "extrinsic_hash": "0x86420610bec1475ac3945a1e3ba8b8f4eb08cd659c8132773533b1cb64947950",
   "finalized": true,
   "block_timestamp": 0
 }
