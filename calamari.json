@@ -1549,17 +1549,17 @@
     },
     "location": {
       "city": {
-        "name": "Toronto"
+        "name": "Amsterdam"
       },
       "coordinates": {
-        "latitude": "43.6456",
-        "longitude": "-79.4569"
+        "latitude": "52.3759",
+        "longitude": "4.8975"
       },
       "country": {
-        "code": "CA",
-        "name": "Canada"
+        "code": "NL",
+        "name": "Netherlands"
       },
-      "ip": "104.21.11.150"
+      "ip": "188.114.96.3"
     },
     "metrics": {
       "calamari": "https://calamari-metrics.validatrium.club",
