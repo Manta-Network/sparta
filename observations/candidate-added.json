@@ -6,7 +6,7 @@
   "event_id": "CandidateAdded",
   "params": "",
   "phase": 2,
-  "event_idx": 7,
+  "event_idx": 5,
   "extrinsic_hash": "",
   "finalized": true,
   "block_timestamp": 0
