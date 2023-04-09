@@ -152,7 +152,7 @@
       "kusama": "https://relay.metrics.tasty.calamari.systems"
     },
     "ss58": "dmyhGnuox8ny9R1efVsWKxNU2FevMxcPZaB66uEJqJhgC4a1W",
-    "status": "applicant"
+    "status": "invulnerable"
   },
   {
     "balance": {
