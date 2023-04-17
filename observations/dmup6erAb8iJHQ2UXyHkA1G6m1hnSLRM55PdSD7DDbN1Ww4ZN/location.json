@@ -1,14 +1,14 @@
 {
-  "ip": "104.21.11.150",
+  "ip": "188.114.96.3",
   "city": {
-    "name": "Toronto"
+    "name": "Amsterdam"
   },
   "country": {
-    "code": "CA",
-    "name": "Canada"
+    "code": "NL",
+    "name": "Netherlands"
   },
   "coordinates": {
-    "latitude": "43.6456",
-    "longitude": "-79.4569"
+    "latitude": "52.3759",
+    "longitude": "4.8975"
   }
 }
