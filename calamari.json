@@ -1552,14 +1552,14 @@
         "name": "Amsterdam"
       },
       "coordinates": {
-        "latitude": "52.3716",
-        "longitude": "4.8883"
+        "latitude": "52.3759",
+        "longitude": "4.8975"
       },
       "country": {
         "code": "NL",
         "name": "Netherlands"
       },
-      "ip": "188.114.96.4"
+      "ip": "188.114.96.3"
     },
     "metrics": {
       "calamari": "https://calamari-metrics.validatrium.club",
