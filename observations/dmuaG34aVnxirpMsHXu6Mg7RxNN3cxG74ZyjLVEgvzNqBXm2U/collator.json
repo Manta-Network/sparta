@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Tampa"
+      "name": "Seattle"
     },
     "coordinates": {
-      "latitude": "27.9875",
-      "longitude": "-82.4583"
+      "latitude": "47.6348",
+      "longitude": "-122.3451"
     },
     "country": {
       "code": "US",
       "name": "United States"
     },
-    "ip": "199.59.243.223"
+    "ip": "13.248.148.254"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.sunshineautos.autos",
