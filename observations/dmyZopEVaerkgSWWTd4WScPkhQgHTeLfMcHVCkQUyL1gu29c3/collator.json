@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Limburg an der Lahn"
+      "name": "Toronto"
     },
     "coordinates": {
-      "latitude": "50.3846",
-      "longitude": "8.0472"
+      "latitude": "43.64",
+      "longitude": "-79.433"
     },
     "country": {
-      "code": "DE",
-      "name": "Germany"
+      "code": "CA",
+      "name": "Canada"
     },
-    "ip": "141.95.126.166"
+    "ip": "104.21.38.187"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.rocke7.net",
