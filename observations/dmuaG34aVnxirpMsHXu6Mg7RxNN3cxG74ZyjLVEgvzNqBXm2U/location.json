@@ -1,14 +1,14 @@
 {
-  "ip": "199.59.243.223",
+  "ip": "13.248.148.254",
   "city": {
-    "name": "Tampa"
+    "name": "Seattle"
   },
   "country": {
     "code": "US",
     "name": "United States"
   },
   "coordinates": {
-    "latitude": "27.9875",
-    "longitude": "-82.4583"
+    "latitude": "47.6348",
+    "longitude": "-122.3451"
   }
 }
