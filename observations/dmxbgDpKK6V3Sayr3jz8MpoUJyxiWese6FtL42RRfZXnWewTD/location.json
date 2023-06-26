@@ -1,14 +1,14 @@
 {
-  "ip": "146.59.68.182",
+  "ip": "104.21.55.217",
   "city": {
-    "name": "Warsaw"
+    "name": "New York"
   },
   "country": {
-    "code": "PL",
-    "name": "Poland"
+    "code": "US",
+    "name": "United States"
   },
   "coordinates": {
-    "latitude": "52.2484",
-    "longitude": "21.0026"
+    "latitude": "40.6063",
+    "longitude": "-74.1774"
   }
 }
