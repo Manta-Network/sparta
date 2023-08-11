@@ -1,14 +1,14 @@
 {
-  "ip": "104.21.55.217",
+  "ip": "13.248.169.48",
   "city": {
-    "name": "New York"
+    "name": "Seattle"
   },
   "country": {
     "code": "US",
     "name": "United States"
   },
   "coordinates": {
-    "latitude": "40.6063",
-    "longitude": "-74.1774"
+    "latitude": "47.6034",
+    "longitude": "-122.3414"
   }
 }

@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "New York"
+      "name": "Seattle"
     },
     "coordinates": {
-      "latitude": "40.6063",
-      "longitude": "-74.1774"
+      "latitude": "47.6034",
+      "longitude": "-122.3414"
     },
     "country": {
       "code": "US",
       "name": "United States"
     },
-    "ip": "104.21.55.217"
+    "ip": "13.248.169.48"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.calamari.info",
