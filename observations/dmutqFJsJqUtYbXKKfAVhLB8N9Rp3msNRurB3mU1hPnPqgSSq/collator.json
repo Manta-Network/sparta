@@ -10,17 +10,17 @@
   },
   "location": {
     "city": {
-      "name": "Hilliard"
+      "name": "Ashburn"
     },
     "coordinates": {
-      "latitude": "40.053184",
-      "longitude": "-83.128877"
+      "latitude": "39.017388",
+      "longitude": "-77.468037"
     },
     "country": {
       "code": "US",
       "name": "United States"
     },
-    "ip": "3.18.7.81"
+    "ip": "52.71.57.184"
   },
   "metrics": {
     "calamari": "https://calamari.metrics.yowcloud.com",
